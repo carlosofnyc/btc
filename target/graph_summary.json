@@ -1,1 +1,1 @@
-{"_invocation_id": "8928441c-3d87-4c7e-be35-b52c8ae27004", "linked": {"0": {"name": "source.btc.btc.btc", "type": "source", "succ": [1]}, "1": {"name": "model.btc.stg_btc", "type": "model"}}}
+{"_invocation_id": "3b532dc5-d8db-43ca-9913-eec018a0a80f", "linked": {"0": {"name": "source.btc.btc.btc", "type": "source", "succ": [1]}, "1": {"name": "model.btc.stg_btc", "type": "model", "succ": [2, 3]}, "2": {"name": "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f", "type": "test"}, "3": {"name": "test.btc.not_null_stg_btc_HASHKEY.f1464799d5", "type": "test"}}}

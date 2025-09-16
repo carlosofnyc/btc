@@ -126,3 +126,271 @@ There are 1 unused configuration paths:
 [0m17:35:21.816634 [debug] [MainThread]: Resource report: {"command_name": "freshness", "command_success": true, "command_wall_clock_time": 3.0261087, "process_in_blocks": "0", "process_kernel_time": 0.199895, "process_mem_max_rss": "163627008", "process_out_blocks": "0", "process_user_time": 1.306098}
 [0m17:35:21.817086 [debug] [MainThread]: Command `dbt source freshness` succeeded at 17:35:21.817016 after 3.03 seconds
 [0m17:35:21.817399 [debug] [MainThread]: Flushing usage events
+[0m17:54:46.605239 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:54:46.618235 | 03c0fbb8-21ab-46de-83ce-0c55bdab3cfb ==============================
+[0m17:54:46.618235 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:54:46.618791 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'target_path': 'None', 'write_json': 'True', 'use_colors': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/mac/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'version_check': 'True', 'no_print': 'None', 'invocation_command': 'dbt test', 'debug': 'False', 'quiet': 'False', 'partial_parse': 'True', 'warn_error': 'None', 'log_format': 'default', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_cache_events': 'False', 'static_parser': 'True'}
+[0m17:54:46.863313 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m17:54:46.934757 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:54:46.979030 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading btc: schema.yml - Runtime Error
+    Syntax error near line 7
+    ------------------------------
+    4  |   - name: stg_btc
+    5  |     columns:
+    6  |       - name: HASHKEY
+    7  |       tests:
+    8  |         - unique
+    9  |         - not_null
+    
+    Raw Error:
+    ------------------------------
+    while parsing a block collection
+      in "<unicode string>", line 6, column 7
+    did not find expected '-' indicator
+      in "<unicode string>", line 7, column 7
+[0m17:54:46.981020 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.40167367, "process_in_blocks": "0", "process_kernel_time": 0.14558, "process_mem_max_rss": "136740864", "process_out_blocks": "0", "process_user_time": 0.949566}
+[0m17:54:46.981365 [debug] [MainThread]: Command `dbt test` failed at 17:54:46.981316 after 0.40 seconds
+[0m17:54:46.981570 [debug] [MainThread]: Flushing usage events
+[0m17:55:50.829924 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:55:50.841050 | 8b8f3566-5f3e-4af9-b1a3-677be9c519c1 ==============================
+[0m17:55:50.841050 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:55:50.841607 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'profiles_dir': '/Users/mac/.dbt', 'use_experimental_parser': 'False', 'version_check': 'True', 'use_colors': 'True', 'target_path': 'None', 'empty': 'False', 'invocation_command': 'dbt run -m stg_btc', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'fail_fast': 'False', 'write_json': 'True', 'debug': 'False', 'static_parser': 'True', 'quiet': 'False', 'printer_width': '80', 'log_cache_events': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'log_format': 'default'}
+[0m17:55:50.841870 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m17:55:51.054318 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m17:55:51.122847 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:55:51.166589 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading btc: schema.yml - Runtime Error
+    Syntax error near line 7
+    ------------------------------
+    4  |   - name: stg_btc
+    5  |     columns:
+    6  |       - name: HASHKEY
+    7  |       tests:
+    8  |         - unique
+    9  |         - not_null
+    
+    Raw Error:
+    ------------------------------
+    while parsing a block collection
+      in "<unicode string>", line 6, column 7
+    did not find expected '-' indicator
+      in "<unicode string>", line 7, column 7
+[0m17:55:51.166992 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m17:55:51.168474 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.36427066, "process_in_blocks": "0", "process_kernel_time": 0.143683, "process_mem_max_rss": "136806400", "process_out_blocks": "0", "process_user_time": 0.941915}
+[0m17:55:51.168802 [debug] [MainThread]: Command `dbt run` failed at 17:55:51.168748 after 0.36 seconds
+[0m17:55:51.169010 [debug] [MainThread]: Flushing usage events
+[0m17:57:51.154295 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:57:51.167123 | 2708250b-1323-4ad3-b422-f007f3f411a2 ==============================
+[0m17:57:51.167123 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:57:51.167716 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run -m stg_btc', 'warn_error': 'None', 'profiles_dir': '/Users/mac/.dbt', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'write_json': 'True', 'no_print': 'None', 'version_check': 'True', 'debug': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'introspect': 'True', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'static_parser': 'True', 'quiet': 'False', 'use_colors': 'True', 'target_path': 'None'}
+[0m17:57:51.168020 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m17:57:51.386191 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m17:57:51.456260 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:57:51.546514 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:57:51.546786 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:57:51.549604 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.btc.example
+[0m17:57:51.613303 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m17:57:51.614340 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m17:57:51.621500 [info ] [MainThread]: Found 1 model, 2 data tests, 1 source, 479 macros
+[0m17:57:51.622290 [info ] [MainThread]: 
+[0m17:57:51.622512 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:57:51.622673 [info ] [MainThread]: 
+[0m17:57:51.622933 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:57:51.623356 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m17:57:51.655632 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m17:57:51.655887 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc"} */
+[0m17:57:51.656070 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:57:52.792013 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.136 seconds
+[0m17:57:52.795266 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_schema)
+[0m17:57:52.810436 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m17:57:52.810865 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m17:57:52.932818 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.121 seconds
+[0m17:57:52.941742 [debug] [Thread-1 (]: Began running node model.btc.stg_btc
+[0m17:57:52.942590 [info ] [Thread-1 (]: 1 of 1 START sql view model btc_schema.stg_btc ................................. [RUN]
+[0m17:57:52.943289 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.stg_btc)
+[0m17:57:52.944063 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc
+[0m17:57:52.952580 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc"
+[0m17:57:52.953714 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc
+[0m17:57:52.979598 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc"
+[0m17:57:52.980572 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m17:57:52.980867 [debug] [Thread-1 (]: On model.btc.stg_btc: create or replace   view btc.btc_schema.stg_btc
+  
+  
+  
+  
+  as (
+    select top 1 *
+from btc.btc_schema.btc
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */;
+[0m17:57:53.190330 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.209 seconds
+[0m17:57:53.221691 [info ] [Thread-1 (]: 1 of 1 OK created sql view model btc_schema.stg_btc ............................ [[32mSUCCESS 1[0m in 0.28s]
+[0m17:57:53.222342 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc
+[0m17:57:53.223575 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:57:53.223891 [debug] [MainThread]: Connection 'model.btc.stg_btc' was left open.
+[0m17:57:53.224148 [debug] [MainThread]: On model.btc.stg_btc: Close
+[0m17:57:53.931752 [info ] [MainThread]: 
+[0m17:57:53.932982 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 2.31 seconds (2.31s).
+[0m17:57:53.934387 [debug] [MainThread]: Command end result
+[0m17:57:53.958497 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m17:57:53.960234 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m17:57:53.964905 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m17:57:53.965186 [info ] [MainThread]: 
+[0m17:57:53.965518 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:57:53.965771 [info ] [MainThread]: 
+[0m17:57:53.966029 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:57:53.966440 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m17:57:53.968898 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.8409948, "process_in_blocks": "0", "process_kernel_time": 0.219331, "process_mem_max_rss": "164102144", "process_out_blocks": "0", "process_user_time": 1.400322}
+[0m17:57:53.969298 [debug] [MainThread]: Command `dbt run` succeeded at 17:57:53.969233 after 2.84 seconds
+[0m17:57:53.969567 [debug] [MainThread]: Flushing usage events
+[0m17:58:20.462436 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:58:20.474327 | 3b532dc5-d8db-43ca-9913-eec018a0a80f ==============================
+[0m17:58:20.474327 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:58:20.474847 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'static_parser': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'no_print': 'None', 'target_path': 'None', 'profiles_dir': '/Users/mac/.dbt', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'warn_error': 'None', 'use_colors': 'True', 'invocation_command': 'dbt test', 'version_check': 'True', 'empty': 'None', 'introspect': 'True', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'write_json': 'True', 'partial_parse': 'True', 'quiet': 'False', 'debug': 'False', 'log_format': 'default', 'log_cache_events': 'False', 'cache_selected_only': 'False'}
+[0m17:58:20.688226 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m17:58:20.759330 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:58:20.850285 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:58:20.850557 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:58:20.853413 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.btc.example
+[0m17:58:20.916276 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m17:58:20.917339 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m17:58:20.929763 [info ] [MainThread]: Found 1 model, 2 data tests, 1 source, 479 macros
+[0m17:58:20.930649 [info ] [MainThread]: 
+[0m17:58:20.930853 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:58:20.931016 [info ] [MainThread]: 
+[0m17:58:20.931279 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:58:20.931725 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc_btc_schema'
+[0m17:58:20.965108 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m17:58:20.965346 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m17:58:20.965510 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:58:24.153829 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 3.188 seconds
+[0m17:58:24.162328 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m17:58:24.163011 [info ] [Thread-1 (]: 1 of 2 START test not_null_stg_btc_HASHKEY ..................................... [RUN]
+[0m17:58:24.163582 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now test.btc.not_null_stg_btc_HASHKEY.f1464799d5)
+[0m17:58:24.164008 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m17:58:24.182386 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc_HASHKEY.f1464799d5"
+[0m17:58:24.183574 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m17:58:24.203032 [debug] [Thread-1 (]: Writing runtime sql for node "test.btc.not_null_stg_btc_HASHKEY.f1464799d5"
+[0m17:58:24.204354 [debug] [Thread-1 (]: Using snowflake connection "test.btc.not_null_stg_btc_HASHKEY.f1464799d5"
+[0m17:58:24.204662 [debug] [Thread-1 (]: On test.btc.not_null_stg_btc_HASHKEY.f1464799d5: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select HASHKEY
+from btc.btc_schema.stg_btc
+where HASHKEY is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "test.btc.not_null_stg_btc_HASHKEY.f1464799d5"} */
+[0m17:58:24.805980 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.601 seconds
+[0m17:58:24.819980 [info ] [Thread-1 (]: 1 of 2 PASS not_null_stg_btc_HASHKEY ........................................... [[32mPASS[0m in 0.66s]
+[0m17:58:24.820811 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m17:58:24.821309 [debug] [Thread-1 (]: Began running node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m17:58:24.821894 [info ] [Thread-1 (]: 2 of 2 START test unique_stg_btc_HASHKEY ....................................... [RUN]
+[0m17:58:24.822541 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc_HASHKEY.f1464799d5, now test.btc.unique_stg_btc_HASHKEY.3bc82edb0f)
+[0m17:58:24.822998 [debug] [Thread-1 (]: Began compiling node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m17:58:24.831276 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f"
+[0m17:58:24.832059 [debug] [Thread-1 (]: Began executing node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m17:58:24.834119 [debug] [Thread-1 (]: Writing runtime sql for node "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f"
+[0m17:58:24.834769 [debug] [Thread-1 (]: Using snowflake connection "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f"
+[0m17:58:24.834969 [debug] [Thread-1 (]: On test.btc.unique_stg_btc_HASHKEY.3bc82edb0f: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    HASHKEY as unique_field,
+    count(*) as n_records
+
+from btc.btc_schema.stg_btc
+where HASHKEY is not null
+group by HASHKEY
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f"} */
+[0m17:58:25.337841 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.502 seconds
+[0m17:58:25.342216 [info ] [Thread-1 (]: 2 of 2 PASS unique_stg_btc_HASHKEY ............................................. [[32mPASS[0m in 0.52s]
+[0m17:58:25.343692 [debug] [Thread-1 (]: Finished running node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m17:58:25.345754 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:58:25.346249 [debug] [MainThread]: Connection 'test.btc.unique_stg_btc_HASHKEY.3bc82edb0f' was left open.
+[0m17:58:25.346723 [debug] [MainThread]: On test.btc.unique_stg_btc_HASHKEY.3bc82edb0f: Close
+[0m17:58:25.441219 [info ] [MainThread]: 
+[0m17:58:25.442539 [info ] [MainThread]: Finished running 2 data tests in 0 hours 0 minutes and 4.51 seconds (4.51s).
+[0m17:58:25.443995 [debug] [MainThread]: Command end result
+[0m17:58:25.468241 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m17:58:25.470118 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m17:58:25.475562 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m17:58:25.475847 [info ] [MainThread]: 
+[0m17:58:25.476171 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:58:25.476442 [info ] [MainThread]: 
+[0m17:58:25.476714 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m17:58:25.479183 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 5.0426893, "process_in_blocks": "0", "process_kernel_time": 0.220773, "process_mem_max_rss": "166952960", "process_out_blocks": "0", "process_user_time": 1.40324}
+[0m17:58:25.479608 [debug] [MainThread]: Command `dbt test` succeeded at 17:58:25.479538 after 5.04 seconds
+[0m17:58:25.479886 [debug] [MainThread]: Flushing usage events
