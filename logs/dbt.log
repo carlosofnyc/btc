@@ -59,3 +59,70 @@
 [0m17:25:07.242926 [debug] [MainThread]: Connection 'debug' was left open.
 [0m17:25:07.243131 [debug] [MainThread]: On debug: Close
 [0m17:25:07.336973 [debug] [MainThread]: Flushing usage events
+[0m17:34:03.539962 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:34:03.551004 | 01ac48ef-6b8b-4c0a-8671-0530e1ac2856 ==============================
+[0m17:34:03.551004 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:34:03.551569 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'invocation_command': 'dbt ', 'warn_error': 'None', 'printer_width': '80', 'static_parser': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'version_check': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'partial_parse': 'True', 'write_json': 'True', 'fail_fast': 'False', 'debug': 'False', 'introspect': 'True', 'profiles_dir': '/Users/mac/.dbt', 'use_colors': 'True', 'no_print': 'None'}
+[0m17:34:03.620840 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m17:34:03.621285 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m17:34:03.623336 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.11240679, "process_in_blocks": "0", "process_kernel_time": 0.096128, "process_mem_max_rss": "111394816", "process_out_blocks": "0", "process_user_time": 0.76092}
+[0m17:34:03.623728 [debug] [MainThread]: Command `cli deps` succeeded at 17:34:03.623670 after 0.11 seconds
+[0m17:34:03.623928 [debug] [MainThread]: Flushing usage events
+[0m17:35:18.815991 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:35:18.826294 | 8928441c-3d87-4c7e-be35-b52c8ae27004 ==============================
+[0m17:35:18.826294 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:35:18.826801 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'version_check': 'True', 'target_path': 'None', 'invocation_command': 'dbt source freshness', 'static_parser': 'True', 'fail_fast': 'False', 'introspect': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'debug': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'empty': 'None', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'profiles_dir': '/Users/mac/.dbt'}
+[0m17:35:19.036183 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m17:35:19.106236 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:35:19.157385 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:35:19.157602 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:35:19.186298 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.btc.example
+[0m17:35:19.238270 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m17:35:19.239646 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m17:35:19.247505 [info ] [MainThread]: Found 1 model, 1 source, 479 macros
+[0m17:35:19.248356 [info ] [MainThread]: 
+[0m17:35:19.248562 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:35:19.248722 [info ] [MainThread]: 
+[0m17:35:19.249001 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:35:19.249475 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc_btc_schema'
+[0m17:35:19.283743 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m17:35:19.283979 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m17:35:19.284145 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:35:20.867252 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.583 seconds
+[0m17:35:20.872355 [info ] [MainThread]: Pulling freshness from warehouse metadata tables for 0 sources
+[0m17:35:20.875664 [debug] [Thread-1 (]: Began running node source.btc.btc.btc
+[0m17:35:20.876207 [info ] [Thread-1 (]: 1 of 1 START freshness of btc.btc .............................................. [RUN]
+[0m17:35:20.876755 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now source.btc.btc.btc)
+[0m17:35:20.877191 [debug] [Thread-1 (]: Began compiling node source.btc.btc.btc
+[0m17:35:20.877614 [debug] [Thread-1 (]: Began executing node source.btc.btc.btc
+[0m17:35:20.893764 [debug] [Thread-1 (]: Using snowflake connection "source.btc.btc.btc"
+[0m17:35:20.894315 [debug] [Thread-1 (]: On source.btc.btc.btc: select
+      max(BLOCK_TIMESTAMP) as max_loaded_at,
+      convert_timezone('UTC', current_timestamp()) as snapshotted_at
+    from btc.btc_schema.btc
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "source.btc.btc.btc"} */
+[0m17:35:21.673547 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.779 seconds
+[0m17:35:21.679385 [warn ] [Thread-1 (]: 1 of 1 WARN freshness of btc.btc ............................................... [[33mWARN[0m in 0.80s]
+[0m17:35:21.680354 [debug] [Thread-1 (]: Finished running node source.btc.btc.btc
+[0m17:35:21.682452 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:35:21.682984 [debug] [MainThread]: Connection 'source.btc.btc.btc' was left open.
+[0m17:35:21.683467 [debug] [MainThread]: On source.btc.btc.btc: Close
+[0m17:35:21.779003 [info ] [MainThread]: 
+[0m17:35:21.779811 [info ] [MainThread]: Finished running 1 source in 0 hours 0 minutes and 2.53 seconds (2.53s).
+[0m17:35:21.807029 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m17:35:21.809296 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m17:35:21.814107 [debug] [MainThread]: Wrote artifact FreshnessResult to /Users/mac/Desktop/DE2025/btc/target/sources.json
+[0m17:35:21.814427 [info ] [MainThread]: Done.
+[0m17:35:21.816634 [debug] [MainThread]: Resource report: {"command_name": "freshness", "command_success": true, "command_wall_clock_time": 3.0261087, "process_in_blocks": "0", "process_kernel_time": 0.199895, "process_mem_max_rss": "163627008", "process_out_blocks": "0", "process_user_time": 1.306098}
+[0m17:35:21.817086 [debug] [MainThread]: Command `dbt source freshness` succeeded at 17:35:21.817016 after 3.03 seconds
+[0m17:35:21.817399 [debug] [MainThread]: Flushing usage events

@@ -1,0 +1,1 @@
+{"_invocation_id": "8928441c-3d87-4c7e-be35-b52c8ae27004", "linked": {"0": {"name": "source.btc.btc.btc", "type": "source", "succ": [1]}, "1": {"name": "model.btc.stg_btc", "type": "model"}}}
