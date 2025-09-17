@@ -17,5 +17,5 @@ clean-targets:
 
 models:
   btc:
-    example:
-      +materialized: view
+    marts:
+      +materialized: table

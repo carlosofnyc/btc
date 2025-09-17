@@ -1871,3 +1871,2492 @@ parsing.
 [0m13:02:48.818617 [debug] [MainThread]: Connection 'debug' was left open.
 [0m13:02:48.819032 [debug] [MainThread]: On debug: Close
 [0m13:02:48.914908 [debug] [MainThread]: Flushing usage events
+<<<<<<< HEAD
+[0m13:24:06.332169 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 13:24:06.343385 | 0983e98b-4842-47da-9aac-d1d140590ad7 ==============================
+[0m13:24:06.343385 [info ] [MainThread]: Running with dbt=1.10.11
+[0m13:24:06.343896 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'empty': 'False', 'quiet': 'False', 'fail_fast': 'False', 'version_check': 'True', 'cache_selected_only': 'False', 'debug': 'False', 'write_json': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'static_parser': 'True', 'invocation_command': 'dbt run -m stg_btc_transactions', 'target_path': 'None', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'partial_parse': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'use_colors': 'True', 'printer_width': '80', 'profiles_dir': '/Users/mac/.dbt', 'warn_error': 'None', 'no_print': 'None'}
+[0m13:24:06.344160 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m13:24:06.559673 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m13:24:06.630730 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m13:24:06.719575 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:24:06.719848 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:24:06.722781 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.btc.example
+[0m13:24:06.787152 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:24:06.788221 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:24:06.795113 [info ] [MainThread]: Found 4 models, 2 data tests, 1 source, 479 macros
+[0m13:24:06.795885 [info ] [MainThread]: 
+[0m13:24:06.796107 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:24:06.796272 [info ] [MainThread]: 
+[0m13:24:06.796527 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:24:06.798695 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc_btc_schema'
+[0m13:24:06.830729 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m13:24:06.830954 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m13:24:06.831123 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:24:10.009318 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.178 seconds
+[0m13:24:10.012289 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_transactions
+[0m13:24:10.012602 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.stg_btc_transactions)
+[0m13:24:10.012864 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_transactions
+[0m13:24:10.018118 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_transactions"
+[0m13:24:10.018866 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_transactions
+[0m13:24:10.019551 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:24:10.019757 [debug] [MainThread]: Connection 'model.btc.stg_btc_transactions' was left open.
+[0m13:24:10.019946 [debug] [MainThread]: On model.btc.stg_btc_transactions: Close
+[0m13:24:10.114306 [info ] [MainThread]: 
+[0m13:24:10.114804 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 3.32 seconds (3.32s).
+[0m13:24:10.115338 [debug] [MainThread]: Command end result
+[0m13:24:10.134113 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:24:10.135487 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:24:10.137860 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m13:24:10.138258 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m13:24:10.140084 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.8341236, "process_in_blocks": "0", "process_kernel_time": 0.215975, "process_mem_max_rss": "165085184", "process_out_blocks": "0", "process_user_time": 1.310901}
+[0m13:24:10.140397 [debug] [MainThread]: Command `dbt run` succeeded at 13:24:10.140345 after 3.83 seconds
+[0m13:24:10.140625 [debug] [MainThread]: Flushing usage events
+[0m13:25:54.821318 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 13:25:54.832438 | c525c5d5-845e-4cbb-83a8-f6de0c32da84 ==============================
+[0m13:25:54.832438 [info ] [MainThread]: Running with dbt=1.10.11
+[0m13:25:54.832962 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/mac/.dbt', 'partial_parse': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'cache_selected_only': 'False', 'printer_width': '80', 'use_colors': 'True', 'quiet': 'False', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'empty': 'False', 'target_path': 'None', 'write_json': 'True', 'warn_error': 'None', 'invocation_command': 'dbt run -m models/stg_btc_transactions.sql', 'version_check': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'debug': 'False', 'static_parser': 'True', 'fail_fast': 'False', 'log_format': 'default'}
+[0m13:25:54.833231 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m13:25:55.052215 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m13:25:55.122853 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m13:25:55.215442 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:25:55.215734 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:25:55.218758 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.btc.example
+[0m13:25:55.282891 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:25:55.283953 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:25:55.290791 [info ] [MainThread]: Found 4 models, 2 data tests, 1 source, 479 macros
+[0m13:25:55.291820 [info ] [MainThread]: 
+[0m13:25:55.292041 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:25:55.292216 [info ] [MainThread]: 
+[0m13:25:55.292483 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:25:55.294649 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc_btc_schema'
+[0m13:25:55.326796 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m13:25:55.327058 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m13:25:55.327230 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:25:56.942653 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.615 seconds
+[0m13:25:56.950434 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_transactions
+[0m13:25:56.951134 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.stg_btc_transactions)
+[0m13:25:56.951626 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_transactions
+[0m13:25:56.960552 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_transactions"
+[0m13:25:56.961719 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_transactions
+[0m13:25:56.962783 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:25:56.963109 [debug] [MainThread]: Connection 'model.btc.stg_btc_transactions' was left open.
+[0m13:25:56.963409 [debug] [MainThread]: On model.btc.stg_btc_transactions: Close
+[0m13:25:57.061203 [info ] [MainThread]: 
+[0m13:25:57.061975 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.77 seconds (1.77s).
+[0m13:25:57.062633 [debug] [MainThread]: Command end result
+[0m13:25:57.086263 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:25:57.087762 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:25:57.090351 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m13:25:57.090800 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m13:25:57.092854 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.2979283, "process_in_blocks": "0", "process_kernel_time": 0.209278, "process_mem_max_rss": "164757504", "process_out_blocks": "0", "process_user_time": 1.308548}
+[0m13:25:57.093236 [debug] [MainThread]: Command `dbt run` succeeded at 13:25:57.093174 after 2.30 seconds
+[0m13:25:57.093521 [debug] [MainThread]: Flushing usage events
+[0m13:27:45.337487 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 13:27:45.348635 | 4ead77f4-fb98-4035-95da-5cc9381f6b61 ==============================
+[0m13:27:45.348635 [info ] [MainThread]: Running with dbt=1.10.11
+[0m13:27:45.349171 [debug] [MainThread]: running dbt with arguments {'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'target_path': 'None', 'debug': 'False', 'invocation_command': 'dbt run --select stg_btc_transactions', 'log_format': 'default', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'introspect': 'True', 'partial_parse': 'True', 'static_parser': 'True', 'printer_width': '80', 'fail_fast': 'False', 'profiles_dir': '/Users/mac/.dbt', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'version_check': 'True', 'log_cache_events': 'False', 'use_colors': 'True', 'empty': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'write_json': 'True'}
+[0m13:27:45.562577 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m13:27:45.633431 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m13:27:45.723284 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:27:45.723568 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:27:45.726509 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.btc.example
+[0m13:27:45.791179 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:27:45.792497 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:27:45.799287 [info ] [MainThread]: Found 4 models, 2 data tests, 1 source, 479 macros
+[0m13:27:45.800033 [info ] [MainThread]: 
+[0m13:27:45.800238 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:27:45.800409 [info ] [MainThread]: 
+[0m13:27:45.800673 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:27:45.802862 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc_btc_schema'
+[0m13:27:45.834999 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m13:27:45.835232 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m13:27:45.835405 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:27:49.045617 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.210 seconds
+[0m13:27:49.053379 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_transactions
+[0m13:27:49.054104 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.stg_btc_transactions)
+[0m13:27:49.054615 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_transactions
+[0m13:27:49.063715 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_transactions"
+[0m13:27:49.064982 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_transactions
+[0m13:27:49.066092 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:27:49.066404 [debug] [MainThread]: Connection 'model.btc.stg_btc_transactions' was left open.
+[0m13:27:49.066674 [debug] [MainThread]: On model.btc.stg_btc_transactions: Close
+[0m13:27:49.158481 [info ] [MainThread]: 
+[0m13:27:49.159176 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 3.36 seconds (3.36s).
+[0m13:27:49.159821 [debug] [MainThread]: Command end result
+[0m13:27:49.182491 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:27:49.183919 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:27:49.186505 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m13:27:49.188509 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.8770888, "process_in_blocks": "0", "process_kernel_time": 0.218191, "process_mem_max_rss": "165609472", "process_out_blocks": "0", "process_user_time": 1.336748}
+[0m13:27:49.188878 [debug] [MainThread]: Command `dbt run` succeeded at 13:27:49.188815 after 3.88 seconds
+[0m13:27:49.189148 [debug] [MainThread]: Flushing usage events
+[0m13:30:09.332402 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 13:30:09.344267 | ab7bf23b-ed3f-4285-ac13-56e6a9dc32e7 ==============================
+[0m13:30:09.344267 [info ] [MainThread]: Running with dbt=1.10.11
+[0m13:30:09.344805 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --select stg_btc_outputs', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'fail_fast': 'False', 'static_parser': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'target_path': 'None', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'version_check': 'True', 'debug': 'False', 'empty': 'False', 'write_json': 'True', 'profiles_dir': '/Users/mac/.dbt', 'log_cache_events': 'False'}
+[0m13:30:09.565691 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m13:30:09.636211 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m13:30:09.726056 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:30:09.726340 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:30:09.729296 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.btc.example
+[0m13:30:09.793776 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:30:09.794855 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:30:09.801743 [info ] [MainThread]: Found 4 models, 2 data tests, 1 source, 479 macros
+[0m13:30:09.802511 [info ] [MainThread]: 
+[0m13:30:09.802711 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:30:09.802871 [info ] [MainThread]: 
+[0m13:30:09.803130 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:30:09.803557 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m13:30:09.832536 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m13:30:09.832774 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc"} */
+[0m13:30:09.832940 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:30:12.940908 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.108 seconds
+[0m13:30:12.950760 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_schema)
+[0m13:30:12.964972 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m13:30:12.965351 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m13:30:13.066099 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.100 seconds
+[0m13:30:13.072553 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_outputs
+[0m13:30:13.073176 [info ] [Thread-1 (]: 1 of 1 START sql incremental model btc_schema.stg_btc_outputs .................. [RUN]
+[0m13:30:13.073713 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.stg_btc_outputs)
+[0m13:30:13.074141 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_outputs
+[0m13:30:13.087856 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_outputs"
+[0m13:30:13.089605 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc_outputs
+[0m13:30:13.125021 [debug] [Thread-1 (]: Dropping relation btc.btc_schema.stg_btc_outputs because it is a view and this model is a table.
+[0m13:30:13.129570 [debug] [Thread-1 (]: Applying DROP to: "BTC"."BTC_SCHEMA"."STG_BTC_OUTPUTS"
+[0m13:30:13.133951 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:30:13.134219 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: drop view if exists "BTC"."BTC_SCHEMA"."STG_BTC_OUTPUTS" cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:30:13.254578 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.120 seconds
+[0m13:30:13.270828 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc_outputs"
+[0m13:30:13.272325 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:30:13.272680 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: create or replace transient table btc.btc_schema.stg_btc_outputs
+    
+    
+    
+    as (-- including incremental logic to only load new data
+
+
+with flattened as (
+select
+    t.hashkey,
+    t.block_number,
+    t.block_timestamp,
+    t.is_coinbase,
+    op.value:value::FLOAT as output_value,
+    op.value:address::STRING as output_address 
+
+from btc.btc_schema.stg_btc as t,
+lateral flatten(input => t.outputs) as op
+where op.value is not null
+
+
+
+)
+
+select hashkey,
+    block_number,
+    block_timestamp,
+    is_coinbase,
+    output_value,
+    output_address
+from flattened
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */;
+[0m13:30:14.905953 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.633 seconds
+[0m13:30:14.914883 [debug] [Thread-1 (]: Applying DROP to: btc.btc_schema.stg_btc_outputs__dbt_tmp
+[0m13:30:14.918124 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:30:14.918637 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: drop view if exists btc.btc_schema.stg_btc_outputs__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:30:14.992632 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.073 seconds
+[0m13:30:15.018851 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model btc_schema.stg_btc_outputs ............. [[32mSUCCESS 1[0m in 1.94s]
+[0m13:30:15.019439 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_outputs
+[0m13:30:15.020517 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:30:15.020887 [debug] [MainThread]: Connection 'model.btc.stg_btc_outputs' was left open.
+[0m13:30:15.021212 [debug] [MainThread]: On model.btc.stg_btc_outputs: Close
+[0m13:30:15.101396 [info ] [MainThread]: 
+[0m13:30:15.102008 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 5.30 seconds (5.30s).
+[0m13:30:15.102784 [debug] [MainThread]: Command end result
+[0m13:30:15.122631 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:30:15.124167 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:30:15.128628 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m13:30:15.128911 [info ] [MainThread]: 
+[0m13:30:15.129226 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:30:15.129466 [info ] [MainThread]: 
+[0m13:30:15.129709 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m13:30:15.131626 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.826516, "process_in_blocks": "0", "process_kernel_time": 0.225935, "process_mem_max_rss": "166150144", "process_out_blocks": "0", "process_user_time": 1.489719}
+[0m13:30:15.131966 [debug] [MainThread]: Command `dbt run` succeeded at 13:30:15.131908 after 5.83 seconds
+[0m13:30:15.132237 [debug] [MainThread]: Flushing usage events
+[0m13:36:37.993921 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 13:36:38.005357 | 5163167a-e1ba-4b89-bb0c-a6a9bc717079 ==============================
+[0m13:36:38.005357 [info ] [MainThread]: Running with dbt=1.10.11
+[0m13:36:38.005875 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'cache_selected_only': 'False', 'empty': 'None', 'indirect_selection': 'eager', 'target_path': 'None', 'introspect': 'True', 'no_print': 'None', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'write_json': 'True', 'invocation_command': 'dbt debug', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'partial_parse': 'True', 'quiet': 'False', 'profiles_dir': '/Users/mac/.dbt', 'log_cache_events': 'False', 'use_colors': 'True', 'log_format': 'default'}
+[0m13:36:38.012448 [info ] [MainThread]: dbt version: 1.10.11
+[0m13:36:38.012685 [info ] [MainThread]: python version: 3.12.0
+[0m13:36:38.012870 [info ] [MainThread]: python path: /Users/mac/Desktop/DE2025/btc/venv/bin/python
+[0m13:36:38.013033 [info ] [MainThread]: os info: macOS-26.0-arm64-arm-64bit
+[0m13:36:38.146619 [info ] [MainThread]: Using profiles dir at /Users/mac/.dbt
+[0m13:36:38.146941 [info ] [MainThread]: Using profiles.yml file at /Users/mac/.dbt/profiles.yml
+[0m13:36:38.147121 [info ] [MainThread]: Using dbt_project.yml file at /Users/mac/Desktop/DE2025/btc/dbt_project.yml
+[0m13:36:38.147401 [info ] [MainThread]: adapter type: snowflake
+[0m13:36:38.147562 [info ] [MainThread]: adapter version: 1.10.2
+[0m13:36:38.200885 [info ] [MainThread]: Configuration:
+[0m13:36:38.201228 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:36:38.201420 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:36:38.201591 [info ] [MainThread]: Required dependencies:
+[0m13:36:38.201798 [debug] [MainThread]: Executing "git --help"
+[0m13:36:38.211092 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:36:38.211662 [debug] [MainThread]: STDERR: "b''"
+[0m13:36:38.211890 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:36:38.212094 [info ] [MainThread]: Connection:
+[0m13:36:38.212291 [info ] [MainThread]:   account: KTPPEJB-WW82576
+[0m13:36:38.212455 [info ] [MainThread]:   user: carlos
+[0m13:36:38.212611 [info ] [MainThread]:   database: btc
+[0m13:36:38.212768 [info ] [MainThread]:   warehouse: btc
+[0m13:36:38.212915 [info ] [MainThread]:   role: accountadmin
+[0m13:36:38.213059 [info ] [MainThread]:   schema: btc_schema
+[0m13:36:38.213207 [info ] [MainThread]:   authenticator: None
+[0m13:36:38.213360 [info ] [MainThread]:   oauth_client_id: None
+[0m13:36:38.213500 [info ] [MainThread]:   query_tag: None
+[0m13:36:38.213646 [info ] [MainThread]:   client_session_keep_alive: False
+[0m13:36:38.213786 [info ] [MainThread]:   host: None
+[0m13:36:38.213944 [info ] [MainThread]:   port: None
+[0m13:36:38.214083 [info ] [MainThread]:   proxy_host: None
+[0m13:36:38.214223 [info ] [MainThread]:   proxy_port: None
+[0m13:36:38.214365 [info ] [MainThread]:   protocol: None
+[0m13:36:38.214509 [info ] [MainThread]:   connect_retries: 1
+[0m13:36:38.214647 [info ] [MainThread]:   connect_timeout: None
+[0m13:36:38.214795 [info ] [MainThread]:   retry_on_database_errors: False
+[0m13:36:38.214937 [info ] [MainThread]:   retry_all: False
+[0m13:36:38.215076 [info ] [MainThread]:   insecure_mode: False
+[0m13:36:38.215213 [info ] [MainThread]:   reuse_connections: True
+[0m13:36:38.215355 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m13:36:38.215714 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m13:36:38.281899 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m13:36:38.304038 [debug] [MainThread]: Using snowflake connection "debug"
+[0m13:36:38.304281 [debug] [MainThread]: On debug: select 1 as id
+[0m13:36:38.304442 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:36:41.495172 [debug] [MainThread]: SQL status: SUCCESS 1 in 3.191 seconds
+[0m13:36:41.496671 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:36:41.497303 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:36:41.501056 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 3.5333333, "process_in_blocks": "0", "process_kernel_time": 0.20448, "process_mem_max_rss": "160448512", "process_out_blocks": "0", "process_user_time": 1.125823}
+[0m13:36:41.502065 [debug] [MainThread]: Command `dbt debug` succeeded at 13:36:41.501771 after 3.53 seconds
+[0m13:36:41.503747 [debug] [MainThread]: Connection 'debug' was left open.
+[0m13:36:41.504118 [debug] [MainThread]: On debug: Close
+[0m13:36:41.600257 [debug] [MainThread]: Flushing usage events
+[0m13:36:51.128075 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 13:36:51.140716 | 9ad4ca93-5536-45ae-869e-dfecf359bdd9 ==============================
+[0m13:36:51.140716 [info ] [MainThread]: Running with dbt=1.10.11
+[0m13:36:51.141242 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'printer_width': '80', 'quiet': 'False', 'profiles_dir': '/Users/mac/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'write_json': 'True', 'invocation_command': 'dbt build', 'use_experimental_parser': 'False', 'no_print': 'None', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'cache_selected_only': 'False', 'log_format': 'default', 'empty': 'False', 'warn_error': 'None', 'introspect': 'True', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'static_parser': 'True', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True'}
+[0m13:36:51.352207 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m13:36:51.422268 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m13:36:51.510907 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:36:51.511190 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:36:51.576030 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:36:51.577073 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:36:51.591701 [info ] [MainThread]: Found 4 models, 2 data tests, 1 source, 479 macros
+[0m13:36:51.592796 [info ] [MainThread]: 
+[0m13:36:51.593008 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:36:51.593175 [info ] [MainThread]: 
+[0m13:36:51.593433 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:36:51.595559 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m13:36:51.623705 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m13:36:51.623939 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc"} */
+[0m13:36:51.624099 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:36:54.842094 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.218 seconds
+[0m13:36:54.846208 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_schema)
+[0m13:36:54.861727 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m13:36:54.862153 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m13:36:54.986618 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.124 seconds
+[0m13:36:54.993054 [debug] [Thread-1 (]: Began running node model.btc.stg_btc
+[0m13:36:54.993732 [info ] [Thread-1 (]: 1 of 5 START sql incremental model btc_schema.stg_btc .......................... [RUN]
+[0m13:36:54.994319 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.stg_btc)
+[0m13:36:54.994769 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc
+[0m13:36:55.009837 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc"
+[0m13:36:55.010719 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc
+[0m13:36:55.050542 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:36:55.050912 [debug] [Thread-1 (]: On model.btc.stg_btc: create or replace  temporary view btc.btc_schema.stg_btc__dbt_tmp
+  
+  
+  
+  
+  as (
+    -- including incremental logic to only load new data
+
+
+select * from btc.btc_schema.btc
+
+
+
+    where block_timestamp > (select max(block_timestamp) from btc.btc_schema.stg_btc)
+
+
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */;
+[0m13:36:55.242403 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.191 seconds
+[0m13:36:55.255579 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:36:55.256278 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table btc.btc_schema.stg_btc__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:36:55.335618 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.079 seconds
+[0m13:36:55.342837 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:36:55.343426 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table btc.btc_schema.stg_btc
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:36:55.479410 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.135 seconds
+[0m13:36:55.491947 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:36:55.492552 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table "BTC"."BTC_SCHEMA"."STG_BTC"
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:36:55.573688 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.081 seconds
+[0m13:36:55.608902 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc"
+[0m13:36:55.610413 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:36:55.610712 [debug] [Thread-1 (]: On model.btc.stg_btc: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */;
+[0m13:36:55.703081 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.092 seconds
+[0m13:36:55.703662 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:36:55.704173 [debug] [Thread-1 (]: On model.btc.stg_btc: merge into btc.btc_schema.stg_btc as DBT_INTERNAL_DEST
+        using btc.btc_schema.stg_btc__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.hashkey = DBT_INTERNAL_DEST.hashkey))
+
+    
+    when matched then update set
+        "HASHKEY" = DBT_INTERNAL_SOURCE."HASHKEY","BLOCK_HASH" = DBT_INTERNAL_SOURCE."BLOCK_HASH","BLOCK_NUMBER" = DBT_INTERNAL_SOURCE."BLOCK_NUMBER","BLOCK_TIMESTAMP" = DBT_INTERNAL_SOURCE."BLOCK_TIMESTAMP","FEE" = DBT_INTERNAL_SOURCE."FEE","INPUT_VALUE" = DBT_INTERNAL_SOURCE."INPUT_VALUE","OUTPUT_BTC" = DBT_INTERNAL_SOURCE."OUTPUT_BTC","FEE_PER_BYTE" = DBT_INTERNAL_SOURCE."FEE_PER_BYTE","IS_COINBASE" = DBT_INTERNAL_SOURCE."IS_COINBASE","OUTPUTS" = DBT_INTERNAL_SOURCE."OUTPUTS"
+    
+
+    when not matched then insert
+        ("HASHKEY", "BLOCK_HASH", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "FEE", "INPUT_VALUE", "OUTPUT_BTC", "FEE_PER_BYTE", "IS_COINBASE", "OUTPUTS")
+    values
+        ("HASHKEY", "BLOCK_HASH", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "FEE", "INPUT_VALUE", "OUTPUT_BTC", "FEE_PER_BYTE", "IS_COINBASE", "OUTPUTS")
+
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */;
+[0m13:36:57.157037 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 1.452 seconds
+[0m13:36:57.158463 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:36:57.159451 [debug] [Thread-1 (]: On model.btc.stg_btc: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:36:57.419787 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.259 seconds
+[0m13:36:57.434365 [debug] [Thread-1 (]: Applying DROP to: btc.btc_schema.stg_btc__dbt_tmp
+[0m13:36:57.442026 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:36:57.442424 [debug] [Thread-1 (]: On model.btc.stg_btc: drop view if exists btc.btc_schema.stg_btc__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:36:57.560030 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.117 seconds
+[0m13:36:57.587060 [info ] [Thread-1 (]: 1 of 5 OK created sql incremental model btc_schema.stg_btc ..................... [[32mSUCCESS 0[0m in 2.59s]
+[0m13:36:57.587712 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc
+[0m13:36:57.588510 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m13:36:57.588917 [info ] [Thread-1 (]: 2 of 5 START test not_null_stg_btc_HASHKEY ..................................... [RUN]
+[0m13:36:57.589322 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc, now test.btc.not_null_stg_btc_HASHKEY.f1464799d5)
+[0m13:36:57.589633 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m13:36:57.599240 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc_HASHKEY.f1464799d5"
+[0m13:36:57.600305 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m13:36:57.615500 [debug] [Thread-1 (]: Writing runtime sql for node "test.btc.not_null_stg_btc_HASHKEY.f1464799d5"
+[0m13:36:57.616792 [debug] [Thread-1 (]: Using snowflake connection "test.btc.not_null_stg_btc_HASHKEY.f1464799d5"
+[0m13:36:57.617113 [debug] [Thread-1 (]: On test.btc.not_null_stg_btc_HASHKEY.f1464799d5: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select HASHKEY
+from btc.btc_schema.stg_btc
+where HASHKEY is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "test.btc.not_null_stg_btc_HASHKEY.f1464799d5"} */
+[0m13:36:57.753818 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.136 seconds
+[0m13:36:57.757762 [info ] [Thread-1 (]: 2 of 5 PASS not_null_stg_btc_HASHKEY ........................................... [[32mPASS[0m in 0.17s]
+[0m13:36:57.758344 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m13:36:57.758703 [debug] [Thread-1 (]: Began running node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m13:36:57.759123 [info ] [Thread-1 (]: 3 of 5 START test unique_stg_btc_HASHKEY ....................................... [RUN]
+[0m13:36:57.759583 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc_HASHKEY.f1464799d5, now test.btc.unique_stg_btc_HASHKEY.3bc82edb0f)
+[0m13:36:57.759922 [debug] [Thread-1 (]: Began compiling node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m13:36:57.765667 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f"
+[0m13:36:57.766685 [debug] [Thread-1 (]: Began executing node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m13:36:57.770314 [debug] [Thread-1 (]: Writing runtime sql for node "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f"
+[0m13:36:57.773266 [debug] [Thread-1 (]: Using snowflake connection "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f"
+[0m13:36:57.774092 [debug] [Thread-1 (]: On test.btc.unique_stg_btc_HASHKEY.3bc82edb0f: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    HASHKEY as unique_field,
+    count(*) as n_records
+
+from btc.btc_schema.stg_btc
+where HASHKEY is not null
+group by HASHKEY
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f"} */
+[0m13:36:59.017531 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.242 seconds
+[0m13:36:59.023979 [info ] [Thread-1 (]: 3 of 5 PASS unique_stg_btc_HASHKEY ............................................. [[32mPASS[0m in 1.26s]
+[0m13:36:59.025278 [debug] [Thread-1 (]: Finished running node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m13:36:59.026303 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_outputs
+[0m13:36:59.027187 [info ] [Thread-1 (]: 4 of 5 START sql incremental model btc_schema.stg_btc_outputs .................. [RUN]
+[0m13:36:59.027758 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.unique_stg_btc_HASHKEY.3bc82edb0f, now model.btc.stg_btc_outputs)
+[0m13:36:59.028211 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_outputs
+[0m13:36:59.033115 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_outputs"
+[0m13:36:59.034119 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc_outputs
+[0m13:36:59.038169 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:36:59.038623 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: create or replace  temporary view btc.btc_schema.stg_btc_outputs__dbt_tmp
+  
+  
+  
+  
+  as (
+    -- including incremental logic to only load new data
+
+
+with flattened as (
+select
+    t.hashkey,
+    t.block_number,
+    t.block_timestamp,
+    t.is_coinbase,
+    op.value:value::FLOAT as output_value,
+    op.value:address::STRING as output_address 
+
+from btc.btc_schema.stg_btc as t,
+lateral flatten(input => t.outputs) as op
+where op.value is not null
+
+
+
+    and t.block_timestamp > (select max(block_timestamp) from btc.btc_schema.stg_btc_outputs)
+
+
+)
+
+select hashkey,
+    block_number,
+    block_timestamp,
+    is_coinbase,
+    output_value,
+    output_address
+from flattened
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */;
+[0m13:36:59.258308 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.219 seconds
+[0m13:36:59.264143 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:36:59.265103 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table btc.btc_schema.stg_btc_outputs__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:36:59.331771 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.066 seconds
+[0m13:36:59.338740 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:36:59.339453 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table btc.btc_schema.stg_btc_outputs
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:36:59.412715 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.072 seconds
+[0m13:36:59.419463 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:36:59.420195 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table "BTC"."BTC_SCHEMA"."STG_BTC_OUTPUTS"
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:36:59.511163 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.090 seconds
+[0m13:36:59.522864 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc_outputs"
+[0m13:36:59.524557 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:36:59.525051 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: BEGIN
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:36:59.618155 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.092 seconds
+[0m13:36:59.619703 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:36:59.620806 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: insert into btc.btc_schema.stg_btc_outputs ("HASHKEY", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "IS_COINBASE", "OUTPUT_VALUE", "OUTPUT_ADDRESS")
+    (
+        select "HASHKEY", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "IS_COINBASE", "OUTPUT_VALUE", "OUTPUT_ADDRESS"
+        from btc.btc_schema.stg_btc_outputs__dbt_tmp
+    )
+
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */;
+[0m13:37:00.978161 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 1.356 seconds
+[0m13:37:00.979565 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:37:00.980151 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:37:01.166960 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.186 seconds
+[0m13:37:01.172843 [debug] [Thread-1 (]: Applying DROP to: btc.btc_schema.stg_btc_outputs__dbt_tmp
+[0m13:37:01.176358 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:37:01.176847 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: drop view if exists btc.btc_schema.stg_btc_outputs__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:37:01.277224 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.100 seconds
+[0m13:37:01.282082 [info ] [Thread-1 (]: 4 of 5 OK created sql incremental model btc_schema.stg_btc_outputs ............. [[32mSUCCESS 0[0m in 2.25s]
+[0m13:37:01.282993 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_outputs
+[0m13:37:01.283969 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_transactions
+[0m13:37:01.284530 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_outputs, now model.btc.stg_btc_transactions)
+[0m13:37:01.285024 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_transactions
+[0m13:37:01.288835 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_transactions"
+[0m13:37:01.290157 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_transactions
+[0m13:37:01.291026 [debug] [Thread-1 (]: Began running node model.btc.whale_alerts
+[0m13:37:01.291692 [info ] [Thread-1 (]: 5 of 5 START sql tables model btc_schema.whale_alerts .......................... [RUN]
+[0m13:37:01.292230 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_transactions, now model.btc.whale_alerts)
+[0m13:37:01.292661 [debug] [Thread-1 (]: Began compiling node model.btc.whale_alerts
+[0m13:37:01.297636 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m13:37:01.298687 [debug] [Thread-1 (]: Began executing node model.btc.whale_alerts
+[0m13:37:01.302406 [debug] [Thread-1 (]: Compilation Error in model whale_alerts (models/marts/whale_alerts.sql)
+  No materialization 'tables' was found for adapter snowflake! (searched types 'default' and 'snowflake')
+[0m13:37:01.303084 [error] [Thread-1 (]: 5 of 5 ERROR creating sql tables model btc_schema.whale_alerts ................. [[31mERROR[0m in 0.01s]
+[0m13:37:01.303596 [debug] [Thread-1 (]: Finished running node model.btc.whale_alerts
+[0m13:37:01.304016 [debug] [Thread-4 (]: Marking all children of 'model.btc.whale_alerts' to be skipped because of status 'error'.  Reason: Compilation Error in model whale_alerts (models/marts/whale_alerts.sql)
+  No materialization 'tables' was found for adapter snowflake! (searched types 'default' and 'snowflake').
+[0m13:37:01.305170 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:37:01.305457 [debug] [MainThread]: Connection 'model.btc.whale_alerts' was left open.
+[0m13:37:01.305719 [debug] [MainThread]: On model.btc.whale_alerts: Close
+[0m13:37:01.397954 [info ] [MainThread]: 
+[0m13:37:01.398519 [info ] [MainThread]: Finished running 2 incremental models, 1 tables model, 2 data tests in 0 hours 0 minutes and 9.80 seconds (9.80s).
+[0m13:37:01.399606 [debug] [MainThread]: Command end result
+[0m13:37:01.417501 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:37:01.418985 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:37:01.423371 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m13:37:01.423629 [info ] [MainThread]: 
+[0m13:37:01.423933 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m13:37:01.424165 [info ] [MainThread]: 
+[0m13:37:01.424435 [error] [MainThread]: [31mFailure in model whale_alerts (models/marts/whale_alerts.sql)[0m
+[0m13:37:01.424685 [error] [MainThread]:   Compilation Error in model whale_alerts (models/marts/whale_alerts.sql)
+  No materialization 'tables' was found for adapter snowflake! (searched types 'default' and 'snowflake')
+[0m13:37:01.424881 [info ] [MainThread]: 
+[0m13:37:01.425099 [info ] [MainThread]:   compiled code at target/compiled/btc/models/marts/whale_alerts.sql
+[0m13:37:01.425282 [info ] [MainThread]: 
+[0m13:37:01.425490 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=5
+[0m13:37:01.427508 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 10.325763, "process_in_blocks": "0", "process_kernel_time": 0.239033, "process_mem_max_rss": "169082880", "process_out_blocks": "0", "process_user_time": 1.718235}
+[0m13:37:01.427827 [debug] [MainThread]: Command `dbt build` failed at 13:37:01.427772 after 10.33 seconds
+[0m13:37:01.428087 [debug] [MainThread]: Flushing usage events
+[0m13:37:35.139334 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 13:37:35.152808 | 79febceb-43b9-456d-8f5b-c57b07b74eda ==============================
+[0m13:37:35.152808 [info ] [MainThread]: Running with dbt=1.10.11
+[0m13:37:35.153373 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'partial_parse': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'log_format': 'default', 'invocation_command': 'dbt build', 'version_check': 'True', 'no_print': 'None', 'use_colors': 'True', 'empty': 'False', 'printer_width': '80', 'profiles_dir': '/Users/mac/.dbt', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'static_parser': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'introspect': 'True'}
+[0m13:37:35.378341 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m13:37:35.450316 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m13:37:35.549788 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:37:35.550228 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:37:35.624874 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:37:35.626115 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:37:35.639758 [info ] [MainThread]: Found 4 models, 2 data tests, 1 source, 479 macros
+[0m13:37:35.640929 [info ] [MainThread]: 
+[0m13:37:35.641154 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:37:35.641325 [info ] [MainThread]: 
+[0m13:37:35.641609 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:37:35.643841 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m13:37:35.674510 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m13:37:35.674793 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc"} */
+[0m13:37:35.674955 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:37:38.785487 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.110 seconds
+[0m13:37:38.790384 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_schema)
+[0m13:37:38.805779 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m13:37:38.806165 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m13:37:38.935163 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.129 seconds
+[0m13:37:38.943374 [debug] [Thread-1 (]: Began running node model.btc.stg_btc
+[0m13:37:38.944319 [info ] [Thread-1 (]: 1 of 5 START sql incremental model btc_schema.stg_btc .......................... [RUN]
+[0m13:37:38.944979 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.stg_btc)
+[0m13:37:38.945444 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc
+[0m13:37:38.966946 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc"
+[0m13:37:38.968828 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc
+[0m13:37:39.006435 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:37:39.006798 [debug] [Thread-1 (]: On model.btc.stg_btc: create or replace  temporary view btc.btc_schema.stg_btc__dbt_tmp
+  
+  
+  
+  
+  as (
+    -- including incremental logic to only load new data
+
+
+select * from btc.btc_schema.btc
+
+
+
+    where block_timestamp > (select max(block_timestamp) from btc.btc_schema.stg_btc)
+
+
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */;
+[0m13:37:39.192028 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.185 seconds
+[0m13:37:39.205387 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:37:39.206210 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table btc.btc_schema.stg_btc__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:37:39.285119 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.078 seconds
+[0m13:37:39.291959 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:37:39.292516 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table btc.btc_schema.stg_btc
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:37:39.364427 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.071 seconds
+[0m13:37:39.377794 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:37:39.378419 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table "BTC"."BTC_SCHEMA"."STG_BTC"
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:37:39.450372 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.071 seconds
+[0m13:37:39.489918 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc"
+[0m13:37:39.491356 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:37:39.491650 [debug] [Thread-1 (]: On model.btc.stg_btc: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */;
+[0m13:37:39.584993 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.093 seconds
+[0m13:37:39.585593 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:37:39.586100 [debug] [Thread-1 (]: On model.btc.stg_btc: merge into btc.btc_schema.stg_btc as DBT_INTERNAL_DEST
+        using btc.btc_schema.stg_btc__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.hashkey = DBT_INTERNAL_DEST.hashkey))
+
+    
+    when matched then update set
+        "HASHKEY" = DBT_INTERNAL_SOURCE."HASHKEY","BLOCK_HASH" = DBT_INTERNAL_SOURCE."BLOCK_HASH","BLOCK_NUMBER" = DBT_INTERNAL_SOURCE."BLOCK_NUMBER","BLOCK_TIMESTAMP" = DBT_INTERNAL_SOURCE."BLOCK_TIMESTAMP","FEE" = DBT_INTERNAL_SOURCE."FEE","INPUT_VALUE" = DBT_INTERNAL_SOURCE."INPUT_VALUE","OUTPUT_BTC" = DBT_INTERNAL_SOURCE."OUTPUT_BTC","FEE_PER_BYTE" = DBT_INTERNAL_SOURCE."FEE_PER_BYTE","IS_COINBASE" = DBT_INTERNAL_SOURCE."IS_COINBASE","OUTPUTS" = DBT_INTERNAL_SOURCE."OUTPUTS"
+    
+
+    when not matched then insert
+        ("HASHKEY", "BLOCK_HASH", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "FEE", "INPUT_VALUE", "OUTPUT_BTC", "FEE_PER_BYTE", "IS_COINBASE", "OUTPUTS")
+    values
+        ("HASHKEY", "BLOCK_HASH", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "FEE", "INPUT_VALUE", "OUTPUT_BTC", "FEE_PER_BYTE", "IS_COINBASE", "OUTPUTS")
+
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */;
+[0m13:37:41.011031 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 1.424 seconds
+[0m13:37:41.012067 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:37:41.012773 [debug] [Thread-1 (]: On model.btc.stg_btc: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:37:41.184533 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.171 seconds
+[0m13:37:41.193225 [debug] [Thread-1 (]: Applying DROP to: btc.btc_schema.stg_btc__dbt_tmp
+[0m13:37:41.199770 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:37:41.200157 [debug] [Thread-1 (]: On model.btc.stg_btc: drop view if exists btc.btc_schema.stg_btc__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:37:41.311729 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.111 seconds
+[0m13:37:41.334625 [info ] [Thread-1 (]: 1 of 5 OK created sql incremental model btc_schema.stg_btc ..................... [[32mSUCCESS 0[0m in 2.39s]
+[0m13:37:41.335328 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc
+[0m13:37:41.336092 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m13:37:41.336570 [info ] [Thread-1 (]: 2 of 5 START test not_null_stg_btc_HASHKEY ..................................... [RUN]
+[0m13:37:41.337056 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc, now test.btc.not_null_stg_btc_HASHKEY.f1464799d5)
+[0m13:37:41.337410 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m13:37:41.348856 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc_HASHKEY.f1464799d5"
+[0m13:37:41.349804 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m13:37:41.366092 [debug] [Thread-1 (]: Writing runtime sql for node "test.btc.not_null_stg_btc_HASHKEY.f1464799d5"
+[0m13:37:41.367185 [debug] [Thread-1 (]: Using snowflake connection "test.btc.not_null_stg_btc_HASHKEY.f1464799d5"
+[0m13:37:41.367571 [debug] [Thread-1 (]: On test.btc.not_null_stg_btc_HASHKEY.f1464799d5: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select HASHKEY
+from btc.btc_schema.stg_btc
+where HASHKEY is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "test.btc.not_null_stg_btc_HASHKEY.f1464799d5"} */
+[0m13:37:41.539392 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.171 seconds
+[0m13:37:41.546506 [info ] [Thread-1 (]: 2 of 5 PASS not_null_stg_btc_HASHKEY ........................................... [[32mPASS[0m in 0.21s]
+[0m13:37:41.547495 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m13:37:41.548014 [debug] [Thread-1 (]: Began running node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m13:37:41.548605 [info ] [Thread-1 (]: 3 of 5 START test unique_stg_btc_HASHKEY ....................................... [RUN]
+[0m13:37:41.549246 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc_HASHKEY.f1464799d5, now test.btc.unique_stg_btc_HASHKEY.3bc82edb0f)
+[0m13:37:41.549727 [debug] [Thread-1 (]: Began compiling node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m13:37:41.557900 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f"
+[0m13:37:41.559167 [debug] [Thread-1 (]: Began executing node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m13:37:41.562255 [debug] [Thread-1 (]: Writing runtime sql for node "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f"
+[0m13:37:41.563489 [debug] [Thread-1 (]: Using snowflake connection "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f"
+[0m13:37:41.563847 [debug] [Thread-1 (]: On test.btc.unique_stg_btc_HASHKEY.3bc82edb0f: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    HASHKEY as unique_field,
+    count(*) as n_records
+
+from btc.btc_schema.stg_btc
+where HASHKEY is not null
+group by HASHKEY
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f"} */
+[0m13:37:42.183795 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.619 seconds
+[0m13:37:42.188070 [info ] [Thread-1 (]: 3 of 5 PASS unique_stg_btc_HASHKEY ............................................. [[32mPASS[0m in 0.64s]
+[0m13:37:42.189039 [debug] [Thread-1 (]: Finished running node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m13:37:42.190203 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_outputs
+[0m13:37:42.191201 [info ] [Thread-1 (]: 4 of 5 START sql incremental model btc_schema.stg_btc_outputs .................. [RUN]
+[0m13:37:42.191821 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.unique_stg_btc_HASHKEY.3bc82edb0f, now model.btc.stg_btc_outputs)
+[0m13:37:42.192239 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_outputs
+[0m13:37:42.196743 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_outputs"
+[0m13:37:42.197975 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc_outputs
+[0m13:37:42.203086 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:37:42.203674 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: create or replace  temporary view btc.btc_schema.stg_btc_outputs__dbt_tmp
+  
+  
+  
+  
+  as (
+    -- including incremental logic to only load new data
+
+
+with flattened as (
+select
+    t.hashkey,
+    t.block_number,
+    t.block_timestamp,
+    t.is_coinbase,
+    op.value:value::FLOAT as output_value,
+    op.value:address::STRING as output_address 
+
+from btc.btc_schema.stg_btc as t,
+lateral flatten(input => t.outputs) as op
+where op.value is not null
+
+
+
+    and t.block_timestamp > (select max(block_timestamp) from btc.btc_schema.stg_btc_outputs)
+
+
+)
+
+select hashkey,
+    block_number,
+    block_timestamp,
+    is_coinbase,
+    output_value,
+    output_address
+from flattened
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */;
+[0m13:37:42.361565 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.157 seconds
+[0m13:37:42.366989 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:37:42.367677 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table btc.btc_schema.stg_btc_outputs__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:37:42.439708 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.071 seconds
+[0m13:37:42.445949 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:37:42.446558 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table btc.btc_schema.stg_btc_outputs
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:37:42.535691 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.088 seconds
+[0m13:37:42.542027 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:37:42.542943 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table "BTC"."BTC_SCHEMA"."STG_BTC_OUTPUTS"
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:37:42.618323 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.075 seconds
+[0m13:37:42.629616 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc_outputs"
+[0m13:37:42.631193 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:37:42.631609 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: BEGIN
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:37:42.716616 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.084 seconds
+[0m13:37:42.717977 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:37:42.718698 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: insert into btc.btc_schema.stg_btc_outputs ("HASHKEY", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "IS_COINBASE", "OUTPUT_VALUE", "OUTPUT_ADDRESS")
+    (
+        select "HASHKEY", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "IS_COINBASE", "OUTPUT_VALUE", "OUTPUT_ADDRESS"
+        from btc.btc_schema.stg_btc_outputs__dbt_tmp
+    )
+
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */;
+[0m13:37:43.139729 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.420 seconds
+[0m13:37:43.140893 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:37:43.141451 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:37:43.254205 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.112 seconds
+[0m13:37:43.260418 [debug] [Thread-1 (]: Applying DROP to: btc.btc_schema.stg_btc_outputs__dbt_tmp
+[0m13:37:43.265312 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:37:43.266045 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: drop view if exists btc.btc_schema.stg_btc_outputs__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:37:43.401643 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.135 seconds
+[0m13:37:43.406222 [info ] [Thread-1 (]: 4 of 5 OK created sql incremental model btc_schema.stg_btc_outputs ............. [[32mSUCCESS 0[0m in 1.21s]
+[0m13:37:43.407665 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_outputs
+[0m13:37:43.408974 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_transactions
+[0m13:37:43.409769 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_outputs, now model.btc.stg_btc_transactions)
+[0m13:37:43.410315 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_transactions
+[0m13:37:43.414541 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_transactions"
+[0m13:37:43.416162 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_transactions
+[0m13:37:43.417201 [debug] [Thread-1 (]: Began running node model.btc.whale_alerts
+[0m13:37:43.417915 [info ] [Thread-1 (]: 5 of 5 START sql table model btc_schema.whale_alerts ........................... [RUN]
+[0m13:37:43.418471 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_transactions, now model.btc.whale_alerts)
+[0m13:37:43.418871 [debug] [Thread-1 (]: Began compiling node model.btc.whale_alerts
+[0m13:37:43.423936 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m13:37:43.425009 [debug] [Thread-1 (]: Began executing node model.btc.whale_alerts
+[0m13:37:43.448962 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.whale_alerts"
+[0m13:37:43.450522 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m13:37:43.450839 [debug] [Thread-1 (]: On model.btc.whale_alerts: create or replace transient table btc.btc_schema.whale_alerts
+    
+    
+    
+    as (with __dbt__cte__stg_btc_transactions as (
+
+
+select * 
+from btc.btc_schema.stg_btc_outputs 
+where is_coinbase = false
+) select
+    output_address,
+    sum(output_value) as total_sent,
+    count(*) as tx_count
+
+from __dbt__cte__stg_btc_transactions
+
+where output_value > 10
+
+group by output_address
+order by total_sent
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */;
+[0m13:37:44.426520 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.975 seconds
+[0m13:37:44.432623 [info ] [Thread-1 (]: 5 of 5 OK created sql table model btc_schema.whale_alerts ...................... [[32mSUCCESS 1[0m in 1.01s]
+[0m13:37:44.433910 [debug] [Thread-1 (]: Finished running node model.btc.whale_alerts
+[0m13:37:44.435570 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:37:44.436581 [debug] [MainThread]: Connection 'model.btc.whale_alerts' was left open.
+[0m13:37:44.437049 [debug] [MainThread]: On model.btc.whale_alerts: Close
+[0m13:37:44.532510 [info ] [MainThread]: 
+[0m13:37:44.533547 [info ] [MainThread]: Finished running 2 incremental models, 1 table model, 2 data tests in 0 hours 0 minutes and 8.89 seconds (8.89s).
+[0m13:37:44.535369 [debug] [MainThread]: Command end result
+[0m13:37:44.560900 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:37:44.562865 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:37:44.568213 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m13:37:44.568542 [info ] [MainThread]: 
+[0m13:37:44.568881 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:37:44.569154 [info ] [MainThread]: 
+[0m13:37:44.569424 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5
+[0m13:37:44.571744 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 9.4614725, "process_in_blocks": "0", "process_kernel_time": 0.266092, "process_mem_max_rss": "169132032", "process_out_blocks": "0", "process_user_time": 1.846638}
+[0m13:37:44.572276 [debug] [MainThread]: Command `dbt build` succeeded at 13:37:44.572204 after 9.46 seconds
+[0m13:37:44.572592 [debug] [MainThread]: Flushing usage events
+[0m13:38:06.591279 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 13:38:06.602507 | ee85bb87-c1d8-4529-aee8-7d0ffa24d268 ==============================
+[0m13:38:06.602507 [info ] [MainThread]: Running with dbt=1.10.11
+[0m13:38:06.603039 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'invocation_command': 'dbt run --select stg_btc+', 'debug': 'False', 'profiles_dir': '/Users/mac/.dbt', 'empty': 'False', 'version_check': 'True', 'log_cache_events': 'False', 'static_parser': 'True', 'warn_error': 'None', 'quiet': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'no_print': 'None', 'target_path': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'printer_width': '80'}
+[0m13:38:06.819121 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m13:38:06.889611 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m13:38:06.984907 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:38:06.985203 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:38:07.050298 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:38:07.051334 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:38:07.058127 [info ] [MainThread]: Found 4 models, 2 data tests, 1 source, 479 macros
+[0m13:38:07.058964 [info ] [MainThread]: 
+[0m13:38:07.059170 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:38:07.059341 [info ] [MainThread]: 
+[0m13:38:07.059588 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:38:07.061752 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m13:38:07.090711 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m13:38:07.090988 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc"} */
+[0m13:38:07.091178 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:38:10.175342 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.084 seconds
+[0m13:38:10.180415 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_schema)
+[0m13:38:10.193942 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m13:38:10.194407 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m13:38:10.533015 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.338 seconds
+[0m13:38:10.540727 [debug] [Thread-1 (]: Began running node model.btc.stg_btc
+[0m13:38:10.541661 [info ] [Thread-1 (]: 1 of 3 START sql incremental model btc_schema.stg_btc .......................... [RUN]
+[0m13:38:10.542375 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.stg_btc)
+[0m13:38:10.542839 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc
+[0m13:38:10.558521 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc"
+[0m13:38:10.559417 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc
+[0m13:38:10.598481 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:38:10.598819 [debug] [Thread-1 (]: On model.btc.stg_btc: create or replace  temporary view btc.btc_schema.stg_btc__dbt_tmp
+  
+  
+  
+  
+  as (
+    -- including incremental logic to only load new data
+
+
+select * from btc.btc_schema.btc
+
+
+
+    where block_timestamp > (select max(block_timestamp) from btc.btc_schema.stg_btc)
+
+
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */;
+[0m13:38:10.813744 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.214 seconds
+[0m13:38:10.825152 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:38:10.825603 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table btc.btc_schema.stg_btc__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:38:10.918328 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.092 seconds
+[0m13:38:10.925126 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:38:10.925847 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table btc.btc_schema.stg_btc
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:38:10.995941 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.069 seconds
+[0m13:38:11.010647 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:38:11.011212 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table "BTC"."BTC_SCHEMA"."STG_BTC"
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:38:11.069602 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.058 seconds
+[0m13:38:11.104916 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc"
+[0m13:38:11.106242 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:38:11.106529 [debug] [Thread-1 (]: On model.btc.stg_btc: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */;
+[0m13:38:11.200806 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.094 seconds
+[0m13:38:11.201467 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:38:11.201979 [debug] [Thread-1 (]: On model.btc.stg_btc: merge into btc.btc_schema.stg_btc as DBT_INTERNAL_DEST
+        using btc.btc_schema.stg_btc__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.hashkey = DBT_INTERNAL_DEST.hashkey))
+
+    
+    when matched then update set
+        "HASHKEY" = DBT_INTERNAL_SOURCE."HASHKEY","BLOCK_HASH" = DBT_INTERNAL_SOURCE."BLOCK_HASH","BLOCK_NUMBER" = DBT_INTERNAL_SOURCE."BLOCK_NUMBER","BLOCK_TIMESTAMP" = DBT_INTERNAL_SOURCE."BLOCK_TIMESTAMP","FEE" = DBT_INTERNAL_SOURCE."FEE","INPUT_VALUE" = DBT_INTERNAL_SOURCE."INPUT_VALUE","OUTPUT_BTC" = DBT_INTERNAL_SOURCE."OUTPUT_BTC","FEE_PER_BYTE" = DBT_INTERNAL_SOURCE."FEE_PER_BYTE","IS_COINBASE" = DBT_INTERNAL_SOURCE."IS_COINBASE","OUTPUTS" = DBT_INTERNAL_SOURCE."OUTPUTS"
+    
+
+    when not matched then insert
+        ("HASHKEY", "BLOCK_HASH", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "FEE", "INPUT_VALUE", "OUTPUT_BTC", "FEE_PER_BYTE", "IS_COINBASE", "OUTPUTS")
+    values
+        ("HASHKEY", "BLOCK_HASH", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "FEE", "INPUT_VALUE", "OUTPUT_BTC", "FEE_PER_BYTE", "IS_COINBASE", "OUTPUTS")
+
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */;
+[0m13:38:11.956305 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.753 seconds
+[0m13:38:11.957395 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:38:11.957934 [debug] [Thread-1 (]: On model.btc.stg_btc: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:38:12.216623 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.258 seconds
+[0m13:38:12.230434 [debug] [Thread-1 (]: Applying DROP to: btc.btc_schema.stg_btc__dbt_tmp
+[0m13:38:12.238384 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:38:12.238809 [debug] [Thread-1 (]: On model.btc.stg_btc: drop view if exists btc.btc_schema.stg_btc__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:38:12.396850 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.157 seconds
+[0m13:38:12.423440 [info ] [Thread-1 (]: 1 of 3 OK created sql incremental model btc_schema.stg_btc ..................... [[32mSUCCESS 0[0m in 1.88s]
+[0m13:38:12.424074 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc
+[0m13:38:12.424768 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_outputs
+[0m13:38:12.425236 [info ] [Thread-1 (]: 2 of 3 START sql incremental model btc_schema.stg_btc_outputs .................. [RUN]
+[0m13:38:12.425626 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc, now model.btc.stg_btc_outputs)
+[0m13:38:12.425933 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_outputs
+[0m13:38:12.429304 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_outputs"
+[0m13:38:12.430117 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc_outputs
+[0m13:38:12.433513 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:38:12.434105 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: create or replace  temporary view btc.btc_schema.stg_btc_outputs__dbt_tmp
+  
+  
+  
+  
+  as (
+    -- including incremental logic to only load new data
+
+
+with flattened as (
+select
+    t.hashkey,
+    t.block_number,
+    t.block_timestamp,
+    t.is_coinbase,
+    op.value:value::FLOAT as output_value,
+    op.value:address::STRING as output_address 
+
+from btc.btc_schema.stg_btc as t,
+lateral flatten(input => t.outputs) as op
+where op.value is not null
+
+
+
+    and t.block_timestamp > (select max(block_timestamp) from btc.btc_schema.stg_btc_outputs)
+
+
+)
+
+select hashkey,
+    block_number,
+    block_timestamp,
+    is_coinbase,
+    output_value,
+    output_address
+from flattened
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */;
+[0m13:38:12.669745 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.235 seconds
+[0m13:38:12.675771 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:38:12.676545 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table btc.btc_schema.stg_btc_outputs__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:38:12.747129 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.070 seconds
+[0m13:38:12.749498 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:38:12.749797 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table btc.btc_schema.stg_btc_outputs
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:38:12.809068 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.059 seconds
+[0m13:38:12.811282 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:38:12.811502 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table "BTC"."BTC_SCHEMA"."STG_BTC_OUTPUTS"
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:38:12.885282 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.074 seconds
+[0m13:38:12.891673 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc_outputs"
+[0m13:38:12.892529 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:38:12.892805 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: BEGIN
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:38:12.979900 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.087 seconds
+[0m13:38:12.980399 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:38:12.980802 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: insert into btc.btc_schema.stg_btc_outputs ("HASHKEY", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "IS_COINBASE", "OUTPUT_VALUE", "OUTPUT_ADDRESS")
+    (
+        select "HASHKEY", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "IS_COINBASE", "OUTPUT_VALUE", "OUTPUT_ADDRESS"
+        from btc.btc_schema.stg_btc_outputs__dbt_tmp
+    )
+
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */;
+[0m13:38:13.315403 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.334 seconds
+[0m13:38:13.315762 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:38:13.315964 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:38:13.399111 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.083 seconds
+[0m13:38:13.403153 [debug] [Thread-1 (]: Applying DROP to: btc.btc_schema.stg_btc_outputs__dbt_tmp
+[0m13:38:13.403977 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:38:13.404282 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: drop view if exists btc.btc_schema.stg_btc_outputs__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:38:13.524936 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.120 seconds
+[0m13:38:13.528662 [info ] [Thread-1 (]: 2 of 3 OK created sql incremental model btc_schema.stg_btc_outputs ............. [[32mSUCCESS 0[0m in 1.10s]
+[0m13:38:13.529514 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_outputs
+[0m13:38:13.530312 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_transactions
+[0m13:38:13.530942 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_outputs, now model.btc.stg_btc_transactions)
+[0m13:38:13.531517 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_transactions
+[0m13:38:13.535217 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_transactions"
+[0m13:38:13.536350 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_transactions
+[0m13:38:13.537014 [debug] [Thread-1 (]: Began running node model.btc.whale_alerts
+[0m13:38:13.537668 [info ] [Thread-1 (]: 3 of 3 START sql table model btc_schema.whale_alerts ........................... [RUN]
+[0m13:38:13.538212 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_transactions, now model.btc.whale_alerts)
+[0m13:38:13.538606 [debug] [Thread-1 (]: Began compiling node model.btc.whale_alerts
+[0m13:38:13.543627 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m13:38:13.544260 [debug] [Thread-1 (]: Began executing node model.btc.whale_alerts
+[0m13:38:13.565560 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.whale_alerts"
+[0m13:38:13.566638 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m13:38:13.566935 [debug] [Thread-1 (]: On model.btc.whale_alerts: create or replace transient table btc.btc_schema.whale_alerts
+    
+    
+    
+    as (with __dbt__cte__stg_btc_transactions as (
+
+
+select * 
+from btc.btc_schema.stg_btc_outputs 
+where is_coinbase = false
+) select
+    output_address,
+    sum(output_value) as total_sent,
+    count(*) as tx_count
+
+from __dbt__cte__stg_btc_transactions
+
+where output_value > 10
+
+group by output_address
+order by total_sent
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */;
+[0m13:38:14.527050 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.960 seconds
+[0m13:38:14.536718 [info ] [Thread-1 (]: 3 of 3 OK created sql table model btc_schema.whale_alerts ...................... [[32mSUCCESS 1[0m in 1.00s]
+[0m13:38:14.537826 [debug] [Thread-1 (]: Finished running node model.btc.whale_alerts
+[0m13:38:14.539119 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:38:14.539602 [debug] [MainThread]: Connection 'model.btc.whale_alerts' was left open.
+[0m13:38:14.539982 [debug] [MainThread]: On model.btc.whale_alerts: Close
+[0m13:38:14.629817 [info ] [MainThread]: 
+[0m13:38:14.630659 [info ] [MainThread]: Finished running 2 incremental models, 1 table model in 0 hours 0 minutes and 7.57 seconds (7.57s).
+[0m13:38:14.631910 [debug] [MainThread]: Command end result
+[0m13:38:14.657143 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:38:14.658781 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:38:14.663636 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m13:38:14.663920 [info ] [MainThread]: 
+[0m13:38:14.664232 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:38:14.664480 [info ] [MainThread]: 
+[0m13:38:14.664744 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m13:38:14.666806 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 8.102563, "process_in_blocks": "0", "process_kernel_time": 0.240092, "process_mem_max_rss": "167362560", "process_out_blocks": "0", "process_user_time": 1.657058}
+[0m13:38:14.667157 [debug] [MainThread]: Command `dbt run` succeeded at 13:38:14.667101 after 8.10 seconds
+[0m13:38:14.667406 [debug] [MainThread]: Flushing usage events
+[0m13:42:06.828694 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 13:42:06.842482 | 10b503cb-49ee-4130-a2d0-6a19736936cd ==============================
+[0m13:42:06.842482 [info ] [MainThread]: Running with dbt=1.10.11
+[0m13:42:06.843049 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'no_print': 'None', 'debug': 'False', 'warn_error': 'None', 'log_format': 'default', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'empty': 'None', 'profiles_dir': '/Users/mac/.dbt', 'fail_fast': 'False', 'quiet': 'False', 'introspect': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'indirect_selection': 'eager', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt seed'}
+[0m13:42:07.056330 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m13:42:07.127970 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m13:42:07.218968 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m13:42:07.219365 [debug] [MainThread]: Partial parsing: added file: btc://seeds/btc_usd_max.csv
+[0m13:42:07.389143 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:42:07.390190 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:42:07.397240 [info ] [MainThread]: Found 4 models, 2 data tests, 1 seed, 1 source, 479 macros
+[0m13:42:07.398111 [info ] [MainThread]: 
+[0m13:42:07.398322 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:42:07.398489 [info ] [MainThread]: 
+[0m13:42:07.398735 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:42:07.399177 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m13:42:07.426433 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m13:42:07.426669 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc"} */
+[0m13:42:07.426854 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:42:11.014525 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.587 seconds
+[0m13:42:11.023433 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_schema)
+[0m13:42:11.038052 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m13:42:11.038435 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m13:42:11.129384 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.091 seconds
+[0m13:42:11.135338 [debug] [Thread-1 (]: Began running node seed.btc.btc_usd_max
+[0m13:42:11.135954 [info ] [Thread-1 (]: 1 of 1 START seed file btc_schema.btc_usd_max .................................. [RUN]
+[0m13:42:11.136495 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now seed.btc.btc_usd_max)
+[0m13:42:11.136923 [debug] [Thread-1 (]: Began compiling node seed.btc.btc_usd_max
+[0m13:42:11.137333 [debug] [Thread-1 (]: Began executing node seed.btc.btc_usd_max
+[0m13:42:11.227911 [debug] [Thread-1 (]: Using snowflake connection "seed.btc.btc_usd_max"
+[0m13:42:11.228229 [debug] [Thread-1 (]: On seed.btc.btc_usd_max: create table btc.btc_schema.btc_usd_max (snapped_at text,price float8,market_cap float8,total_volume float8)
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "seed.btc.btc_usd_max"} */
+[0m13:42:11.414274 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.186 seconds
+[0m13:42:11.482631 [debug] [Thread-1 (]: Using snowflake connection "seed.btc.btc_usd_max"
+[0m13:42:11.482960 [debug] [Thread-1 (]: On seed.btc.btc_usd_max: BEGIN
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "seed.btc.btc_usd_max"} */
+[0m13:42:11.566522 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.083 seconds
+[0m13:42:11.744280 [debug] [Thread-1 (]: Using snowflake connection "seed.btc.btc_usd_max"
+[0m13:42:11.744587 [debug] [Thread-1 (]: On seed.btc.btc_usd_max: insert into btc.btc_schema.btc_usd_max (snapped_at, price, market_cap, total_volume) values
+            (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%...
+[0m13:42:13.346526 [debug] [Thread-1 (]: SQL status: SUCCESS 4524 in 1.601 seconds
+[0m13:42:13.348235 [debug] [Thread-1 (]: Using snowflake connection "seed.btc.btc_usd_max"
+[0m13:42:13.348657 [debug] [Thread-1 (]: On seed.btc.btc_usd_max: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "seed.btc.btc_usd_max"} */
+[0m13:42:13.582656 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.233 seconds
+[0m13:42:13.593218 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.btc.btc_usd_max"
+[0m13:42:13.616261 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file btc_schema.btc_usd_max .............................. [[32mINSERT 4524[0m in 2.48s]
+[0m13:42:13.616755 [debug] [Thread-1 (]: Finished running node seed.btc.btc_usd_max
+[0m13:42:13.617627 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:42:13.617923 [debug] [MainThread]: Connection 'seed.btc.btc_usd_max' was left open.
+[0m13:42:13.618174 [debug] [MainThread]: On seed.btc.btc_usd_max: Close
+[0m13:42:13.720200 [info ] [MainThread]: 
+[0m13:42:13.720556 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 6.32 seconds (6.32s).
+[0m13:42:13.720970 [debug] [MainThread]: Command end result
+[0m13:42:13.733129 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:42:13.734227 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:42:13.737335 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m13:42:13.737530 [info ] [MainThread]: 
+[0m13:42:13.737752 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:42:13.737917 [info ] [MainThread]: 
+[0m13:42:13.738088 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m13:42:13.739849 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 6.937305, "process_in_blocks": "0", "process_kernel_time": 0.23754, "process_mem_max_rss": "174014464", "process_out_blocks": "0", "process_user_time": 1.863117}
+[0m13:42:13.740202 [debug] [MainThread]: Command `dbt seed` succeeded at 13:42:13.740145 after 6.94 seconds
+[0m13:42:13.740422 [debug] [MainThread]: Flushing usage events
+[0m13:57:33.569235 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 13:57:33.581487 | b504859b-ea21-4fbb-ba88-f6c15c017f1a ==============================
+[0m13:57:33.581487 [info ] [MainThread]: Running with dbt=1.10.11
+[0m13:57:33.582036 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'debug': 'False', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'empty': 'False', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'version_check': 'True', 'static_parser': 'True', 'profiles_dir': '/Users/mac/.dbt', 'fail_fast': 'False', 'cache_selected_only': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'invocation_command': 'dbt run --select stg_btc+', 'no_print': 'None', 'target_path': 'None', 'partial_parse': 'True', 'log_cache_events': 'False', 'introspect': 'True'}
+[0m13:57:33.796992 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m13:57:33.868436 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m13:57:33.963958 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:57:33.964240 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:57:34.039137 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:57:34.040750 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:57:34.048760 [info ] [MainThread]: Found 4 models, 2 data tests, 1 seed, 1 source, 479 macros
+[0m13:57:34.049681 [info ] [MainThread]: 
+[0m13:57:34.049897 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:57:34.050067 [info ] [MainThread]: 
+[0m13:57:34.050328 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:57:34.052512 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m13:57:34.081780 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m13:57:34.082060 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc"} */
+[0m13:57:34.082243 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:57:37.151444 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.066 seconds
+[0m13:57:37.154511 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_schema)
+[0m13:57:37.167763 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m13:57:37.168173 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m13:57:37.290260 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.122 seconds
+[0m13:57:37.297356 [debug] [Thread-1 (]: Began running node model.btc.stg_btc
+[0m13:57:37.297952 [info ] [Thread-1 (]: 1 of 3 START sql incremental model btc_schema.stg_btc .......................... [RUN]
+[0m13:57:37.298443 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.stg_btc)
+[0m13:57:37.298813 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc
+[0m13:57:37.310993 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc"
+[0m13:57:37.311932 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc
+[0m13:57:37.348696 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:57:37.349062 [debug] [Thread-1 (]: On model.btc.stg_btc: create or replace  temporary view btc.btc_schema.stg_btc__dbt_tmp
+  
+  
+  
+  
+  as (
+    -- including incremental logic to only load new data
+
+
+select * from btc.btc_schema.btc
+
+
+
+    where block_timestamp > (select max(block_timestamp) from btc.btc_schema.stg_btc)
+
+
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */;
+[0m13:57:37.594132 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.245 seconds
+[0m13:57:37.601513 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:57:37.602019 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table btc.btc_schema.stg_btc__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:57:37.669979 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.068 seconds
+[0m13:57:37.674933 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:57:37.675407 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table btc.btc_schema.stg_btc
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:57:37.752407 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.076 seconds
+[0m13:57:37.765210 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:57:37.765740 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table "BTC"."BTC_SCHEMA"."STG_BTC"
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:57:37.866368 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.100 seconds
+[0m13:57:37.903354 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc"
+[0m13:57:37.905717 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:57:37.906035 [debug] [Thread-1 (]: On model.btc.stg_btc: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */;
+[0m13:57:37.994295 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.088 seconds
+[0m13:57:37.994944 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:57:37.995393 [debug] [Thread-1 (]: On model.btc.stg_btc: merge into btc.btc_schema.stg_btc as DBT_INTERNAL_DEST
+        using btc.btc_schema.stg_btc__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.hashkey = DBT_INTERNAL_DEST.hashkey))
+
+    
+    when matched then update set
+        "HASHKEY" = DBT_INTERNAL_SOURCE."HASHKEY","BLOCK_HASH" = DBT_INTERNAL_SOURCE."BLOCK_HASH","BLOCK_NUMBER" = DBT_INTERNAL_SOURCE."BLOCK_NUMBER","BLOCK_TIMESTAMP" = DBT_INTERNAL_SOURCE."BLOCK_TIMESTAMP","FEE" = DBT_INTERNAL_SOURCE."FEE","INPUT_VALUE" = DBT_INTERNAL_SOURCE."INPUT_VALUE","OUTPUT_BTC" = DBT_INTERNAL_SOURCE."OUTPUT_BTC","FEE_PER_BYTE" = DBT_INTERNAL_SOURCE."FEE_PER_BYTE","IS_COINBASE" = DBT_INTERNAL_SOURCE."IS_COINBASE","OUTPUTS" = DBT_INTERNAL_SOURCE."OUTPUTS"
+    
+
+    when not matched then insert
+        ("HASHKEY", "BLOCK_HASH", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "FEE", "INPUT_VALUE", "OUTPUT_BTC", "FEE_PER_BYTE", "IS_COINBASE", "OUTPUTS")
+    values
+        ("HASHKEY", "BLOCK_HASH", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "FEE", "INPUT_VALUE", "OUTPUT_BTC", "FEE_PER_BYTE", "IS_COINBASE", "OUTPUTS")
+
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */;
+[0m13:57:38.877736 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.881 seconds
+[0m13:57:38.879147 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:57:38.879904 [debug] [Thread-1 (]: On model.btc.stg_btc: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:57:39.161733 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.281 seconds
+[0m13:57:39.168084 [debug] [Thread-1 (]: Applying DROP to: btc.btc_schema.stg_btc__dbt_tmp
+[0m13:57:39.173659 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m13:57:39.174042 [debug] [Thread-1 (]: On model.btc.stg_btc: drop view if exists btc.btc_schema.stg_btc__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc"} */
+[0m13:57:39.263430 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.089 seconds
+[0m13:57:39.281432 [info ] [Thread-1 (]: 1 of 3 OK created sql incremental model btc_schema.stg_btc ..................... [[32mSUCCESS 0[0m in 1.98s]
+[0m13:57:39.281998 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc
+[0m13:57:39.282646 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_outputs
+[0m13:57:39.282979 [info ] [Thread-1 (]: 2 of 3 START sql incremental model btc_schema.stg_btc_outputs .................. [RUN]
+[0m13:57:39.283305 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc, now model.btc.stg_btc_outputs)
+[0m13:57:39.283547 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_outputs
+[0m13:57:39.286830 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_outputs"
+[0m13:57:39.287455 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc_outputs
+[0m13:57:39.290114 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:57:39.290395 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: create or replace  temporary view btc.btc_schema.stg_btc_outputs__dbt_tmp
+  
+  
+  
+  
+  as (
+    -- including incremental logic to only load new data
+
+
+with flattened as (
+select
+    t.hashkey,
+    t.block_number,
+    t.block_timestamp,
+    t.is_coinbase,
+    op.value:value::FLOAT as output_value,
+    op.value:address::STRING as output_address 
+
+from btc.btc_schema.stg_btc as t,
+lateral flatten(input => t.outputs) as op
+where op.value is not null
+
+
+
+    and t.block_timestamp > (select max(block_timestamp) from btc.btc_schema.stg_btc_outputs)
+
+
+)
+
+select hashkey,
+    block_number,
+    block_timestamp,
+    is_coinbase,
+    output_value,
+    output_address
+from flattened
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */;
+[0m13:57:39.493118 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.202 seconds
+[0m13:57:39.498803 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:57:39.499263 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table btc.btc_schema.stg_btc_outputs__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:57:39.577108 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.077 seconds
+[0m13:57:39.583763 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:57:39.584197 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table btc.btc_schema.stg_btc_outputs
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:57:39.652165 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.067 seconds
+[0m13:57:39.659594 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:57:39.659888 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table "BTC"."BTC_SCHEMA"."STG_BTC_OUTPUTS"
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:57:39.719405 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.059 seconds
+[0m13:57:39.728861 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc_outputs"
+[0m13:57:39.730650 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:57:39.731041 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: BEGIN
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:57:39.801019 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.069 seconds
+[0m13:57:39.801855 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:57:39.802456 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: insert into btc.btc_schema.stg_btc_outputs ("HASHKEY", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "IS_COINBASE", "OUTPUT_VALUE", "OUTPUT_ADDRESS")
+    (
+        select "HASHKEY", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "IS_COINBASE", "OUTPUT_VALUE", "OUTPUT_ADDRESS"
+        from btc.btc_schema.stg_btc_outputs__dbt_tmp
+    )
+
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */;
+[0m13:57:40.450413 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.647 seconds
+[0m13:57:40.450931 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:57:40.451184 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:57:40.547951 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.096 seconds
+[0m13:57:40.554964 [debug] [Thread-1 (]: Applying DROP to: btc.btc_schema.stg_btc_outputs__dbt_tmp
+[0m13:57:40.556005 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m13:57:40.556416 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: drop view if exists btc.btc_schema.stg_btc_outputs__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.stg_btc_outputs"} */
+[0m13:57:40.669655 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.113 seconds
+[0m13:57:40.674677 [info ] [Thread-1 (]: 2 of 3 OK created sql incremental model btc_schema.stg_btc_outputs ............. [[32mSUCCESS 0[0m in 1.39s]
+[0m13:57:40.675653 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_outputs
+[0m13:57:40.677097 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_transactions
+[0m13:57:40.677673 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_outputs, now model.btc.stg_btc_transactions)
+[0m13:57:40.678045 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_transactions
+[0m13:57:40.681333 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_transactions"
+[0m13:57:40.682782 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_transactions
+[0m13:57:40.683891 [debug] [Thread-1 (]: Began running node model.btc.whale_alerts
+[0m13:57:40.684538 [info ] [Thread-1 (]: 3 of 3 START sql table model btc_schema.whale_alerts ........................... [RUN]
+[0m13:57:40.685304 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_transactions, now model.btc.whale_alerts)
+[0m13:57:40.685620 [debug] [Thread-1 (]: Began compiling node model.btc.whale_alerts
+[0m13:57:40.691331 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m13:57:40.692800 [debug] [Thread-1 (]: Began executing node model.btc.whale_alerts
+[0m13:57:40.715197 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.whale_alerts"
+[0m13:57:40.716917 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m13:57:40.717260 [debug] [Thread-1 (]: On model.btc.whale_alerts: create or replace transient table btc.btc_schema.whale_alerts
+    
+    
+    
+    as (with  __dbt__cte__stg_btc_transactions as (
+
+
+select * 
+from btc.btc_schema.stg_btc_outputs 
+where is_coinbase = false
+), whales as (
+    select
+    output_address,
+    sum(output_value) as total_sent,
+    count(*) as transaction_count
+
+from __dbt__cte__stg_btc_transactions
+
+where output_value > 10
+
+group by output_address
+order by total_sent desc
+
+),
+latest_price as (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) = current_date()
+)
+
+select wh.output_address,
+wh.total_sent,
+wh.transaction_count,
+(wh.total_sent * lp.price) as usd_value
+from whales wh
+cross join latest_price lp
+order by wh.total_sent desc
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */;
+[0m13:57:41.542160 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.824 seconds
+[0m13:57:41.551676 [info ] [Thread-1 (]: 3 of 3 OK created sql table model btc_schema.whale_alerts ...................... [[32mSUCCESS 1[0m in 0.87s]
+[0m13:57:41.552507 [debug] [Thread-1 (]: Finished running node model.btc.whale_alerts
+[0m13:57:41.553971 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:57:41.554372 [debug] [MainThread]: Connection 'model.btc.whale_alerts' was left open.
+[0m13:57:41.554758 [debug] [MainThread]: On model.btc.whale_alerts: Close
+[0m13:57:41.651902 [info ] [MainThread]: 
+[0m13:57:41.653001 [info ] [MainThread]: Finished running 2 incremental models, 1 table model in 0 hours 0 minutes and 7.60 seconds (7.60s).
+[0m13:57:41.654696 [debug] [MainThread]: Command end result
+[0m13:57:41.681236 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m13:57:41.683605 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m13:57:41.689475 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m13:57:41.689860 [info ] [MainThread]: 
+[0m13:57:41.690210 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:57:41.690477 [info ] [MainThread]: 
+[0m13:57:41.690747 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m13:57:41.693745 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 8.144332, "process_in_blocks": "0", "process_kernel_time": 0.251046, "process_mem_max_rss": "166903808", "process_out_blocks": "0", "process_user_time": 1.643324}
+[0m13:57:41.694202 [debug] [MainThread]: Command `dbt run` succeeded at 13:57:41.694123 after 8.14 seconds
+[0m13:57:41.694531 [debug] [MainThread]: Flushing usage events
+[0m14:04:00.706487 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 14:04:00.719446 | f578bbea-6cce-4b82-8888-dbbd249b08b7 ==============================
+[0m14:04:00.719446 [info ] [MainThread]: Running with dbt=1.10.11
+[0m14:04:00.720046 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'use_colors': 'True', 'quiet': 'False', 'introspect': 'True', 'warn_error': 'None', 'debug': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'profiles_dir': '/Users/mac/.dbt', 'version_check': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'printer_width': '80', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'invocation_command': 'dbt run --select whale_alerts', 'log_format': 'default'}
+[0m14:04:00.948579 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m14:04:01.020840 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m14:04:01.138748 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:04:01.139050 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:04:01.217196 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m14:04:01.218265 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m14:04:01.225813 [info ] [MainThread]: Found 4 models, 2 data tests, 1 seed, 1 source, 480 macros
+[0m14:04:01.226621 [info ] [MainThread]: 
+[0m14:04:01.226830 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:04:01.227000 [info ] [MainThread]: 
+[0m14:04:01.227264 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:04:01.227709 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m14:04:01.256794 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m14:04:01.257076 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc"} */
+[0m14:04:01.257251 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:04:04.452556 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.195 seconds
+[0m14:04:04.460788 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_schema)
+[0m14:04:04.474785 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m14:04:04.475292 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m14:04:04.578746 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.103 seconds
+[0m14:04:04.585884 [debug] [Thread-1 (]: Began running node model.btc.whale_alerts
+[0m14:04:04.586455 [info ] [Thread-1 (]: 1 of 1 START sql table model btc_schema.whale_alerts ........................... [RUN]
+[0m14:04:04.586894 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.whale_alerts)
+[0m14:04:04.587219 [debug] [Thread-1 (]: Began compiling node model.btc.whale_alerts
+[0m14:04:04.597800 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m14:04:04.603277 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m14:04:04.604026 [debug] [Thread-1 (]: Began executing node model.btc.whale_alerts
+[0m14:04:04.626901 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.whale_alerts"
+[0m14:04:04.628338 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m14:04:04.628842 [debug] [Thread-1 (]: On model.btc.whale_alerts: create or replace transient table btc.btc_schema.whale_alerts
+    
+    
+    
+    as (with  __dbt__cte__stg_btc_transactions as (
+
+
+select * 
+from btc.btc_schema.stg_btc_outputs 
+where is_coinbase = false
+), whales as (
+    select
+    output_address,
+    sum(output_value) as total_sent,
+    count(*) as transaction_count
+
+from __dbt__cte__stg_btc_transactions
+
+where output_value > 10
+
+group by output_address
+order by total_sent desc
+
+),
+latest_price as (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) = current_date()
+)
+
+select wh.output_address,
+wh.total_sent,
+wh.transaction_count,
+
+
+wh.total_sent * (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) >= current_date()
+)
+
+ as usd_value
+from whales wh
+cross join latest_price lp
+order by wh.total_sent desc
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */;
+[0m14:04:05.697554 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.068 seconds
+[0m14:04:05.727301 [info ] [Thread-1 (]: 1 of 1 OK created sql table model btc_schema.whale_alerts ...................... [[32mSUCCESS 1[0m in 1.14s]
+[0m14:04:05.727961 [debug] [Thread-1 (]: Finished running node model.btc.whale_alerts
+[0m14:04:05.728997 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:04:05.729329 [debug] [MainThread]: Connection 'model.btc.whale_alerts' was left open.
+[0m14:04:05.729614 [debug] [MainThread]: On model.btc.whale_alerts: Close
+[0m14:04:05.820693 [info ] [MainThread]: 
+[0m14:04:05.821334 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.59 seconds (4.59s).
+[0m14:04:05.822195 [debug] [MainThread]: Command end result
+[0m14:04:05.843956 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m14:04:05.845701 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m14:04:05.850675 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m14:04:05.850959 [info ] [MainThread]: 
+[0m14:04:05.851276 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:04:05.851512 [info ] [MainThread]: 
+[0m14:04:05.851754 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:04:05.854350 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.176638, "process_in_blocks": "0", "process_kernel_time": 0.222167, "process_mem_max_rss": "165068800", "process_out_blocks": "0", "process_user_time": 1.443177}
+[0m14:04:05.854710 [debug] [MainThread]: Command `dbt run` succeeded at 14:04:05.854647 after 5.18 seconds
+[0m14:04:05.854971 [debug] [MainThread]: Flushing usage events
+=======
+>>>>>>> main
+[0m14:28:55.335688 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 14:28:55.372599 | b70cfe37-f9b6-46ee-b6a9-5e0d8883d4fe ==============================
+[0m14:28:55.372599 [info ] [MainThread]: Running with dbt=1.10.11
+[0m14:28:55.384474 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'empty': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'target_path': 'None', 'quiet': 'False', 'warn_error': 'None', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/mac/.dbt', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'static_parser': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'version_check': 'True', 'write_json': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --target production', 'debug': 'False'}
+[0m14:28:57.161138 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m14:28:57.262328 [debug] [MainThread]: checksum: 6e971fb8f28f41d820cb7f06b169a74aff7bfe6a0f8ef8a3f3d3ce2d4daff49b, vars: {}, profile: , target: production, version: 1.10.11
+[0m14:28:57.323261 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m14:28:57.323601 [debug] [MainThread]: previous checksum: 6e971fb8f28f41d820cb7f06b169a74aff7bfe6a0f8ef8a3f3d3ce2d4daff49b, current checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9
+[0m14:28:57.832183 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two models with the name "stg_btc_outputs".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for ref("stg_btc_outputs").
+  
+  To fix this, change the name of one of these resources:
+  - model.btc.stg_btc_outputs (models/staging/stg_btc_outputs.sql)
+  - model.btc.stg_btc_outputs (models/stg_btc_outputs.sql)
+[0m14:28:57.834583 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.525792, "process_in_blocks": "0", "process_kernel_time": 0.705027, "process_mem_max_rss": "166363136", "process_out_blocks": "0", "process_user_time": 2.869008}
+[0m14:28:57.834956 [debug] [MainThread]: Command `dbt run` failed at 14:28:57.834904 after 2.53 seconds
+[0m14:28:57.835184 [debug] [MainThread]: Flushing usage events
+[0m14:31:06.333249 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 14:31:06.345343 | 6ce7edd0-f54e-4343-a0ae-c1e7680d71e2 ==============================
+[0m14:31:06.345343 [info ] [MainThread]: Running with dbt=1.10.11
+[0m14:31:06.345875 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'empty': 'False', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'version_check': 'True', 'log_format': 'default', 'use_colors': 'True', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/Users/mac/.dbt', 'cache_selected_only': 'False', 'invocation_command': 'dbt run --target production', 'fail_fast': 'False', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'introspect': 'True', 'write_json': 'True', 'debug': 'False', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'printer_width': '80'}
+[0m14:31:06.564940 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m14:31:06.638204 [debug] [MainThread]: checksum: 6e971fb8f28f41d820cb7f06b169a74aff7bfe6a0f8ef8a3f3d3ce2d4daff49b, vars: {}, profile: , target: production, version: 1.10.11
+[0m14:31:06.696356 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m14:31:06.698064 [debug] [MainThread]: previous checksum: 6e971fb8f28f41d820cb7f06b169a74aff7bfe6a0f8ef8a3f3d3ce2d4daff49b, current checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9
+[0m14:31:07.449050 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m14:31:07.450354 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m14:31:07.528772 [info ] [MainThread]: Found 4 models, 1 seed, 2 data tests, 1 source, 480 macros
+[0m14:31:07.529794 [info ] [MainThread]: 
+[0m14:31:07.530019 [info ] [MainThread]: Concurrency: 1 threads (target='production')
+[0m14:31:07.530200 [info ] [MainThread]: 
+[0m14:31:07.530499 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:31:07.532817 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m14:31:07.575194 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m14:31:07.575456 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "connection_name": "list_btc"} */
+[0m14:31:07.575652 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:31:11.089244 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.513 seconds
+[0m14:31:11.092751 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_schema)
+[0m14:31:11.106536 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m14:31:11.106945 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "connection_name": "list_btc_btc_schema"} */;
+[0m14:31:11.511359 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.404 seconds
+[0m14:31:11.520362 [debug] [Thread-1 (]: Began running node model.btc.stg_btc
+[0m14:31:11.521132 [info ] [Thread-1 (]: 1 of 3 START sql incremental model btc_schema.stg_btc .......................... [RUN]
+[0m14:31:11.521735 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.stg_btc)
+[0m14:31:11.522194 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc
+[0m14:31:11.533500 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc"
+[0m14:31:11.534616 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc
+[0m14:31:11.573959 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:31:11.574373 [debug] [Thread-1 (]: On model.btc.stg_btc: create or replace  temporary view btc.btc_schema.stg_btc__dbt_tmp
+  
+  
+  
+  
+  as (
+    -- including incremental logic to only load new data
+
+
+select * from btc.btc_schema.btc
+
+
+
+    where block_timestamp > (select max(block_timestamp) from btc.btc_schema.stg_btc)
+
+
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */;
+[0m14:31:12.020034 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.445 seconds
+[0m14:31:12.032233 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:31:12.032714 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table btc.btc_schema.stg_btc__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */
+[0m14:31:12.164051 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.131 seconds
+[0m14:31:12.172321 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:31:12.173115 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table btc.btc_schema.stg_btc
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */
+[0m14:31:12.238700 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.065 seconds
+[0m14:31:12.252729 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:31:12.253375 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table "BTC"."BTC_SCHEMA"."STG_BTC"
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */
+[0m14:31:12.341769 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.088 seconds
+[0m14:31:12.379050 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc"
+[0m14:31:12.380742 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:31:12.381091 [debug] [Thread-1 (]: On model.btc.stg_btc: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */;
+[0m14:31:12.503597 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.122 seconds
+[0m14:31:12.504715 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:31:12.505377 [debug] [Thread-1 (]: On model.btc.stg_btc: merge into btc.btc_schema.stg_btc as DBT_INTERNAL_DEST
+        using btc.btc_schema.stg_btc__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.hashkey = DBT_INTERNAL_DEST.hashkey))
+
+    
+    when matched then update set
+        "HASHKEY" = DBT_INTERNAL_SOURCE."HASHKEY","BLOCK_HASH" = DBT_INTERNAL_SOURCE."BLOCK_HASH","BLOCK_NUMBER" = DBT_INTERNAL_SOURCE."BLOCK_NUMBER","BLOCK_TIMESTAMP" = DBT_INTERNAL_SOURCE."BLOCK_TIMESTAMP","FEE" = DBT_INTERNAL_SOURCE."FEE","INPUT_VALUE" = DBT_INTERNAL_SOURCE."INPUT_VALUE","OUTPUT_BTC" = DBT_INTERNAL_SOURCE."OUTPUT_BTC","FEE_PER_BYTE" = DBT_INTERNAL_SOURCE."FEE_PER_BYTE","IS_COINBASE" = DBT_INTERNAL_SOURCE."IS_COINBASE","OUTPUTS" = DBT_INTERNAL_SOURCE."OUTPUTS"
+    
+
+    when not matched then insert
+        ("HASHKEY", "BLOCK_HASH", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "FEE", "INPUT_VALUE", "OUTPUT_BTC", "FEE_PER_BYTE", "IS_COINBASE", "OUTPUTS")
+    values
+        ("HASHKEY", "BLOCK_HASH", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "FEE", "INPUT_VALUE", "OUTPUT_BTC", "FEE_PER_BYTE", "IS_COINBASE", "OUTPUTS")
+
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */;
+[0m14:31:14.054514 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 1.548 seconds
+[0m14:31:14.055908 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:31:14.056480 [debug] [Thread-1 (]: On model.btc.stg_btc: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */
+[0m14:31:14.250911 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.194 seconds
+[0m14:31:14.264433 [debug] [Thread-1 (]: Applying DROP to: btc.btc_schema.stg_btc__dbt_tmp
+[0m14:31:14.272639 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:31:14.273067 [debug] [Thread-1 (]: On model.btc.stg_btc: drop view if exists btc.btc_schema.stg_btc__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */
+[0m14:31:14.403130 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.130 seconds
+[0m14:31:14.434402 [info ] [Thread-1 (]: 1 of 3 OK created sql incremental model btc_schema.stg_btc ..................... [[32mSUCCESS 0[0m in 2.91s]
+[0m14:31:14.434880 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc
+[0m14:31:14.435374 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_outputs
+[0m14:31:14.435680 [info ] [Thread-1 (]: 2 of 3 START sql incremental model btc_schema.stg_btc_outputs .................. [RUN]
+[0m14:31:14.435964 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc, now model.btc.stg_btc_outputs)
+[0m14:31:14.436150 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_outputs
+[0m14:31:14.438239 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_outputs"
+[0m14:31:14.438628 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc_outputs
+[0m14:31:14.440495 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:31:14.440712 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: create or replace  temporary view btc.btc_schema.stg_btc_outputs__dbt_tmp
+  
+  
+  
+  
+  as (
+    -- including incremental logic to only load new data
+
+
+with flattened as (
+select
+    t.hashkey,
+    t.block_number,
+    t.block_timestamp,
+    t.is_coinbase,
+    op.value:value::FLOAT as output_value,
+    op.value:address::STRING as output_address 
+
+from btc.btc_schema.stg_btc as t,
+lateral flatten(input => t.outputs) as op
+where op.value is not null
+
+
+
+    and t.block_timestamp > (select max(block_timestamp) from btc.btc_schema.stg_btc_outputs)
+
+
+)
+
+select hashkey,
+    block_number,
+    block_timestamp,
+    is_coinbase,
+    output_value,
+    output_address
+from flattened
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */;
+[0m14:31:14.661305 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.220 seconds
+[0m14:31:14.663882 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:31:14.664198 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table btc.btc_schema.stg_btc_outputs__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */
+[0m14:31:14.754788 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.090 seconds
+[0m14:31:14.757346 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:31:14.757605 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table btc.btc_schema.stg_btc_outputs
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */
+[0m14:31:14.817177 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.059 seconds
+[0m14:31:14.820044 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:31:14.820414 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table "BTC"."BTC_SCHEMA"."STG_BTC_OUTPUTS"
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */
+[0m14:31:14.902308 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.082 seconds
+[0m14:31:14.910869 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc_outputs"
+[0m14:31:14.911978 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:31:14.912313 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: BEGIN
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */
+[0m14:31:15.016326 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.104 seconds
+[0m14:31:15.017104 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:31:15.017699 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: insert into btc.btc_schema.stg_btc_outputs ("HASHKEY", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "IS_COINBASE", "OUTPUT_VALUE", "OUTPUT_ADDRESS")
+    (
+        select "HASHKEY", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "IS_COINBASE", "OUTPUT_VALUE", "OUTPUT_ADDRESS"
+        from btc.btc_schema.stg_btc_outputs__dbt_tmp
+    )
+
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */;
+[0m14:31:15.275992 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.257 seconds
+[0m14:31:15.277028 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:31:15.277582 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */
+[0m14:31:15.388006 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.110 seconds
+[0m14:31:15.393844 [debug] [Thread-1 (]: Applying DROP to: btc.btc_schema.stg_btc_outputs__dbt_tmp
+[0m14:31:15.396957 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:31:15.397476 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: drop view if exists btc.btc_schema.stg_btc_outputs__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */
+[0m14:31:15.668811 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.271 seconds
+[0m14:31:15.674221 [info ] [Thread-1 (]: 2 of 3 OK created sql incremental model btc_schema.stg_btc_outputs ............. [[32mSUCCESS 0[0m in 1.24s]
+[0m14:31:15.675287 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_outputs
+[0m14:31:15.676312 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_transactions
+[0m14:31:15.677006 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_outputs, now model.btc.stg_btc_transactions)
+[0m14:31:15.677534 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_transactions
+[0m14:31:15.681692 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_transactions"
+[0m14:31:15.682907 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_transactions
+[0m14:31:15.683517 [debug] [Thread-1 (]: Began running node model.btc.whale_alerts
+[0m14:31:15.684087 [info ] [Thread-1 (]: 3 of 3 START sql table model btc_schema.whale_alerts ........................... [RUN]
+[0m14:31:15.684527 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_transactions, now model.btc.whale_alerts)
+[0m14:31:15.685109 [debug] [Thread-1 (]: Began compiling node model.btc.whale_alerts
+[0m14:31:15.695608 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m14:31:15.696376 [debug] [Thread-1 (]: Began executing node model.btc.whale_alerts
+[0m14:31:15.716964 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.whale_alerts"
+[0m14:31:15.718380 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m14:31:15.718740 [debug] [Thread-1 (]: On model.btc.whale_alerts: create or replace transient table btc.btc_schema.whale_alerts
+    
+    
+    
+    as (with  __dbt__cte__stg_btc_transactions as (
+
+
+select * 
+from btc.btc_schema.stg_btc_outputs 
+where is_coinbase = false
+), whales as (
+    select
+    output_address,
+    sum(output_value) as total_sent,
+    count(*) as transaction_count
+
+from __dbt__cte__stg_btc_transactions
+
+where output_value > 10
+
+group by output_address
+order by total_sent desc
+
+),
+latest_price as (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) = current_date()
+)
+
+select wh.output_address,
+wh.total_sent,
+wh.transaction_count,
+
+
+wh.total_sent * (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) >= current_date()
+)
+
+ as usd_value
+from whales wh
+cross join latest_price lp
+order by wh.total_sent desc
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.whale_alerts"} */;
+[0m14:31:17.379029 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.660 seconds
+[0m14:31:17.388329 [info ] [Thread-1 (]: 3 of 3 OK created sql table model btc_schema.whale_alerts ...................... [[32mSUCCESS 1[0m in 1.70s]
+[0m14:31:17.389204 [debug] [Thread-1 (]: Finished running node model.btc.whale_alerts
+[0m14:31:17.390520 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:31:17.390897 [debug] [MainThread]: Connection 'model.btc.whale_alerts' was left open.
+[0m14:31:17.391280 [debug] [MainThread]: On model.btc.whale_alerts: Close
+[0m14:31:17.489904 [info ] [MainThread]: 
+[0m14:31:17.490690 [info ] [MainThread]: Finished running 2 incremental models, 1 table model in 0 hours 0 minutes and 9.96 seconds (9.96s).
+[0m14:31:17.492148 [debug] [MainThread]: Command end result
+[0m14:31:17.517410 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m14:31:17.519009 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m14:31:17.523687 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m14:31:17.523972 [info ] [MainThread]: 
+[0m14:31:17.524272 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:31:17.524512 [info ] [MainThread]: 
+[0m14:31:17.524751 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m14:31:17.527153 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 11.220265, "process_in_blocks": "0", "process_kernel_time": 0.287262, "process_mem_max_rss": "175456256", "process_out_blocks": "0", "process_user_time": 2.385818}
+[0m14:31:17.527571 [debug] [MainThread]: Command `dbt run` succeeded at 14:31:17.527498 after 11.22 seconds
+[0m14:31:17.527841 [debug] [MainThread]: Flushing usage events
+[0m14:34:07.933251 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 14:34:07.945719 | 1a9752f8-97a8-42d2-b1ff-c47ae880af64 ==============================
+[0m14:34:07.945719 [info ] [MainThread]: Running with dbt=1.10.11
+[0m14:34:07.946233 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'invocation_command': 'dbt run --target production', 'no_print': 'None', 'profiles_dir': '/Users/mac/.dbt', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'empty': 'False', 'warn_error': 'None', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'target_path': 'None', 'version_check': 'True', 'partial_parse': 'True', 'static_parser': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'debug': 'False', 'write_json': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False'}
+[0m14:34:08.177737 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m14:34:08.250165 [debug] [MainThread]: checksum: 6e971fb8f28f41d820cb7f06b169a74aff7bfe6a0f8ef8a3f3d3ce2d4daff49b, vars: {}, profile: , target: production, version: 1.10.11
+[0m14:34:08.307203 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m14:34:09.058728 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m14:34:09.060065 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m14:34:09.098132 [info ] [MainThread]: Found 4 models, 1 seed, 2 data tests, 1 source, 480 macros
+[0m14:34:09.099115 [info ] [MainThread]: 
+[0m14:34:09.099328 [info ] [MainThread]: Concurrency: 1 threads (target='production')
+[0m14:34:09.099495 [info ] [MainThread]: 
+[0m14:34:09.099754 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:34:09.101993 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m14:34:09.132974 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m14:34:09.133218 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "connection_name": "list_btc"} */
+[0m14:34:09.133391 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:34:12.329121 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.196 seconds
+[0m14:34:12.331103 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now create_btc_btc_prod)
+[0m14:34:12.331947 [debug] [ThreadPool]: Creating schema "database: "btc"
+schema: "btc_prod"
+"
+[0m14:34:12.335954 [debug] [ThreadPool]: Using snowflake connection "create_btc_btc_prod"
+[0m14:34:12.336258 [debug] [ThreadPool]: On create_btc_btc_prod: create schema if not exists btc.btc_prod
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "connection_name": "create_btc_btc_prod"} */
+[0m14:34:12.447148 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.111 seconds
+[0m14:34:12.468672 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_btc_btc_prod, now list_btc_btc_prod)
+[0m14:34:12.479639 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_prod"
+[0m14:34:12.480361 [debug] [ThreadPool]: On list_btc_btc_prod: show objects in btc.btc_prod
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "connection_name": "list_btc_btc_prod"} */;
+[0m14:34:12.581452 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.101 seconds
+[0m14:34:12.586346 [debug] [Thread-1 (]: Began running node model.btc.stg_btc
+[0m14:34:12.586900 [info ] [Thread-1 (]: 1 of 3 START sql incremental model btc_prod.stg_btc ............................ [RUN]
+[0m14:34:12.587320 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_prod, now model.btc.stg_btc)
+[0m14:34:12.587630 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc
+[0m14:34:12.594491 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc"
+[0m14:34:12.595396 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc
+[0m14:34:12.636745 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc"
+[0m14:34:12.639788 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:34:12.640097 [debug] [Thread-1 (]: On model.btc.stg_btc: create or replace transient table btc.btc_prod.stg_btc
+    
+    
+    
+    as (-- including incremental logic to only load new data
+
+
+select * from btc.btc_schema.btc
+
+
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */;
+[0m14:34:14.480093 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.839 seconds
+[0m14:34:14.493445 [debug] [Thread-1 (]: Applying DROP to: btc.btc_prod.stg_btc__dbt_tmp
+[0m14:34:14.499518 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:34:14.500183 [debug] [Thread-1 (]: On model.btc.stg_btc: drop view if exists btc.btc_prod.stg_btc__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */
+[0m14:34:15.225677 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.725 seconds
+[0m14:34:15.247881 [info ] [Thread-1 (]: 1 of 3 OK created sql incremental model btc_prod.stg_btc ....................... [[32mSUCCESS 1[0m in 2.66s]
+[0m14:34:15.248396 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc
+[0m14:34:15.248986 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_outputs
+[0m14:34:15.249454 [info ] [Thread-1 (]: 2 of 3 START sql incremental model btc_prod.stg_btc_outputs .................... [RUN]
+[0m14:34:15.249838 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc, now model.btc.stg_btc_outputs)
+[0m14:34:15.250118 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_outputs
+[0m14:34:15.252875 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_outputs"
+[0m14:34:15.253506 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc_outputs
+[0m14:34:15.256724 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc_outputs"
+[0m14:34:15.257695 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:34:15.257978 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: create or replace transient table btc.btc_prod.stg_btc_outputs
+    
+    
+    
+    as (-- including incremental logic to only load new data
+
+
+with flattened as (
+select
+    t.hashkey,
+    t.block_number,
+    t.block_timestamp,
+    t.is_coinbase,
+    op.value:value::FLOAT as output_value,
+    op.value:address::STRING as output_address 
+
+from btc.btc_prod.stg_btc as t,
+lateral flatten(input => t.outputs) as op
+where op.value is not null
+
+
+
+)
+
+select hashkey,
+    block_number,
+    block_timestamp,
+    is_coinbase,
+    output_value,
+    output_address
+from flattened
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */;
+[0m14:34:16.727102 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.468 seconds
+[0m14:34:16.731904 [debug] [Thread-1 (]: Applying DROP to: btc.btc_prod.stg_btc_outputs__dbt_tmp
+[0m14:34:16.733212 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:34:16.733939 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: drop view if exists btc.btc_prod.stg_btc_outputs__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */
+[0m14:34:16.793814 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.059 seconds
+[0m14:34:16.798194 [info ] [Thread-1 (]: 2 of 3 OK created sql incremental model btc_prod.stg_btc_outputs ............... [[32mSUCCESS 1[0m in 1.55s]
+[0m14:34:16.799071 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_outputs
+[0m14:34:16.800231 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_transactions
+[0m14:34:16.801041 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_outputs, now model.btc.stg_btc_transactions)
+[0m14:34:16.801666 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_transactions
+[0m14:34:16.805743 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_transactions"
+[0m14:34:16.807084 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_transactions
+[0m14:34:16.807972 [debug] [Thread-1 (]: Began running node model.btc.whale_alerts
+[0m14:34:16.808674 [info ] [Thread-1 (]: 3 of 3 START sql table model btc_prod.whale_alerts ............................. [RUN]
+[0m14:34:16.809303 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_transactions, now model.btc.whale_alerts)
+[0m14:34:16.809701 [debug] [Thread-1 (]: Began compiling node model.btc.whale_alerts
+[0m14:34:16.818842 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m14:34:16.819912 [debug] [Thread-1 (]: Began executing node model.btc.whale_alerts
+[0m14:34:16.828785 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.whale_alerts"
+[0m14:34:16.830482 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m14:34:16.831136 [debug] [Thread-1 (]: On model.btc.whale_alerts: create or replace transient table btc.btc_prod.whale_alerts
+    
+    
+    
+    as (with  __dbt__cte__stg_btc_transactions as (
+
+
+select * 
+from btc.btc_prod.stg_btc_outputs 
+where is_coinbase = false
+), whales as (
+    select
+    output_address,
+    sum(output_value) as total_sent,
+    count(*) as transaction_count
+
+from __dbt__cte__stg_btc_transactions
+
+where output_value > 10
+
+group by output_address
+order by total_sent desc
+
+),
+latest_price as (
+    select price
+    from btc.btc_prod.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) = current_date()
+)
+
+select wh.output_address,
+wh.total_sent,
+wh.transaction_count,
+
+
+wh.total_sent * (
+    select price
+    from btc.btc_prod.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) >= current_date()
+)
+
+ as usd_value
+from whales wh
+cross join latest_price lp
+order by wh.total_sent desc
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.whale_alerts"} */;
+[0m14:34:16.927396 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bf1c72-0004-e2d2-0000-0000f195c365
+[0m14:34:16.928009 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'BTC.BTC_PROD.BTC_USD_MAX' does not exist or not authorized.
+[0m14:34:16.932047 [debug] [Thread-1 (]: Database Error in model whale_alerts (models/marts/whale_alerts.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'BTC.BTC_PROD.BTC_USD_MAX' does not exist or not authorized.
+  compiled code at target/run/btc/models/marts/whale_alerts.sql
+[0m14:34:16.932828 [error] [Thread-1 (]: 3 of 3 ERROR creating sql table model btc_prod.whale_alerts .................... [[31mERROR[0m in 0.12s]
+[0m14:34:16.933371 [debug] [Thread-1 (]: Finished running node model.btc.whale_alerts
+[0m14:34:16.933869 [debug] [Thread-4 (]: Marking all children of 'model.btc.whale_alerts' to be skipped because of status 'error'.  Reason: Database Error in model whale_alerts (models/marts/whale_alerts.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'BTC.BTC_PROD.BTC_USD_MAX' does not exist or not authorized.
+  compiled code at target/run/btc/models/marts/whale_alerts.sql.
+[0m14:34:16.935481 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:34:16.935806 [debug] [MainThread]: Connection 'model.btc.whale_alerts' was left open.
+[0m14:34:16.936053 [debug] [MainThread]: On model.btc.whale_alerts: Close
+[0m14:34:17.028593 [info ] [MainThread]: 
+[0m14:34:17.029229 [info ] [MainThread]: Finished running 2 incremental models, 1 table model in 0 hours 0 minutes and 7.93 seconds (7.93s).
+[0m14:34:17.030175 [debug] [MainThread]: Command end result
+[0m14:34:17.051476 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m14:34:17.053303 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m14:34:17.057423 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m14:34:17.057696 [info ] [MainThread]: 
+[0m14:34:17.057991 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:34:17.058227 [info ] [MainThread]: 
+[0m14:34:17.058736 [error] [MainThread]: [31mFailure in model whale_alerts (models/marts/whale_alerts.sql)[0m
+[0m14:34:17.059194 [error] [MainThread]:   Database Error in model whale_alerts (models/marts/whale_alerts.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'BTC.BTC_PROD.BTC_USD_MAX' does not exist or not authorized.
+  compiled code at target/run/btc/models/marts/whale_alerts.sql
+[0m14:34:17.059456 [info ] [MainThread]: 
+[0m14:34:17.059725 [info ] [MainThread]:   compiled code at target/compiled/btc/models/marts/whale_alerts.sql
+[0m14:34:17.059958 [info ] [MainThread]: 
+[0m14:34:17.060210 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=3
+[0m14:34:17.063208 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 9.156229, "process_in_blocks": "0", "process_kernel_time": 0.267895, "process_mem_max_rss": "174981120", "process_out_blocks": "0", "process_user_time": 2.178222}
+[0m14:34:17.063652 [debug] [MainThread]: Command `dbt run` failed at 14:34:17.063585 after 9.16 seconds
+[0m14:34:17.063956 [debug] [MainThread]: Flushing usage events
+[0m14:35:24.768951 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 14:35:24.780131 | ee8de7a0-fcd4-4f2b-8286-e17e5c0027be ==============================
+[0m14:35:24.780131 [info ] [MainThread]: Running with dbt=1.10.11
+[0m14:35:24.780687 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'no_print': 'None', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'static_parser': 'True', 'use_colors': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'invocation_command': 'dbt seed --target production', 'use_experimental_parser': 'False', 'log_format': 'default', 'partial_parse': 'True', 'empty': 'None', 'fail_fast': 'False', 'write_json': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'printer_width': '80', 'quiet': 'False', 'profiles_dir': '/Users/mac/.dbt'}
+[0m14:35:24.993821 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m14:35:25.067360 [debug] [MainThread]: checksum: 6e971fb8f28f41d820cb7f06b169a74aff7bfe6a0f8ef8a3f3d3ce2d4daff49b, vars: {}, profile: , target: production, version: 1.10.11
+[0m14:35:25.163814 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:35:25.164100 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:35:25.240767 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m14:35:25.241977 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m14:35:25.251097 [info ] [MainThread]: Found 4 models, 1 seed, 2 data tests, 1 source, 480 macros
+[0m14:35:25.252058 [info ] [MainThread]: 
+[0m14:35:25.252289 [info ] [MainThread]: Concurrency: 1 threads (target='production')
+[0m14:35:25.252469 [info ] [MainThread]: 
+[0m14:35:25.252756 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:35:25.253205 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m14:35:25.283580 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m14:35:25.283847 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "connection_name": "list_btc"} */
+[0m14:35:25.284038 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:35:28.479009 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 3.195 seconds
+[0m14:35:28.488539 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_prod)
+[0m14:35:28.502796 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_prod"
+[0m14:35:28.503173 [debug] [ThreadPool]: On list_btc_btc_prod: show objects in btc.btc_prod
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "connection_name": "list_btc_btc_prod"} */;
+[0m14:35:28.588042 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.084 seconds
+[0m14:35:28.601529 [debug] [Thread-1 (]: Began running node seed.btc.btc_usd_max
+[0m14:35:28.603202 [info ] [Thread-1 (]: 1 of 1 START seed file btc_prod.btc_usd_max .................................... [RUN]
+[0m14:35:28.604094 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_prod, now seed.btc.btc_usd_max)
+[0m14:35:28.609288 [debug] [Thread-1 (]: Began compiling node seed.btc.btc_usd_max
+[0m14:35:28.609623 [debug] [Thread-1 (]: Began executing node seed.btc.btc_usd_max
+[0m14:35:28.706537 [debug] [Thread-1 (]: Using snowflake connection "seed.btc.btc_usd_max"
+[0m14:35:28.706904 [debug] [Thread-1 (]: On seed.btc.btc_usd_max: create table btc.btc_prod.btc_usd_max (snapped_at text,price float8,market_cap float8,total_volume float8)
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "seed.btc.btc_usd_max"} */
+[0m14:35:28.898865 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.191 seconds
+[0m14:35:28.970962 [debug] [Thread-1 (]: Using snowflake connection "seed.btc.btc_usd_max"
+[0m14:35:28.971310 [debug] [Thread-1 (]: On seed.btc.btc_usd_max: BEGIN
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "seed.btc.btc_usd_max"} */
+[0m14:35:29.041712 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.070 seconds
+[0m14:35:29.249934 [debug] [Thread-1 (]: Using snowflake connection "seed.btc.btc_usd_max"
+[0m14:35:29.250157 [debug] [Thread-1 (]: On seed.btc.btc_usd_max: insert into btc.btc_prod.btc_usd_max (snapped_at, price, market_cap, total_volume) values
+            (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,...
+[0m14:35:30.914198 [debug] [Thread-1 (]: SQL status: SUCCESS 4524 in 1.664 seconds
+[0m14:35:30.915769 [debug] [Thread-1 (]: Using snowflake connection "seed.btc.btc_usd_max"
+[0m14:35:30.916368 [debug] [Thread-1 (]: On seed.btc.btc_usd_max: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "seed.btc.btc_usd_max"} */
+[0m14:35:31.231262 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.314 seconds
+[0m14:35:31.241525 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.btc.btc_usd_max"
+[0m14:35:31.267055 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file btc_prod.btc_usd_max ................................ [[32mINSERT 4524[0m in 2.66s]
+[0m14:35:31.267568 [debug] [Thread-1 (]: Finished running node seed.btc.btc_usd_max
+[0m14:35:31.268471 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:35:31.268782 [debug] [MainThread]: Connection 'seed.btc.btc_usd_max' was left open.
+[0m14:35:31.269037 [debug] [MainThread]: On seed.btc.btc_usd_max: Close
+[0m14:35:31.358617 [info ] [MainThread]: 
+[0m14:35:31.359164 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 6.11 seconds (6.11s).
+[0m14:35:31.359827 [debug] [MainThread]: Command end result
+[0m14:35:31.378231 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m14:35:31.379798 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m14:35:31.384355 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m14:35:31.384605 [info ] [MainThread]: 
+[0m14:35:31.384891 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:35:31.385110 [info ] [MainThread]: 
+[0m14:35:31.385332 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:35:31.387227 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 6.644668, "process_in_blocks": "0", "process_kernel_time": 0.245789, "process_mem_max_rss": "170065920", "process_out_blocks": "0", "process_user_time": 1.812411}
+[0m14:35:31.387537 [debug] [MainThread]: Command `dbt seed` succeeded at 14:35:31.387484 after 6.65 seconds
+[0m14:35:31.387773 [debug] [MainThread]: Flushing usage events
+[0m14:35:35.373122 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 14:35:35.384050 | e8774396-0d66-42fc-b8b4-51a19b397fc9 ==============================
+[0m14:35:35.384050 [info ] [MainThread]: Running with dbt=1.10.11
+[0m14:35:35.384627 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'write_json': 'True', 'empty': 'False', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'printer_width': '80', 'fail_fast': 'False', 'introspect': 'True', 'quiet': 'False', 'invocation_command': 'dbt run --target production', 'profiles_dir': '/Users/mac/.dbt', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'target_path': 'None', 'static_parser': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'no_print': 'None', 'cache_selected_only': 'False', 'debug': 'False', 'log_format': 'default'}
+[0m14:35:35.601363 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m14:35:35.672544 [debug] [MainThread]: checksum: 6e971fb8f28f41d820cb7f06b169a74aff7bfe6a0f8ef8a3f3d3ce2d4daff49b, vars: {}, profile: , target: production, version: 1.10.11
+[0m14:35:35.768051 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:35:35.768330 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:35:35.842856 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m14:35:35.843994 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m14:35:35.851012 [info ] [MainThread]: Found 4 models, 1 seed, 2 data tests, 1 source, 480 macros
+[0m14:35:35.851960 [info ] [MainThread]: 
+[0m14:35:35.852203 [info ] [MainThread]: Concurrency: 1 threads (target='production')
+[0m14:35:35.852383 [info ] [MainThread]: 
+[0m14:35:35.852646 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:35:35.854776 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m14:35:35.883857 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m14:35:35.884107 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "connection_name": "list_btc"} */
+[0m14:35:35.884270 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:35:36.247413 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.363 seconds
+[0m14:35:36.251768 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_prod)
+[0m14:35:36.267261 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_prod"
+[0m14:35:36.267745 [debug] [ThreadPool]: On list_btc_btc_prod: show objects in btc.btc_prod
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "connection_name": "list_btc_btc_prod"} */;
+[0m14:35:36.367452 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.099 seconds
+[0m14:35:36.373475 [debug] [Thread-1 (]: Began running node model.btc.stg_btc
+[0m14:35:36.374160 [info ] [Thread-1 (]: 1 of 3 START sql incremental model btc_prod.stg_btc ............................ [RUN]
+[0m14:35:36.374737 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_prod, now model.btc.stg_btc)
+[0m14:35:36.375183 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc
+[0m14:35:36.389515 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc"
+[0m14:35:36.390309 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc
+[0m14:35:36.428379 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:35:36.428721 [debug] [Thread-1 (]: On model.btc.stg_btc: create or replace  temporary view btc.btc_prod.stg_btc__dbt_tmp
+  
+  
+  
+  
+  as (
+    -- including incremental logic to only load new data
+
+
+select * from btc.btc_schema.btc
+
+
+
+    where block_timestamp > (select max(block_timestamp) from btc.btc_prod.stg_btc)
+
+
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */;
+[0m14:35:36.667165 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.238 seconds
+[0m14:35:36.681367 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:35:36.681982 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table btc.btc_prod.stg_btc__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */
+[0m14:35:36.754817 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.072 seconds
+[0m14:35:36.762624 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:35:36.763127 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table btc.btc_prod.stg_btc
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */
+[0m14:35:36.845009 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.081 seconds
+[0m14:35:36.856487 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:35:36.857036 [debug] [Thread-1 (]: On model.btc.stg_btc: describe table "BTC"."BTC_PROD"."STG_BTC"
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */
+[0m14:35:36.934224 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.076 seconds
+[0m14:35:36.970047 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc"
+[0m14:35:36.971528 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:35:36.971849 [debug] [Thread-1 (]: On model.btc.stg_btc: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */;
+[0m14:35:37.050925 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.079 seconds
+[0m14:35:37.051425 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:35:37.051855 [debug] [Thread-1 (]: On model.btc.stg_btc: merge into btc.btc_prod.stg_btc as DBT_INTERNAL_DEST
+        using btc.btc_prod.stg_btc__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.hashkey = DBT_INTERNAL_DEST.hashkey))
+
+    
+    when matched then update set
+        "HASHKEY" = DBT_INTERNAL_SOURCE."HASHKEY","BLOCK_HASH" = DBT_INTERNAL_SOURCE."BLOCK_HASH","BLOCK_NUMBER" = DBT_INTERNAL_SOURCE."BLOCK_NUMBER","BLOCK_TIMESTAMP" = DBT_INTERNAL_SOURCE."BLOCK_TIMESTAMP","FEE" = DBT_INTERNAL_SOURCE."FEE","INPUT_VALUE" = DBT_INTERNAL_SOURCE."INPUT_VALUE","OUTPUT_BTC" = DBT_INTERNAL_SOURCE."OUTPUT_BTC","FEE_PER_BYTE" = DBT_INTERNAL_SOURCE."FEE_PER_BYTE","IS_COINBASE" = DBT_INTERNAL_SOURCE."IS_COINBASE","OUTPUTS" = DBT_INTERNAL_SOURCE."OUTPUTS"
+    
+
+    when not matched then insert
+        ("HASHKEY", "BLOCK_HASH", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "FEE", "INPUT_VALUE", "OUTPUT_BTC", "FEE_PER_BYTE", "IS_COINBASE", "OUTPUTS")
+    values
+        ("HASHKEY", "BLOCK_HASH", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "FEE", "INPUT_VALUE", "OUTPUT_BTC", "FEE_PER_BYTE", "IS_COINBASE", "OUTPUTS")
+
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */;
+[0m14:35:38.346414 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 1.294 seconds
+[0m14:35:38.347353 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:35:38.347841 [debug] [Thread-1 (]: On model.btc.stg_btc: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */
+[0m14:35:38.586241 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.238 seconds
+[0m14:35:38.599321 [debug] [Thread-1 (]: Applying DROP to: btc.btc_prod.stg_btc__dbt_tmp
+[0m14:35:38.607374 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc"
+[0m14:35:38.607856 [debug] [Thread-1 (]: On model.btc.stg_btc: drop view if exists btc.btc_prod.stg_btc__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc"} */
+[0m14:35:38.709398 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.101 seconds
+[0m14:35:38.732855 [info ] [Thread-1 (]: 1 of 3 OK created sql incremental model btc_prod.stg_btc ....................... [[32mSUCCESS 0[0m in 2.36s]
+[0m14:35:38.733453 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc
+[0m14:35:38.734154 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_outputs
+[0m14:35:38.734565 [info ] [Thread-1 (]: 2 of 3 START sql incremental model btc_prod.stg_btc_outputs .................... [RUN]
+[0m14:35:38.734937 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc, now model.btc.stg_btc_outputs)
+[0m14:35:38.735232 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_outputs
+[0m14:35:38.738383 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_outputs"
+[0m14:35:38.739120 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc_outputs
+[0m14:35:38.742125 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:35:38.742464 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: create or replace  temporary view btc.btc_prod.stg_btc_outputs__dbt_tmp
+  
+  
+  
+  
+  as (
+    -- including incremental logic to only load new data
+
+
+with flattened as (
+select
+    t.hashkey,
+    t.block_number,
+    t.block_timestamp,
+    t.is_coinbase,
+    op.value:value::FLOAT as output_value,
+    op.value:address::STRING as output_address 
+
+from btc.btc_prod.stg_btc as t,
+lateral flatten(input => t.outputs) as op
+where op.value is not null
+
+
+
+    and t.block_timestamp > (select max(block_timestamp) from btc.btc_prod.stg_btc_outputs)
+
+
+)
+
+select hashkey,
+    block_number,
+    block_timestamp,
+    is_coinbase,
+    output_value,
+    output_address
+from flattened
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */;
+[0m14:35:38.952238 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.209 seconds
+[0m14:35:38.958467 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:35:38.959286 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table btc.btc_prod.stg_btc_outputs__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */
+[0m14:35:39.050064 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.090 seconds
+[0m14:35:39.057915 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:35:39.058716 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table btc.btc_prod.stg_btc_outputs
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */
+[0m14:35:39.125133 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.066 seconds
+[0m14:35:39.131413 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:35:39.131974 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: describe table "BTC"."BTC_PROD"."STG_BTC_OUTPUTS"
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */
+[0m14:35:39.203313 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.071 seconds
+[0m14:35:39.218232 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.stg_btc_outputs"
+[0m14:35:39.220080 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:35:39.220624 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: BEGIN
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */
+[0m14:35:39.303860 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.083 seconds
+[0m14:35:39.305661 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:35:39.306440 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: insert into btc.btc_prod.stg_btc_outputs ("HASHKEY", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "IS_COINBASE", "OUTPUT_VALUE", "OUTPUT_ADDRESS")
+    (
+        select "HASHKEY", "BLOCK_NUMBER", "BLOCK_TIMESTAMP", "IS_COINBASE", "OUTPUT_VALUE", "OUTPUT_ADDRESS"
+        from btc.btc_prod.stg_btc_outputs__dbt_tmp
+    )
+
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */;
+[0m14:35:40.392492 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 1.085 seconds
+[0m14:35:40.394175 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:35:40.394994 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */
+[0m14:35:40.611153 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.215 seconds
+[0m14:35:40.616387 [debug] [Thread-1 (]: Applying DROP to: btc.btc_prod.stg_btc_outputs__dbt_tmp
+[0m14:35:40.617452 [debug] [Thread-1 (]: Using snowflake connection "model.btc.stg_btc_outputs"
+[0m14:35:40.617932 [debug] [Thread-1 (]: On model.btc.stg_btc_outputs: drop view if exists btc.btc_prod.stg_btc_outputs__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.stg_btc_outputs"} */
+[0m14:35:40.735690 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.117 seconds
+[0m14:35:40.740706 [info ] [Thread-1 (]: 2 of 3 OK created sql incremental model btc_prod.stg_btc_outputs ............... [[32mSUCCESS 0[0m in 2.01s]
+[0m14:35:40.742188 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_outputs
+[0m14:35:40.743261 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_transactions
+[0m14:35:40.744189 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_outputs, now model.btc.stg_btc_transactions)
+[0m14:35:40.744766 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_transactions
+[0m14:35:40.749146 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_transactions"
+[0m14:35:40.750630 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_transactions
+[0m14:35:40.751341 [debug] [Thread-1 (]: Began running node model.btc.whale_alerts
+[0m14:35:40.751859 [info ] [Thread-1 (]: 3 of 3 START sql table model btc_prod.whale_alerts ............................. [RUN]
+[0m14:35:40.752318 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_transactions, now model.btc.whale_alerts)
+[0m14:35:40.752675 [debug] [Thread-1 (]: Began compiling node model.btc.whale_alerts
+[0m14:35:40.763907 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m14:35:40.764805 [debug] [Thread-1 (]: Began executing node model.btc.whale_alerts
+[0m14:35:40.785798 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.whale_alerts"
+[0m14:35:40.787186 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m14:35:40.787485 [debug] [Thread-1 (]: On model.btc.whale_alerts: create or replace transient table btc.btc_prod.whale_alerts
+    
+    
+    
+    as (with  __dbt__cte__stg_btc_transactions as (
+
+
+select * 
+from btc.btc_prod.stg_btc_outputs 
+where is_coinbase = false
+), whales as (
+    select
+    output_address,
+    sum(output_value) as total_sent,
+    count(*) as transaction_count
+
+from __dbt__cte__stg_btc_transactions
+
+where output_value > 10
+
+group by output_address
+order by total_sent desc
+
+),
+latest_price as (
+    select price
+    from btc.btc_prod.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) = current_date()
+)
+
+select wh.output_address,
+wh.total_sent,
+wh.transaction_count,
+
+
+wh.total_sent * (
+    select price
+    from btc.btc_prod.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) >= current_date()
+)
+
+ as usd_value
+from whales wh
+cross join latest_price lp
+order by wh.total_sent desc
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "production", "node_id": "model.btc.whale_alerts"} */;
+[0m14:35:41.828621 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.041 seconds
+[0m14:35:41.831349 [info ] [Thread-1 (]: 3 of 3 OK created sql table model btc_prod.whale_alerts ........................ [[32mSUCCESS 1[0m in 1.08s]
+[0m14:35:41.832003 [debug] [Thread-1 (]: Finished running node model.btc.whale_alerts
+[0m14:35:41.833258 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:35:41.833617 [debug] [MainThread]: Connection 'model.btc.whale_alerts' was left open.
+[0m14:35:41.833919 [debug] [MainThread]: On model.btc.whale_alerts: Close
+[0m14:35:41.938310 [info ] [MainThread]: 
+[0m14:35:41.939056 [info ] [MainThread]: Finished running 2 incremental models, 1 table model in 0 hours 0 minutes and 6.09 seconds (6.09s).
+[0m14:35:41.940431 [debug] [MainThread]: Command end result
+[0m14:35:41.966887 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m14:35:41.973410 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m14:35:41.983996 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m14:35:41.984363 [info ] [MainThread]: 
+[0m14:35:41.987923 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:35:41.988961 [info ] [MainThread]: 
+[0m14:35:41.989861 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m14:35:41.993756 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.6453443, "process_in_blocks": "0", "process_kernel_time": 0.244936, "process_mem_max_rss": "166510592", "process_out_blocks": "0", "process_user_time": 1.6715}
+[0m14:35:41.994634 [debug] [MainThread]: Command `dbt run` succeeded at 14:35:41.994515 after 6.65 seconds
+[0m14:35:41.995338 [debug] [MainThread]: Flushing usage events
