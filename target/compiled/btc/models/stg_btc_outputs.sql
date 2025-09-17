@@ -1,13 +1,17 @@
+<<<<<<< HEAD
 -- including incremental logic to only load new data
 
 
 with flattened as (
+=======
+>>>>>>> main
 select
     t.hashkey,
     t.block_number,
     t.block_timestamp,
     t.is_coinbase,
     op.value:value::FLOAT as output_value,
+<<<<<<< HEAD
     op.value:address::STRING as output_address 
 
 from btc.btc_schema.stg_btc as t,
@@ -25,3 +29,9 @@ select hashkey,
     output_value,
     output_address
 from flattened
+=======
+    op.value:address::STRING as out_address 
+
+from btc.btc_schema.stg_btc as t,
+lateral flatten(input => t.outputs) as op
+>>>>>>> main

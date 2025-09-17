@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"_invocation_id": "f578bbea-6cce-4b82-8888-dbbd249b08b7", "linked": {"0": {"name": "source.btc.btc.btc", "type": "source", "succ": [3]}, "1": {"name": "model.btc.stg_btc_transactions", "type": "model", "succ": [7]}, "2": {"name": "model.btc.stg_btc_outputs", "type": "model", "succ": [1]}, "3": {"name": "model.btc.stg_btc", "type": "model", "succ": [2, 4, 5]}, "4": {"name": "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f", "type": "test"}, "5": {"name": "test.btc.not_null_stg_btc_HASHKEY.f1464799d5", "type": "test"}, "6": {"name": "seed.btc.btc_usd_max", "type": "seed", "succ": [7]}, "7": {"name": "model.btc.whale_alerts", "type": "model"}}}
+=======
+{"_invocation_id": "eee86515-50c9-418b-8473-ae921213050e", "linked": {"0": {"name": "source.btc.btc.btc", "type": "source", "succ": [1]}, "1": {"name": "model.btc.stg_btc", "type": "model", "succ": [2, 3, 4]}, "2": {"name": "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f", "type": "test"}, "3": {"name": "test.btc.not_null_stg_btc_HASHKEY.f1464799d5", "type": "test"}, "4": {"name": "model.btc.stg_btc_outputs", "type": "model"}}}
+>>>>>>> main

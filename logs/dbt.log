@@ -1871,6 +1871,7 @@ parsing.
 [0m13:02:48.818617 [debug] [MainThread]: Connection 'debug' was left open.
 [0m13:02:48.819032 [debug] [MainThread]: On debug: Close
 [0m13:02:48.914908 [debug] [MainThread]: Flushing usage events
+<<<<<<< HEAD
 [0m13:24:06.332169 [debug] [MainThread]: Got an exception trying to initialize tracking
 
 
@@ -3506,3 +3507,5 @@ order by wh.total_sent desc
 [0m14:04:05.854350 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.176638, "process_in_blocks": "0", "process_kernel_time": 0.222167, "process_mem_max_rss": "165068800", "process_out_blocks": "0", "process_user_time": 1.443177}
 [0m14:04:05.854710 [debug] [MainThread]: Command `dbt run` succeeded at 14:04:05.854647 after 5.18 seconds
 [0m14:04:05.854971 [debug] [MainThread]: Flushing usage events
+=======
+>>>>>>> main
