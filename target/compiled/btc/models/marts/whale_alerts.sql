@@ -2,7 +2,7 @@ with  __dbt__cte__stg_btc_transactions as (
 
 
 select * 
-from btc.btc_schema.stg_btc_outputs 
+from btc.btc_prod.stg_btc_outputs 
 where is_coinbase = false
 ), whales as (
     select
@@ -20,7 +20,7 @@ order by total_sent desc
 ),
 latest_price as (
     select price
-    from btc.btc_schema.btc_usd_max
+    from btc.btc_prod.btc_usd_max
     where to_date(replace(snapped_at, ' UTC', '')) = current_date()
 )
 
@@ -31,7 +31,7 @@ wh.transaction_count,
 
 wh.total_sent * (
     select price
-    from btc.btc_schema.btc_usd_max
+    from btc.btc_prod.btc_usd_max
     where to_date(replace(snapped_at, ' UTC', '')) >= current_date()
 )
 
