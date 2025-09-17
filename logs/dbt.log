@@ -4360,3 +4360,734 @@ order by wh.total_sent desc
 [0m14:35:41.993756 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.6453443, "process_in_blocks": "0", "process_kernel_time": 0.244936, "process_mem_max_rss": "166510592", "process_out_blocks": "0", "process_user_time": 1.6715}
 [0m14:35:41.994634 [debug] [MainThread]: Command `dbt run` succeeded at 14:35:41.994515 after 6.65 seconds
 [0m14:35:41.995338 [debug] [MainThread]: Flushing usage events
+[0m17:32:41.748403 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:32:41.765554 | ffcaa8e9-ce3c-4857-a2e4-ac8e022c4c31 ==============================
+[0m17:32:41.765554 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:32:41.766107 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/mac/.dbt', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'quiet': 'False', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'empty': 'False', 'debug': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'log_format': 'default', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'write_json': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs'}
+[0m17:32:49.769984 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m17:32:49.854192 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 1 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+[0m17:32:49.856750 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 8.134762, "process_in_blocks": "0", "process_kernel_time": 0.293453, "process_mem_max_rss": "176046080", "process_out_blocks": "0", "process_user_time": 1.297481}
+[0m17:32:49.857288 [debug] [MainThread]: Command `dbt run` failed at 17:32:49.857234 after 8.14 seconds
+[0m17:32:49.857542 [debug] [MainThread]: Flushing usage events
+[0m17:33:05.960701 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:33:05.971731 | eeb0bd18-2938-4ddc-a9f5-de46f283450c ==============================
+[0m17:33:05.971731 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:33:05.972293 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'version_check': 'True', 'profiles_dir': '/Users/mac/.dbt', 'quiet': 'False', 'static_parser': 'True', 'invocation_command': 'dbt deps', 'log_format': 'default', 'empty': 'None', 'printer_width': '80', 'debug': 'False', 'fail_fast': 'False', 'no_print': 'None', 'write_json': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'partial_parse': 'True'}
+[0m17:33:06.111578 [debug] [MainThread]: Set downloads directory='/var/folders/yt/m6lpgwx11h3dm6844cq8ssqr0000gn/T/dbt-downloads-u4tvmt3b'
+[0m17:33:06.112258 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m17:33:06.326756 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m17:33:06.327976 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m17:33:06.456296 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m17:33:06.473619 [info ] [MainThread]: Updating lock file in file path: /Users/mac/Desktop/DE2025/btc/package-lock.yml
+[0m17:33:06.476153 [debug] [MainThread]: Set downloads directory='/var/folders/yt/m6lpgwx11h3dm6844cq8ssqr0000gn/T/dbt-downloads-g7qne4p4'
+[0m17:33:06.479353 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m17:33:06.918598 [info ] [MainThread]: Installed from version 1.3.1
+[0m17:33:06.919067 [info ] [MainThread]: Up to date!
+[0m17:33:06.921431 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.9868995, "process_in_blocks": "0", "process_kernel_time": 0.202986, "process_mem_max_rss": "116899840", "process_out_blocks": "0", "process_user_time": 0.848764}
+[0m17:33:06.921946 [debug] [MainThread]: Command `dbt deps` succeeded at 17:33:06.921872 after 0.99 seconds
+[0m17:33:06.922216 [debug] [MainThread]: Flushing usage events
+[0m17:36:18.861540 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:36:18.875020 | c82112e7-f1d6-4673-aa6f-c55d7067fb93 ==============================
+[0m17:36:18.875020 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:36:18.875638 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'no_print': 'None', 'version_check': 'True', 'introspect': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt docs generate', 'indirect_selection': 'eager', 'log_format': 'default', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'target_path': 'None', 'use_colors': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'profiles_dir': '/Users/mac/.dbt', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'printer_width': '80', 'write_json': 'True', 'quiet': 'False'}
+[0m17:36:19.388445 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m17:36:19.484132 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:36:19.543134 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m17:36:19.543417 [debug] [MainThread]: previous checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, current checksum: 6e971fb8f28f41d820cb7f06b169a74aff7bfe6a0f8ef8a3f3d3ce2d4daff49b
+[0m17:36:19.543592 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m17:36:19.543754 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m17:36:20.410773 [info ] [MainThread]: Found 4 models, 1 seed, 2 data tests, 1 source, 596 macros
+[0m17:36:20.411850 [info ] [MainThread]: 
+[0m17:36:20.412065 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:36:20.412234 [info ] [MainThread]: 
+[0m17:36:20.412488 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:36:20.414944 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc_btc_schema'
+[0m17:36:20.450323 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m17:36:20.450579 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m17:36:20.450747 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:36:24.590396 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 4.139 seconds
+[0m17:36:24.598418 [debug] [Thread-1 (]: Began running node model.btc.stg_btc
+[0m17:36:24.599210 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.stg_btc)
+[0m17:36:24.599695 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc
+[0m17:36:24.611615 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc"
+[0m17:36:24.612490 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc
+[0m17:36:24.613136 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc
+[0m17:36:24.613507 [debug] [Thread-1 (]: Began running node seed.btc.btc_usd_max
+[0m17:36:24.613965 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc, now seed.btc.btc_usd_max)
+[0m17:36:24.614294 [debug] [Thread-1 (]: Began compiling node seed.btc.btc_usd_max
+[0m17:36:24.617433 [debug] [Thread-1 (]: Began executing node seed.btc.btc_usd_max
+[0m17:36:24.617985 [debug] [Thread-1 (]: Finished running node seed.btc.btc_usd_max
+[0m17:36:24.618325 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_outputs
+[0m17:36:24.618675 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.btc.btc_usd_max, now model.btc.stg_btc_outputs)
+[0m17:36:24.618986 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_outputs
+[0m17:36:24.622147 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_outputs"
+[0m17:36:24.622721 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc_outputs
+[0m17:36:24.623209 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_outputs
+[0m17:36:24.623524 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m17:36:24.623916 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_outputs, now test.btc.not_null_stg_btc_HASHKEY.f1464799d5)
+[0m17:36:24.624289 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m17:36:24.633077 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc_HASHKEY.f1464799d5"
+[0m17:36:24.633627 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m17:36:24.634084 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m17:36:24.634376 [debug] [Thread-1 (]: Began running node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m17:36:24.634740 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc_HASHKEY.f1464799d5, now test.btc.unique_stg_btc_HASHKEY.3bc82edb0f)
+[0m17:36:24.635062 [debug] [Thread-1 (]: Began compiling node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m17:36:24.639393 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f"
+[0m17:36:24.639888 [debug] [Thread-1 (]: Began executing node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m17:36:24.640310 [debug] [Thread-1 (]: Finished running node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m17:36:24.640578 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_transactions
+[0m17:36:24.640863 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.unique_stg_btc_HASHKEY.3bc82edb0f, now model.btc.stg_btc_transactions)
+[0m17:36:24.641113 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_transactions
+[0m17:36:24.642994 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_transactions"
+[0m17:36:24.643562 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_transactions
+[0m17:36:24.643958 [debug] [Thread-1 (]: Began running node model.btc.whale_alerts
+[0m17:36:24.644274 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_transactions, now model.btc.whale_alerts)
+[0m17:36:24.644522 [debug] [Thread-1 (]: Began compiling node model.btc.whale_alerts
+[0m17:36:24.650447 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m17:36:24.650881 [debug] [Thread-1 (]: Began executing node model.btc.whale_alerts
+[0m17:36:24.651274 [debug] [Thread-1 (]: Finished running node model.btc.whale_alerts
+[0m17:36:24.651778 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:36:24.651977 [debug] [MainThread]: Connection 'model.btc.whale_alerts' was left open.
+[0m17:36:24.652171 [debug] [MainThread]: On model.btc.whale_alerts: Close
+[0m17:36:24.769285 [debug] [MainThread]: Command end result
+[0m17:36:24.857487 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m17:36:24.859411 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m17:36:24.863647 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m17:36:24.866352 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m17:36:24.866649 [info ] [MainThread]: Building catalog
+[0m17:36:24.871854 [debug] [ThreadPool]: Acquiring new snowflake connection 'btc.information_schema'
+[0m17:36:24.880454 [debug] [ThreadPool]: Using snowflake connection "btc.information_schema"
+[0m17:36:24.880845 [debug] [ThreadPool]: On btc.information_schema: with tables as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+        case
+            when is_dynamic = 'YES' and table_type = 'BASE TABLE' THEN 'DYNAMIC TABLE'
+            else table_type
+        end as "table_type",
+        comment as "table_comment",
+
+        -- note: this is the _role_ that owns the table
+        table_owner as "table_owner",
+
+        'Clustering Key' as "stats:clustering_key:label",
+        clustering_key as "stats:clustering_key:value",
+        'The key used to cluster this table' as "stats:clustering_key:description",
+        (clustering_key is not null) as "stats:clustering_key:include",
+
+        'Row Count' as "stats:row_count:label",
+        row_count as "stats:row_count:value",
+        'An approximate count of rows in this table' as "stats:row_count:description",
+        (row_count is not null) as "stats:row_count:include",
+
+        'Approximate Size' as "stats:bytes:label",
+        bytes as "stats:bytes:value",
+        'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+        (bytes is not null) as "stats:bytes:include",
+
+        'Last Modified' as "stats:last_modified:label",
+        to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+        'The timestamp for last update/change' as "stats:last_modified:description",
+        (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+    from btc.INFORMATION_SCHEMA.tables
+            where (
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'btc_usd_max' and upper("table_name") = upper('btc_usd_max')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'whale_alerts' and upper("table_name") = upper('whale_alerts')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'btc' and upper("table_name") = upper('btc')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'stg_btc' and upper("table_name") = upper('stg_btc')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'stg_btc_outputs' and upper("table_name") = upper('stg_btc_outputs')
+
+                )
+            )
+        ),
+        columns as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+
+        column_name as "column_name",
+        ordinal_position as "column_index",
+        data_type as "column_type",
+        comment as "column_comment"
+    from btc.INFORMATION_SCHEMA.columns
+            where (
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'btc_usd_max' and upper("table_name") = upper('btc_usd_max')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'whale_alerts' and upper("table_name") = upper('whale_alerts')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'btc' and upper("table_name") = upper('btc')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'stg_btc' and upper("table_name") = upper('stg_btc')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'stg_btc_outputs' and upper("table_name") = upper('stg_btc_outputs')
+
+                )
+            )
+        )
+        select *
+    from tables
+    join columns using ("table_database", "table_schema", "table_name")
+    order by "column_index"
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "btc.information_schema"} */
+[0m17:36:24.881285 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:36:28.793054 [debug] [ThreadPool]: SQL status: SUCCESS 34 in 3.912 seconds
+[0m17:36:28.818811 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/mac/Desktop/DE2025/btc/target/catalog.json
+[0m17:36:28.837120 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m17:36:28.838543 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m17:36:28.838761 [info ] [MainThread]: Catalog written to /Users/mac/Desktop/DE2025/btc/target/catalog.json
+[0m17:36:28.841810 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 10.007395, "process_in_blocks": "0", "process_kernel_time": 0.396323, "process_mem_max_rss": "218906624", "process_out_blocks": "0", "process_user_time": 2.743184}
+[0m17:36:28.842191 [debug] [MainThread]: Command `dbt docs generate` succeeded at 17:36:28.842130 after 10.01 seconds
+[0m17:36:28.842415 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m17:36:28.842587 [debug] [MainThread]: Connection 'btc.information_schema' was left open.
+[0m17:36:28.842765 [debug] [MainThread]: On btc.information_schema: Close
+[0m17:36:28.929028 [debug] [MainThread]: Flushing usage events
+[0m17:38:05.780631 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:38:05.793155 | 9e95517e-49f2-486e-9d15-69d1f8d94c23 ==============================
+[0m17:38:05.793155 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:38:05.793674 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'partial_parse': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'use_experimental_parser': 'False', 'version_check': 'True', 'fail_fast': 'False', 'profiles_dir': '/Users/mac/.dbt', 'cache_selected_only': 'False', 'introspect': 'True', 'empty': 'None', 'quiet': 'False', 'invocation_command': 'dbt docs serve', 'target_path': 'None', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'write_json': 'True', 'printer_width': '80', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'static_parser': 'True'}
+[0m17:38:06.526774 [error] [MainThread]: Encountered an error:
+[Errno 48] Address already in use
+[0m17:38:06.529523 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/task/docs/serve.py", line 24, in run
+    with socketserver.TCPServer((host, port), SimpleHTTPRequestHandler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.0/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/Users/mac/.pyenv/versions/3.12.0/lib/python3.12/socketserver.py", line 473, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
+
+[0m17:38:06.532498 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 0.77883524, "process_in_blocks": "0", "process_kernel_time": 0.191082, "process_mem_max_rss": "174882816", "process_out_blocks": "0", "process_user_time": 1.067122}
+[0m17:38:06.533465 [debug] [MainThread]: Command `dbt docs serve` failed at 17:38:06.533379 after 0.78 seconds
+[0m17:38:06.533793 [debug] [MainThread]: Flushing usage events
+[0m17:40:10.518327 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:40:10.532810 | 70b82ccc-9a1e-4f88-8e98-b800f5e547af ==============================
+[0m17:40:10.532810 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:40:10.533336 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'empty': 'None', 'warn_error': 'None', 'profiles_dir': '/Users/mac/.dbt', 'quiet': 'False', 'version_check': 'True', 'log_cache_events': 'False', 'use_colors': 'True', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'invocation_command': 'dbt docs serve', 'fail_fast': 'False', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'use_experimental_parser': 'False', 'write_json': 'True', 'introspect': 'True', 'debug': 'False', 'partial_parse': 'True', 'printer_width': '80'}
+[0m17:40:11.242913 [error] [MainThread]: Encountered an error:
+[Errno 48] Address already in use
+[0m17:40:11.246132 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/task/docs/serve.py", line 24, in run
+    with socketserver.TCPServer((host, port), SimpleHTTPRequestHandler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.0/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/Users/mac/.pyenv/versions/3.12.0/lib/python3.12/socketserver.py", line 473, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
+
+[0m17:40:11.249524 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 0.7577448, "process_in_blocks": "0", "process_kernel_time": 0.196193, "process_mem_max_rss": "175046656", "process_out_blocks": "0", "process_user_time": 1.067812}
+[0m17:40:11.250362 [debug] [MainThread]: Command `dbt docs serve` failed at 17:40:11.250288 after 0.76 seconds
+[0m17:40:11.250672 [debug] [MainThread]: Flushing usage events
+[0m17:41:02.406926 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:41:02.418117 | 7b3a44ed-ef55-4699-99cf-f0465ab98bac ==============================
+[0m17:41:02.418117 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:41:02.418628 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt docs serve', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'log_cache_events': 'False', 'debug': 'False', 'use_colors': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'empty': 'None', 'quiet': 'False', 'profiles_dir': '/Users/mac/.dbt', 'write_json': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'no_print': 'None', 'static_parser': 'True', 'log_format': 'default'}
+[0m17:41:02.962551 [error] [MainThread]: Encountered an error:
+[Errno 48] Address already in use
+[0m17:41:02.964359 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/task/docs/serve.py", line 24, in run
+    with socketserver.TCPServer((host, port), SimpleHTTPRequestHandler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.0/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/Users/mac/.pyenv/versions/3.12.0/lib/python3.12/socketserver.py", line 473, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
+
+[0m17:41:02.967067 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 0.5866012, "process_in_blocks": "0", "process_kernel_time": 0.160853, "process_mem_max_rss": "176209920", "process_out_blocks": "0", "process_user_time": 1.061417}
+[0m17:41:02.967906 [debug] [MainThread]: Command `dbt docs serve` failed at 17:41:02.967831 after 0.59 seconds
+[0m17:41:02.968243 [debug] [MainThread]: Flushing usage events
+[0m17:41:36.699323 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:41:36.713248 | 148f86e4-2aec-49bc-8ec4-e70ff19931b7 ==============================
+[0m17:41:36.713248 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:41:36.713876 [debug] [MainThread]: running dbt with arguments {'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'invocation_command': 'dbt docs serve', 'target_path': 'None', 'printer_width': '80', 'log_cache_events': 'False', 'profiles_dir': '/Users/mac/.dbt', 'log_format': 'default', 'quiet': 'False', 'version_check': 'True', 'no_print': 'None', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'debug': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'static_parser': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True', 'write_json': 'True'}
+[0m17:41:37.446116 [error] [MainThread]: Encountered an error:
+[Errno 48] Address already in use
+[0m17:41:37.449039 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/task/docs/serve.py", line 24, in run
+    with socketserver.TCPServer((host, port), SimpleHTTPRequestHandler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.0/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/Users/mac/.pyenv/versions/3.12.0/lib/python3.12/socketserver.py", line 473, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
+
+[0m17:41:37.452270 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 0.7802713, "process_in_blocks": "0", "process_kernel_time": 0.207411, "process_mem_max_rss": "176226304", "process_out_blocks": "0", "process_user_time": 1.068675}
+[0m17:41:37.453054 [debug] [MainThread]: Command `dbt docs serve` failed at 17:41:37.452986 after 0.78 seconds
+[0m17:41:37.453353 [debug] [MainThread]: Flushing usage events
+[0m17:42:53.096531 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:42:53.109094 | 6a03507e-3b04-465c-8f51-a6c20f247640 ==============================
+[0m17:42:53.109094 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:42:53.109633 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'static_parser': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'profiles_dir': '/Users/mac/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False', 'empty': 'None', 'invocation_command': 'dbt docs generate', 'warn_error': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'no_print': 'None', 'partial_parse': 'True', 'write_json': 'True'}
+[0m17:42:53.673615 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m17:42:53.765663 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:42:53.848515 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:42:53.848745 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:42:53.887589 [info ] [MainThread]: Found 4 models, 1 seed, 2 data tests, 1 source, 596 macros
+[0m17:42:53.888603 [info ] [MainThread]: 
+[0m17:42:53.888822 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:42:53.888989 [info ] [MainThread]: 
+[0m17:42:53.889254 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:42:53.891420 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc_btc_schema'
+[0m17:42:53.927008 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m17:42:53.927235 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m17:42:53.927399 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:42:57.197630 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 3.270 seconds
+[0m17:42:57.206424 [debug] [Thread-1 (]: Began running node model.btc.stg_btc
+[0m17:42:57.207182 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.stg_btc)
+[0m17:42:57.207682 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc
+[0m17:42:57.228856 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc"
+[0m17:42:57.229682 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc
+[0m17:42:57.230304 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc
+[0m17:42:57.230650 [debug] [Thread-1 (]: Began running node seed.btc.btc_usd_max
+[0m17:42:57.231092 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc, now seed.btc.btc_usd_max)
+[0m17:42:57.231437 [debug] [Thread-1 (]: Began compiling node seed.btc.btc_usd_max
+[0m17:42:57.233056 [debug] [Thread-1 (]: Began executing node seed.btc.btc_usd_max
+[0m17:42:57.233564 [debug] [Thread-1 (]: Finished running node seed.btc.btc_usd_max
+[0m17:42:57.233868 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_outputs
+[0m17:42:57.234182 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.btc.btc_usd_max, now model.btc.stg_btc_outputs)
+[0m17:42:57.234452 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_outputs
+[0m17:42:57.237348 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_outputs"
+[0m17:42:57.237895 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc_outputs
+[0m17:42:57.238366 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_outputs
+[0m17:42:57.238650 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m17:42:57.238984 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_outputs, now test.btc.not_null_stg_btc_HASHKEY.f1464799d5)
+[0m17:42:57.239294 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m17:42:57.247602 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc_HASHKEY.f1464799d5"
+[0m17:42:57.248137 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m17:42:57.248554 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc_HASHKEY.f1464799d5
+[0m17:42:57.248813 [debug] [Thread-1 (]: Began running node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m17:42:57.249085 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc_HASHKEY.f1464799d5, now test.btc.unique_stg_btc_HASHKEY.3bc82edb0f)
+[0m17:42:57.249319 [debug] [Thread-1 (]: Began compiling node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m17:42:57.253201 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.unique_stg_btc_HASHKEY.3bc82edb0f"
+[0m17:42:57.253646 [debug] [Thread-1 (]: Began executing node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m17:42:57.254029 [debug] [Thread-1 (]: Finished running node test.btc.unique_stg_btc_HASHKEY.3bc82edb0f
+[0m17:42:57.254278 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_transactions
+[0m17:42:57.254523 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.unique_stg_btc_HASHKEY.3bc82edb0f, now model.btc.stg_btc_transactions)
+[0m17:42:57.254741 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_transactions
+[0m17:42:57.256624 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_transactions"
+[0m17:42:57.257136 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_transactions
+[0m17:42:57.257557 [debug] [Thread-1 (]: Began running node model.btc.whale_alerts
+[0m17:42:57.257827 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_transactions, now model.btc.whale_alerts)
+[0m17:42:57.258060 [debug] [Thread-1 (]: Began compiling node model.btc.whale_alerts
+[0m17:42:57.264436 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m17:42:57.264855 [debug] [Thread-1 (]: Began executing node model.btc.whale_alerts
+[0m17:42:57.265235 [debug] [Thread-1 (]: Finished running node model.btc.whale_alerts
+[0m17:42:57.265701 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:42:57.265907 [debug] [MainThread]: Connection 'model.btc.whale_alerts' was left open.
+[0m17:42:57.266111 [debug] [MainThread]: On model.btc.whale_alerts: Close
+[0m17:42:57.391284 [debug] [MainThread]: Command end result
+[0m17:42:57.528202 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m17:42:57.530609 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m17:42:57.534471 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m17:42:57.537478 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m17:42:57.537677 [info ] [MainThread]: Building catalog
+[0m17:42:57.542374 [debug] [ThreadPool]: Acquiring new snowflake connection 'btc.information_schema'
+[0m17:42:57.550733 [debug] [ThreadPool]: Using snowflake connection "btc.information_schema"
+[0m17:42:57.551145 [debug] [ThreadPool]: On btc.information_schema: with tables as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+        case
+            when is_dynamic = 'YES' and table_type = 'BASE TABLE' THEN 'DYNAMIC TABLE'
+            else table_type
+        end as "table_type",
+        comment as "table_comment",
+
+        -- note: this is the _role_ that owns the table
+        table_owner as "table_owner",
+
+        'Clustering Key' as "stats:clustering_key:label",
+        clustering_key as "stats:clustering_key:value",
+        'The key used to cluster this table' as "stats:clustering_key:description",
+        (clustering_key is not null) as "stats:clustering_key:include",
+
+        'Row Count' as "stats:row_count:label",
+        row_count as "stats:row_count:value",
+        'An approximate count of rows in this table' as "stats:row_count:description",
+        (row_count is not null) as "stats:row_count:include",
+
+        'Approximate Size' as "stats:bytes:label",
+        bytes as "stats:bytes:value",
+        'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+        (bytes is not null) as "stats:bytes:include",
+
+        'Last Modified' as "stats:last_modified:label",
+        to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+        'The timestamp for last update/change' as "stats:last_modified:description",
+        (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+    from btc.INFORMATION_SCHEMA.tables
+            where (
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'whale_alerts' and upper("table_name") = upper('whale_alerts')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'btc_usd_max' and upper("table_name") = upper('btc_usd_max')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'stg_btc_outputs' and upper("table_name") = upper('stg_btc_outputs')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'btc' and upper("table_name") = upper('btc')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'stg_btc' and upper("table_name") = upper('stg_btc')
+
+                )
+            )
+        ),
+        columns as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+
+        column_name as "column_name",
+        ordinal_position as "column_index",
+        data_type as "column_type",
+        comment as "column_comment"
+    from btc.INFORMATION_SCHEMA.columns
+            where (
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'whale_alerts' and upper("table_name") = upper('whale_alerts')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'btc_usd_max' and upper("table_name") = upper('btc_usd_max')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'stg_btc_outputs' and upper("table_name") = upper('stg_btc_outputs')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'btc' and upper("table_name") = upper('btc')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'btc_schema' and upper("table_schema") = upper('btc_schema')
+
+                    and 
+    "table_name" ilike 'stg_btc' and upper("table_name") = upper('stg_btc')
+
+                )
+            )
+        )
+        select *
+    from tables
+    join columns using ("table_database", "table_schema", "table_name")
+    order by "column_index"
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "btc.information_schema"} */
+[0m17:42:57.551438 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:43:04.200342 [debug] [ThreadPool]: SQL status: SUCCESS 34 in 6.649 seconds
+[0m17:43:04.233654 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/mac/Desktop/DE2025/btc/target/catalog.json
+[0m17:43:04.252733 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m17:43:04.253960 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m17:43:04.254181 [info ] [MainThread]: Catalog written to /Users/mac/Desktop/DE2025/btc/target/catalog.json
+[0m17:43:04.257176 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 11.187336, "process_in_blocks": "0", "process_kernel_time": 0.312989, "process_mem_max_rss": "209649664", "process_out_blocks": "0", "process_user_time": 1.847274}
+[0m17:43:04.257553 [debug] [MainThread]: Command `dbt docs generate` succeeded at 17:43:04.257494 after 11.19 seconds
+[0m17:43:04.257787 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m17:43:04.257975 [debug] [MainThread]: Connection 'btc.information_schema' was left open.
+[0m17:43:04.258162 [debug] [MainThread]: On btc.information_schema: Close
+[0m17:43:04.336912 [debug] [MainThread]: Flushing usage events
+[0m17:43:17.132494 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:43:17.145542 | 476403e2-c985-4271-ae47-2b4df4bc4bd6 ==============================
+[0m17:43:17.145542 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:43:17.146119 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'target_path': 'None', 'invocation_command': 'dbt docs serve', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'warn_error': 'None', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'debug': 'False', 'partial_parse': 'True', 'printer_width': '80', 'no_print': 'None', 'fail_fast': 'False', 'empty': 'None', 'use_colors': 'True', 'profiles_dir': '/Users/mac/.dbt', 'write_json': 'True', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'log_cache_events': 'False'}
+[0m17:43:17.796417 [error] [MainThread]: Encountered an error:
+[Errno 48] Address already in use
+[0m17:43:17.801654 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/task/docs/serve.py", line 24, in run
+    with socketserver.TCPServer((host, port), SimpleHTTPRequestHandler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.0/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/Users/mac/.pyenv/versions/3.12.0/lib/python3.12/socketserver.py", line 473, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
+
+[0m17:43:17.805988 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 0.71039426, "process_in_blocks": "0", "process_kernel_time": 0.171316, "process_mem_max_rss": "175308800", "process_out_blocks": "0", "process_user_time": 1.074209}
+[0m17:43:17.807889 [debug] [MainThread]: Command `dbt docs serve` failed at 17:43:17.807433 after 0.71 seconds
+[0m17:43:17.808615 [debug] [MainThread]: Flushing usage events
+[0m17:43:59.729204 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:43:59.741546 | eff951da-d790-4ea0-9f7c-3f64a422d66f ==============================
+[0m17:43:59.741546 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:43:59.742097 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'empty': 'None', 'quiet': 'False', 'printer_width': '80', 'fail_fast': 'False', 'use_colors': 'True', 'static_parser': 'True', 'profiles_dir': '/Users/mac/.dbt', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'invocation_command': 'dbt docs serve --port 8081', 'log_format': 'default', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'no_print': 'None', 'version_check': 'True', 'write_json': 'True', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'target_path': 'None'}
+[0m17:46:00.415350 [error] [MainThread]: Encountered an error:
+
+[0m17:46:00.423703 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/mac/Desktop/DE2025/btc/venv/lib/python3.12/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/Users/mac/.pyenv/versions/3.12.0/lib/python3.12/socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.0/lib/python3.12/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m17:46:00.430501 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 120.727005, "process_in_blocks": "0", "process_kernel_time": 0.176999, "process_mem_max_rss": "175390720", "process_out_blocks": "0", "process_user_time": 1.08315}
+[0m17:46:00.432383 [debug] [MainThread]: Command `dbt docs serve` failed at 17:46:00.432185 after 120.73 seconds
+[0m17:46:00.433005 [debug] [MainThread]: Flushing usage events

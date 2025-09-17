@@ -10,13 +10,13 @@ select
     op.value:value::FLOAT as output_value,
     op.value:address::STRING as output_address 
 
-from btc.btc_prod.stg_btc as t,
+from btc.btc_schema.stg_btc as t,
 lateral flatten(input => t.outputs) as op
 where op.value is not null
 
 
 
-    and t.block_timestamp > (select max(block_timestamp) from btc.btc_prod.stg_btc_outputs)
+    and t.block_timestamp > (select max(block_timestamp) from btc.btc_schema.stg_btc_outputs)
 
 
 )
