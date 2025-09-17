@@ -5,5 +5,5 @@ select * from btc.btc_schema.btc
 
 
 
-    where block_timestamp > (select max(block_timestamp) from btc.btc_prod.stg_btc)
+    where block_timestamp > (select max(block_timestamp) from btc.btc_schema.stg_btc)
 
