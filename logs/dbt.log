@@ -5091,3 +5091,37 @@ KeyboardInterrupt
 [0m17:46:00.430501 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 120.727005, "process_in_blocks": "0", "process_kernel_time": 0.176999, "process_mem_max_rss": "175390720", "process_out_blocks": "0", "process_user_time": 1.08315}
 [0m17:46:00.432383 [debug] [MainThread]: Command `dbt docs serve` failed at 17:46:00.432185 after 120.73 seconds
 [0m17:46:00.433005 [debug] [MainThread]: Flushing usage events
+[0m15:00:30.143401 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:00:30.155778 | fb3fa988-a698-4cb5-8aa4-913c55595b96 ==============================
+[0m15:00:30.155778 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:00:30.156363 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'write_json': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'version_check': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'static_parser': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'target_path': 'None', 'printer_width': '80', 'profiles_dir': '/Users/mac/.dbt', 'no_print': 'None', 'empty': 'None', 'introspect': 'True', 'cache_selected_only': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False'}
+[0m15:00:30.254155 [debug] [MainThread]: Set downloads directory='/var/folders/yt/m6lpgwx11h3dm6844cq8ssqr0000gn/T/dbt-downloads-x1y_3xvs'
+[0m15:00:30.254485 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:00:30.551410 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:00:30.552195 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:00:30.638335 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:00:30.641209 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m15:00:31.120486 [info ] [MainThread]: Installed from version 1.3.1
+[0m15:00:31.120804 [info ] [MainThread]: Up to date!
+[0m15:00:31.131622 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.0180647, "process_in_blocks": "0", "process_kernel_time": 0.156881, "process_mem_max_rss": "117243904", "process_out_blocks": "0", "process_user_time": 0.866995}
+[0m15:00:31.132014 [debug] [MainThread]: Command `cli deps` succeeded at 15:00:31.131947 after 1.02 seconds
+[0m15:00:31.132227 [debug] [MainThread]: Flushing usage events
+[0m15:03:19.091845 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:03:19.103848 | e102eee6-79b5-4f7a-9806-195ec7c5efd6 ==============================
+[0m15:03:19.103848 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:03:19.104423 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'debug': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'version_check': 'True', 'no_print': 'None', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'use_colors': 'True', 'partial_parse': 'True', 'profiles_dir': '/Users/mac/.dbt', 'empty': 'None', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'invocation_command': 'dbt ', 'static_parser': 'True', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'indirect_selection': 'eager', 'target_path': 'None'}
+[0m15:03:19.195283 [debug] [MainThread]: Set downloads directory='/var/folders/yt/m6lpgwx11h3dm6844cq8ssqr0000gn/T/dbt-downloads-sh1s02gw'
+[0m15:03:19.195592 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:03:19.477872 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:03:19.479008 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:03:19.571131 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:03:19.574780 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m15:03:20.196270 [info ] [MainThread]: Installed from version 1.3.1
+[0m15:03:20.196675 [info ] [MainThread]: Up to date!
+[0m15:03:20.199375 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.1380336, "process_in_blocks": "0", "process_kernel_time": 0.181493, "process_mem_max_rss": "117538816", "process_out_blocks": "0", "process_user_time": 0.881859}
+[0m15:03:20.199748 [debug] [MainThread]: Command `cli deps` succeeded at 15:03:20.199686 after 1.14 seconds
+[0m15:03:20.199978 [debug] [MainThread]: Flushing usage events

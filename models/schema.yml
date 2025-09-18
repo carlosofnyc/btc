@@ -7,3 +7,9 @@ models:
         tests:
         - unique
         - not_null
+
+  - name: whale_alert
+    columns:
+      - name: OUTPUT_ADDRESS
+        datatests:
+        - btc_address_validity
