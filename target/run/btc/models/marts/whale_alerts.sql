@@ -2,15 +2,27 @@
   
     
 
-create or replace transient table btc.btc_prod.whale_alerts
+create or replace transient table btc.btc_schema.whale_alerts
+    
+  (
+    OUTPUT_ADDRESS TEXT,
+    TOTAL_SENT float,
+    TRANSACTION_COUNT integer,
+    USD_VALUE DOUBLE
+    
+    )
+
     
     
     
-    as (with  __dbt__cte__stg_btc_transactions as (
+    as (
+    select OUTPUT_ADDRESS, TOTAL_SENT, TRANSACTION_COUNT, USD_VALUE
+    from (
+        with  __dbt__cte__stg_btc_transactions as (
 
 
 select * 
-from btc.btc_prod.stg_btc_outputs 
+from btc.btc_schema.stg_btc_outputs 
 where is_coinbase = false
 ), whales as (
     select
@@ -28,7 +40,7 @@ order by total_sent desc
 ),
 latest_price as (
     select price
-    from btc.btc_prod.btc_usd_max
+    from btc.btc_schema.btc_usd_max
     where to_date(replace(snapped_at, ' UTC', '')) = current_date()
 )
 
@@ -39,7 +51,7 @@ wh.transaction_count,
 
 wh.total_sent * (
     select price
-    from btc.btc_prod.btc_usd_max
+    from btc.btc_schema.btc_usd_max
     where to_date(replace(snapped_at, ' UTC', '')) >= current_date()
 )
 
@@ -47,6 +59,7 @@ wh.total_sent * (
 from whales wh
 cross join latest_price lp
 order by wh.total_sent desc
+    ) as model_subq
     )
 ;
 

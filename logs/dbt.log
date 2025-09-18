@@ -5125,3 +5125,904 @@ KeyboardInterrupt
 [0m15:03:20.199375 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.1380336, "process_in_blocks": "0", "process_kernel_time": 0.181493, "process_mem_max_rss": "117538816", "process_out_blocks": "0", "process_user_time": 0.881859}
 [0m15:03:20.199748 [debug] [MainThread]: Command `cli deps` succeeded at 15:03:20.199686 after 1.14 seconds
 [0m15:03:20.199978 [debug] [MainThread]: Flushing usage events
+[0m15:30:25.450748 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:30:25.465383 | 5b252f46-3668-4293-8ac4-25bd4ad053f0 ==============================
+[0m15:30:25.465383 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:30:25.466157 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'log_cache_events': 'False', 'profiles_dir': '/Users/mac/.dbt', 'quiet': 'False', 'use_experimental_parser': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'fail_fast': 'False', 'printer_width': '80', 'partial_parse': 'True', 'write_json': 'True', 'version_check': 'True', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'target_path': 'None', 'debug': 'False', 'indirect_selection': 'eager', 'invocation_command': 'dbt test --select whale_alert', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'warn_error': 'None'}
+[0m15:30:25.982106 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m15:30:26.071882 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m15:30:26.156048 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m15:30:26.156387 [debug] [MainThread]: Partial parsing: added file: btc://tests/generic/crypto_utils.sql
+[0m15:30:26.156635 [debug] [MainThread]: Partial parsing: updated file: btc://models/schema.yml
+[0m15:30:26.196116 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'whale_alert' in the 'models' section of file 'models/schema.yml'
+[0m15:30:26.296890 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m15:30:26.298655 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m15:30:26.459457 [info ] [MainThread]: Found 4 models, 1 seed, 2 data tests, 1 source, 597 macros
+[0m15:30:26.459895 [warn ] [MainThread]: The selection criterion 'whale_alert' does not match any enabled nodes
+[0m15:30:26.460496 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:30:26.460792 [debug] [MainThread]: Command end result
+[0m15:30:26.511927 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m15:30:26.512996 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m15:30:26.514920 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m15:30:26.517661 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.0934136, "process_in_blocks": "0", "process_kernel_time": 0.246555, "process_mem_max_rss": "226623488", "process_out_blocks": "0", "process_user_time": 1.444332}
+[0m15:30:26.518051 [debug] [MainThread]: Command `dbt test` succeeded at 15:30:26.518002 after 1.09 seconds
+[0m15:30:26.518259 [debug] [MainThread]: Flushing usage events
+[0m15:32:05.035741 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:32:05.048664 | 5ff3ded4-4e88-4149-8608-2e4ed2d95c2d ==============================
+[0m15:32:05.048664 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:32:05.049224 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'no_print': 'None', 'profiles_dir': '/Users/mac/.dbt', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'target_path': 'None', 'printer_width': '80', 'use_colors': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'quiet': 'False', 'partial_parse': 'True', 'empty': 'None', 'introspect': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'invocation_command': 'dbt test --select whale_alerts', 'version_check': 'True', 'warn_error': 'None'}
+[0m15:32:05.578348 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m15:32:05.670748 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m15:32:05.752997 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:32:05.753242 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:32:05.829548 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m15:32:05.830818 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m15:32:05.845974 [info ] [MainThread]: Found 4 models, 1 seed, 2 data tests, 1 source, 597 macros
+[0m15:32:05.846742 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:32:05.847727 [debug] [MainThread]: Command end result
+[0m15:32:05.861260 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m15:32:05.862124 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m15:32:05.863672 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m15:32:05.866427 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.8571764, "process_in_blocks": "0", "process_kernel_time": 0.214607, "process_mem_max_rss": "182976512", "process_out_blocks": "0", "process_user_time": 1.295423}
+[0m15:32:05.866811 [debug] [MainThread]: Command `dbt test` succeeded at 15:32:05.866757 after 0.86 seconds
+[0m15:32:05.867023 [debug] [MainThread]: Flushing usage events
+[0m15:35:39.605104 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:35:39.620138 | d73ac6dd-f4dd-4fa6-b422-c6dd5467ea10 ==============================
+[0m15:35:39.620138 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:35:39.620716 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'empty': 'None', 'use_experimental_parser': 'False', 'target_path': 'None', 'cache_selected_only': 'False', 'static_parser': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'quiet': 'False', 'no_print': 'None', 'fail_fast': 'False', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'use_colors': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'profiles_dir': '/Users/mac/.dbt', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt test --select whale_alerts', 'introspect': 'True', 'write_json': 'True'}
+[0m15:35:40.134395 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m15:35:40.226287 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m15:35:40.311315 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:35:40.311700 [debug] [MainThread]: Partial parsing: updated file: btc://models/schema.yml
+[0m15:35:40.492922 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m15:35:40.494403 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m15:35:40.549074 [info ] [MainThread]: Found 4 models, 1 seed, 3 data tests, 1 source, 597 macros
+[0m15:35:40.549980 [info ] [MainThread]: 
+[0m15:35:40.550199 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:35:40.550372 [info ] [MainThread]: 
+[0m15:35:40.550647 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:35:40.553091 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc_btc_schema'
+[0m15:35:40.589060 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m15:35:40.589306 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m15:35:40.589474 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:35:43.589588 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 3.000 seconds
+[0m15:35:43.597683 [debug] [Thread-1 (]: Began running node test.btc.btc_address_validity_whale_alerts_OUTPUT_ADDRESS.a87dac8f14
+[0m15:35:43.598325 [info ] [Thread-1 (]: 1 of 1 START test btc_address_validity_whale_alerts_OUTPUT_ADDRESS ............. [RUN]
+[0m15:35:43.598914 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now test.btc.btc_address_validity_whale_alerts_OUTPUT_ADDRESS.a87dac8f14)
+[0m15:35:43.599314 [debug] [Thread-1 (]: Began compiling node test.btc.btc_address_validity_whale_alerts_OUTPUT_ADDRESS.a87dac8f14
+[0m15:35:43.608642 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.btc_address_validity_whale_alerts_OUTPUT_ADDRESS.a87dac8f14"
+[0m15:35:43.609367 [debug] [Thread-1 (]: Began executing node test.btc.btc_address_validity_whale_alerts_OUTPUT_ADDRESS.a87dac8f14
+[0m15:35:43.629531 [debug] [Thread-1 (]: Writing runtime sql for node "test.btc.btc_address_validity_whale_alerts_OUTPUT_ADDRESS.a87dac8f14"
+[0m15:35:43.630652 [debug] [Thread-1 (]: Using snowflake connection "test.btc.btc_address_validity_whale_alerts_OUTPUT_ADDRESS.a87dac8f14"
+[0m15:35:43.630976 [debug] [Thread-1 (]: On test.btc.btc_address_validity_whale_alerts_OUTPUT_ADDRESS.a87dac8f14: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+    select *
+    from btc.btc_schema.whale_alerts
+    where NOT (
+        OUTPUT_ADDRESS LIKE '1%'
+        OR OUTPUT_ADDRESS LIKE '3%'
+        OR OUTPUT_ADDRESS LIKE 'bc1%'
+    )
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "test.btc.btc_address_validity_whale_alerts_OUTPUT_ADDRESS.a87dac8f14"} */
+[0m15:35:44.650018 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.018 seconds
+[0m15:35:44.664375 [info ] [Thread-1 (]: 1 of 1 PASS btc_address_validity_whale_alerts_OUTPUT_ADDRESS ................... [[32mPASS[0m in 1.07s]
+[0m15:35:44.665298 [debug] [Thread-1 (]: Finished running node test.btc.btc_address_validity_whale_alerts_OUTPUT_ADDRESS.a87dac8f14
+[0m15:35:44.666704 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:35:44.667112 [debug] [MainThread]: Connection 'test.btc.btc_address_validity_whale_alerts_OUTPUT_ADDRESS.a87dac8f14' was left open.
+[0m15:35:44.667476 [debug] [MainThread]: On test.btc.btc_address_validity_whale_alerts_OUTPUT_ADDRESS.a87dac8f14: Close
+[0m15:35:44.827638 [info ] [MainThread]: 
+[0m15:35:44.829085 [info ] [MainThread]: Finished running 1 test in 0 hours 0 minutes and 4.28 seconds (4.28s).
+[0m15:35:44.830382 [debug] [MainThread]: Command end result
+[0m15:35:44.860526 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m15:35:44.862056 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m15:35:44.867315 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m15:35:44.867590 [info ] [MainThread]: 
+[0m15:35:44.867890 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:35:44.868132 [info ] [MainThread]: 
+[0m15:35:44.868379 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:35:44.871906 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 5.2941155, "process_in_blocks": "0", "process_kernel_time": 0.292272, "process_mem_max_rss": "210059264", "process_out_blocks": "0", "process_user_time": 1.762852}
+[0m15:35:44.872246 [debug] [MainThread]: Command `dbt test` succeeded at 15:35:44.872188 after 5.29 seconds
+[0m15:35:44.872513 [debug] [MainThread]: Flushing usage events
+[0m15:41:53.743237 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:41:53.757059 | 4be2cd9b-4963-4e35-a9f8-0806d526382b ==============================
+[0m15:41:53.757059 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:41:53.757589 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'log_format': 'default', 'indirect_selection': 'eager', 'printer_width': '80', 'introspect': 'True', 'static_parser': 'True', 'use_colors': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'invocation_command': 'dbt run --select whale_alerts', 'profiles_dir': '/Users/mac/.dbt', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'no_print': 'None', 'debug': 'False', 'write_json': 'True', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'empty': 'False', 'partial_parse': 'True'}
+[0m15:41:54.269073 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m15:41:54.358611 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m15:41:54.421568 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading btc: schema.yml - Runtime Error
+    Syntax error near line 17
+    ------------------------------
+    14 |         tests:
+    15 |         - btc_address_validity
+    16 |   
+    17 |     - name: whale_alerts
+    18 |     config:
+    19 |       contract:
+    20 |         enforced: true
+    
+    Raw Error:
+    ------------------------------
+    while parsing a block mapping
+      in "<unicode string>", line 11, column 5
+    did not find expected key
+      in "<unicode string>", line 17, column 5
+[0m15:41:54.424034 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.70786786, "process_in_blocks": "0", "process_kernel_time": 0.192769, "process_mem_max_rss": "178618368", "process_out_blocks": "0", "process_user_time": 1.16659}
+[0m15:41:54.424380 [debug] [MainThread]: Command `dbt run` failed at 15:41:54.424327 after 0.71 seconds
+[0m15:41:54.424586 [debug] [MainThread]: Flushing usage events
+[0m15:45:01.472952 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:45:01.483560 | dbf9f782-744c-4ba6-a4b8-ba4e06f4e29c ==============================
+[0m15:45:01.483560 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:45:01.484121 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/mac/.dbt', 'introspect': 'True', 'invocation_command': 'dbt run --select whale_alerts', 'cache_selected_only': 'False', 'target_path': 'None', 'partial_parse': 'True', 'empty': 'False', 'use_colors': 'True', 'warn_error': 'None', 'quiet': 'False', 'static_parser': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'no_print': 'None', 'log_cache_events': 'False', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'debug': 'False', 'version_check': 'True', 'fail_fast': 'False', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'indirect_selection': 'eager'}
+[0m15:45:01.907105 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m15:45:01.993999 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m15:45:02.079904 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:45:02.080315 [debug] [MainThread]: Partial parsing: updated file: btc://models/schema.yml
+[0m15:45:02.382896 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m15:45:02.384176 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m15:45:02.395095 [info ] [MainThread]: Found 4 models, 1 seed, 3 data tests, 1 source, 597 macros
+[0m15:45:02.395958 [info ] [MainThread]: 
+[0m15:45:02.396167 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:45:02.396330 [info ] [MainThread]: 
+[0m15:45:02.396584 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:45:02.397023 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m15:45:02.428537 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m15:45:02.428788 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc"} */
+[0m15:45:02.428957 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:45:06.402341 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 3.973 seconds
+[0m15:45:06.412141 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_schema)
+[0m15:45:06.426677 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m15:45:06.427085 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m15:45:06.568287 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.141 seconds
+[0m15:45:06.576917 [debug] [Thread-1 (]: Began running node model.btc.whale_alerts
+[0m15:45:06.577657 [info ] [Thread-1 (]: 1 of 1 START sql table model btc_schema.whale_alerts ........................... [RUN]
+[0m15:45:06.578212 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.whale_alerts)
+[0m15:45:06.578634 [debug] [Thread-1 (]: Began compiling node model.btc.whale_alerts
+[0m15:45:06.590484 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m15:45:06.597458 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m15:45:06.598359 [debug] [Thread-1 (]: Began executing node model.btc.whale_alerts
+[0m15:45:06.634424 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m15:45:06.634776 [debug] [Thread-1 (]: On model.btc.whale_alerts: select * from (
+        with  __dbt__cte__stg_btc_transactions as (
+
+
+select * 
+from btc.btc_schema.stg_btc_outputs 
+where is_coinbase = false
+), whales as (
+    select
+    output_address,
+    sum(output_value) as total_sent,
+    count(*) as transaction_count
+
+from __dbt__cte__stg_btc_transactions
+
+where output_value > 10
+
+group by output_address
+order by total_sent desc
+
+),
+latest_price as (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) = current_date()
+)
+
+select wh.output_address,
+wh.total_sent,
+wh.transaction_count,
+
+
+wh.total_sent * (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) >= current_date()
+)
+
+ as usd_value
+from whales wh
+cross join latest_price lp
+order by wh.total_sent desc
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+[0m15:45:07.892594 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 1.257 seconds
+[0m15:45:07.909377 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m15:45:07.910036 [debug] [Thread-1 (]: On model.btc.whale_alerts: select * from (
+        select
+    
+      
+    cast(null as TEXT)
+     as OUTPUT_ADDRESS, 
+      
+    cast(null as float)
+     as TOTAL_SENT, 
+      
+    cast(null as float)
+     as USD_VALUE
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+[0m15:45:08.273789 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.363 seconds
+[0m15:45:08.283249 [debug] [Thread-1 (]: Compilation Error in model whale_alerts (models/marts/whale_alerts.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name       | definition_type | contract_type | mismatch_reason     |
+  | ----------------- | --------------- | ------------- | ------------------- |
+  | TRANSACTION_COUNT | FIXED           |               | missing in contract |
+  
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_table_snowflake (macros/materializations/table.sql)
+  > called by model whale_alerts (models/marts/whale_alerts.sql)
+[0m15:45:08.284750 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model btc_schema.whale_alerts .................. [[31mERROR[0m in 1.71s]
+[0m15:45:08.285188 [debug] [Thread-1 (]: Finished running node model.btc.whale_alerts
+[0m15:45:08.285586 [debug] [Thread-4 (]: Marking all children of 'model.btc.whale_alerts' to be skipped because of status 'error'.  Reason: Compilation Error in model whale_alerts (models/marts/whale_alerts.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name       | definition_type | contract_type | mismatch_reason     |
+  | ----------------- | --------------- | ------------- | ------------------- |
+  | TRANSACTION_COUNT | FIXED           |               | missing in contract |
+  
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_table_snowflake (macros/materializations/table.sql)
+  > called by model whale_alerts (models/marts/whale_alerts.sql).
+[0m15:45:08.286730 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:45:08.286954 [debug] [MainThread]: Connection 'model.btc.whale_alerts' was left open.
+[0m15:45:08.287154 [debug] [MainThread]: On model.btc.whale_alerts: Close
+[0m15:45:08.431019 [info ] [MainThread]: 
+[0m15:45:08.431678 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 6.03 seconds (6.03s).
+[0m15:45:08.432507 [debug] [MainThread]: Command end result
+[0m15:45:08.457528 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m15:45:08.459418 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m15:45:08.463627 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m15:45:08.463874 [info ] [MainThread]: 
+[0m15:45:08.464167 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:45:08.464388 [info ] [MainThread]: 
+[0m15:45:08.464661 [error] [MainThread]: [31mFailure in model whale_alerts (models/marts/whale_alerts.sql)[0m
+[0m15:45:08.464943 [error] [MainThread]:   Compilation Error in model whale_alerts (models/marts/whale_alerts.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name       | definition_type | contract_type | mismatch_reason     |
+  | ----------------- | --------------- | ------------- | ------------------- |
+  | TRANSACTION_COUNT | FIXED           |               | missing in contract |
+  
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_table_snowflake (macros/materializations/table.sql)
+  > called by model whale_alerts (models/marts/whale_alerts.sql)
+[0m15:45:08.465253 [info ] [MainThread]: 
+[0m15:45:08.465534 [info ] [MainThread]:   compiled code at target/compiled/btc/models/marts/whale_alerts.sql
+[0m15:45:08.465745 [info ] [MainThread]: 
+[0m15:45:08.465972 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:45:08.469024 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 7.0218673, "process_in_blocks": "0", "process_kernel_time": 0.269594, "process_mem_max_rss": "213499904", "process_out_blocks": "0", "process_user_time": 1.860877}
+[0m15:45:08.469365 [debug] [MainThread]: Command `dbt run` failed at 15:45:08.469312 after 7.02 seconds
+[0m15:45:08.469638 [debug] [MainThread]: Flushing usage events
+[0m15:46:06.248289 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:46:06.259567 | af7ff35e-d915-4039-95b6-0e038ead2961 ==============================
+[0m15:46:06.259567 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:46:06.260101 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'warn_error': 'None', 'use_experimental_parser': 'False', 'write_json': 'True', 'profiles_dir': '/Users/mac/.dbt', 'printer_width': '80', 'quiet': 'False', 'use_colors': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'invocation_command': 'dbt run --select whale_alerts', 'empty': 'False', 'fail_fast': 'False', 'version_check': 'True', 'log_cache_events': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'target_path': 'None', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'introspect': 'True', 'indirect_selection': 'eager'}
+[0m15:46:06.682900 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m15:46:06.769688 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m15:46:06.844968 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:46:06.845402 [debug] [MainThread]: Partial parsing: updated file: btc://models/schema.yml
+[0m15:46:07.141401 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m15:46:07.142448 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m15:46:07.149396 [info ] [MainThread]: Found 4 models, 1 seed, 3 data tests, 1 source, 597 macros
+[0m15:46:07.150179 [info ] [MainThread]: 
+[0m15:46:07.150384 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:46:07.150543 [info ] [MainThread]: 
+[0m15:46:07.150786 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:46:07.151199 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m15:46:07.180062 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m15:46:07.180335 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc"} */
+[0m15:46:07.180503 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:46:10.998388 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 3.818 seconds
+[0m15:46:11.008742 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_schema)
+[0m15:46:11.023474 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m15:46:11.023908 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m15:46:11.134950 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.111 seconds
+[0m15:46:11.142407 [debug] [Thread-1 (]: Began running node model.btc.whale_alerts
+[0m15:46:11.143100 [info ] [Thread-1 (]: 1 of 1 START sql table model btc_schema.whale_alerts ........................... [RUN]
+[0m15:46:11.143684 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.whale_alerts)
+[0m15:46:11.144145 [debug] [Thread-1 (]: Began compiling node model.btc.whale_alerts
+[0m15:46:11.155967 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m15:46:11.162089 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m15:46:11.162901 [debug] [Thread-1 (]: Began executing node model.btc.whale_alerts
+[0m15:46:11.201096 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m15:46:11.201602 [debug] [Thread-1 (]: On model.btc.whale_alerts: select * from (
+        with  __dbt__cte__stg_btc_transactions as (
+
+
+select * 
+from btc.btc_schema.stg_btc_outputs 
+where is_coinbase = false
+), whales as (
+    select
+    output_address,
+    sum(output_value) as total_sent,
+    count(*) as transaction_count
+
+from __dbt__cte__stg_btc_transactions
+
+where output_value > 10
+
+group by output_address
+order by total_sent desc
+
+),
+latest_price as (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) = current_date()
+)
+
+select wh.output_address,
+wh.total_sent,
+wh.transaction_count,
+
+
+wh.total_sent * (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) >= current_date()
+)
+
+ as usd_value
+from whales wh
+cross join latest_price lp
+order by wh.total_sent desc
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+[0m15:46:11.651376 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.449 seconds
+[0m15:46:11.669740 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m15:46:11.670403 [debug] [Thread-1 (]: On model.btc.whale_alerts: select * from (
+        select
+    
+      
+    cast(null as TEXT)
+     as OUTPUT_ADDRESS, 
+      
+    cast(null as float)
+     as TOTAL_SENT, 
+      
+    cast(null as float)
+     as TRANSACTION_COUNT, 
+      
+    cast(null as float)
+     as USD_VALUE
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+[0m15:46:12.159074 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.488 seconds
+[0m15:46:12.175285 [debug] [Thread-1 (]: Compilation Error in model whale_alerts (models/marts/whale_alerts.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name       | definition_type | contract_type | mismatch_reason    |
+  | ----------------- | --------------- | ------------- | ------------------ |
+  | TRANSACTION_COUNT | FIXED           | REAL          | data type mismatch |
+  
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_table_snowflake (macros/materializations/table.sql)
+  > called by model whale_alerts (models/marts/whale_alerts.sql)
+[0m15:46:12.177563 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model btc_schema.whale_alerts .................. [[31mERROR[0m in 1.03s]
+[0m15:46:12.178289 [debug] [Thread-1 (]: Finished running node model.btc.whale_alerts
+[0m15:46:12.178810 [debug] [Thread-4 (]: Marking all children of 'model.btc.whale_alerts' to be skipped because of status 'error'.  Reason: Compilation Error in model whale_alerts (models/marts/whale_alerts.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name       | definition_type | contract_type | mismatch_reason    |
+  | ----------------- | --------------- | ------------- | ------------------ |
+  | TRANSACTION_COUNT | FIXED           | REAL          | data type mismatch |
+  
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_table_snowflake (macros/materializations/table.sql)
+  > called by model whale_alerts (models/marts/whale_alerts.sql).
+[0m15:46:12.180383 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:46:12.180682 [debug] [MainThread]: Connection 'model.btc.whale_alerts' was left open.
+[0m15:46:12.180946 [debug] [MainThread]: On model.btc.whale_alerts: Close
+[0m15:46:12.335831 [info ] [MainThread]: 
+[0m15:46:12.336851 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 5.18 seconds (5.18s).
+[0m15:46:12.337893 [debug] [MainThread]: Command end result
+[0m15:46:12.368908 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m15:46:12.370639 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m15:46:12.375358 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m15:46:12.375654 [info ] [MainThread]: 
+[0m15:46:12.375984 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:46:12.376250 [info ] [MainThread]: 
+[0m15:46:12.376563 [error] [MainThread]: [31mFailure in model whale_alerts (models/marts/whale_alerts.sql)[0m
+[0m15:46:12.376894 [error] [MainThread]:   Compilation Error in model whale_alerts (models/marts/whale_alerts.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name       | definition_type | contract_type | mismatch_reason    |
+  | ----------------- | --------------- | ------------- | ------------------ |
+  | TRANSACTION_COUNT | FIXED           | REAL          | data type mismatch |
+  
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_table_snowflake (macros/materializations/table.sql)
+  > called by model whale_alerts (models/marts/whale_alerts.sql)
+[0m15:46:12.377350 [info ] [MainThread]: 
+[0m15:46:12.377674 [info ] [MainThread]:   compiled code at target/compiled/btc/models/marts/whale_alerts.sql
+[0m15:46:12.377915 [info ] [MainThread]: 
+[0m15:46:12.378171 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:46:12.381269 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 6.159732, "process_in_blocks": "0", "process_kernel_time": 0.263466, "process_mem_max_rss": "211943424", "process_out_blocks": "0", "process_user_time": 1.881623}
+[0m15:46:12.381645 [debug] [MainThread]: Command `dbt run` failed at 15:46:12.381584 after 6.16 seconds
+[0m15:46:12.381938 [debug] [MainThread]: Flushing usage events
+[0m15:47:45.925972 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:47:45.938337 | 6c9c030c-6836-4a30-bf03-22833135ebf2 ==============================
+[0m15:47:45.938337 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:47:45.938863 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'printer_width': '80', 'profiles_dir': '/Users/mac/.dbt', 'debug': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select whale_alerts', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'empty': 'False', 'use_colors': 'True', 'log_format': 'default', 'fail_fast': 'False', 'quiet': 'False'}
+[0m15:47:46.363966 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m15:47:46.450900 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m15:47:46.525910 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:47:46.526360 [debug] [MainThread]: Partial parsing: updated file: btc://models/schema.yml
+[0m15:47:46.825158 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m15:47:46.826279 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m15:47:46.833298 [info ] [MainThread]: Found 4 models, 1 seed, 3 data tests, 1 source, 597 macros
+[0m15:47:46.834090 [info ] [MainThread]: 
+[0m15:47:46.834302 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:47:46.834468 [info ] [MainThread]: 
+[0m15:47:46.834713 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:47:46.835158 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m15:47:46.864401 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m15:47:46.864643 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc"} */
+[0m15:47:46.864808 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:47:50.660085 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 3.795 seconds
+[0m15:47:50.664989 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_schema)
+[0m15:47:50.674435 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m15:47:50.674727 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m15:47:50.827591 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.152 seconds
+[0m15:47:50.833090 [debug] [Thread-1 (]: Began running node model.btc.whale_alerts
+[0m15:47:50.833707 [info ] [Thread-1 (]: 1 of 1 START sql table model btc_schema.whale_alerts ........................... [RUN]
+[0m15:47:50.834187 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.whale_alerts)
+[0m15:47:50.834537 [debug] [Thread-1 (]: Began compiling node model.btc.whale_alerts
+[0m15:47:50.847542 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m15:47:50.854285 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m15:47:50.855020 [debug] [Thread-1 (]: Began executing node model.btc.whale_alerts
+[0m15:47:50.892666 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m15:47:50.893145 [debug] [Thread-1 (]: On model.btc.whale_alerts: select * from (
+        with  __dbt__cte__stg_btc_transactions as (
+
+
+select * 
+from btc.btc_schema.stg_btc_outputs 
+where is_coinbase = false
+), whales as (
+    select
+    output_address,
+    sum(output_value) as total_sent,
+    count(*) as transaction_count
+
+from __dbt__cte__stg_btc_transactions
+
+where output_value > 10
+
+group by output_address
+order by total_sent desc
+
+),
+latest_price as (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) = current_date()
+)
+
+select wh.output_address,
+wh.total_sent,
+wh.transaction_count,
+
+
+wh.total_sent * (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) >= current_date()
+)
+
+ as usd_value
+from whales wh
+cross join latest_price lp
+order by wh.total_sent desc
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+[0m15:47:51.527018 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.633 seconds
+[0m15:47:51.545293 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m15:47:51.545978 [debug] [Thread-1 (]: On model.btc.whale_alerts: select * from (
+        select
+    
+      
+    cast(null as TEXT)
+     as OUTPUT_ADDRESS, 
+      
+    cast(null as float)
+     as TOTAL_SENT, 
+      
+    cast(null as float)
+     as TRANSACTION_COUNT, 
+      
+    cast(null as integer)
+     as USD_VALUE
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+[0m15:47:52.033312 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.487 seconds
+[0m15:47:52.052048 [debug] [Thread-1 (]: Compilation Error in model whale_alerts (models/marts/whale_alerts.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name       | definition_type | contract_type | mismatch_reason    |
+  | ----------------- | --------------- | ------------- | ------------------ |
+  | TRANSACTION_COUNT | FIXED           | REAL          | data type mismatch |
+  | USD_VALUE         | REAL            | FIXED         | data type mismatch |
+  
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_table_snowflake (macros/materializations/table.sql)
+  > called by model whale_alerts (models/marts/whale_alerts.sql)
+[0m15:47:52.054458 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model btc_schema.whale_alerts .................. [[31mERROR[0m in 1.22s]
+[0m15:47:52.055213 [debug] [Thread-1 (]: Finished running node model.btc.whale_alerts
+[0m15:47:52.055878 [debug] [Thread-4 (]: Marking all children of 'model.btc.whale_alerts' to be skipped because of status 'error'.  Reason: Compilation Error in model whale_alerts (models/marts/whale_alerts.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name       | definition_type | contract_type | mismatch_reason    |
+  | ----------------- | --------------- | ------------- | ------------------ |
+  | TRANSACTION_COUNT | FIXED           | REAL          | data type mismatch |
+  | USD_VALUE         | REAL            | FIXED         | data type mismatch |
+  
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_table_snowflake (macros/materializations/table.sql)
+  > called by model whale_alerts (models/marts/whale_alerts.sql).
+[0m15:47:52.057724 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:47:52.058091 [debug] [MainThread]: Connection 'model.btc.whale_alerts' was left open.
+[0m15:47:52.058390 [debug] [MainThread]: On model.btc.whale_alerts: Close
+[0m15:47:52.220692 [info ] [MainThread]: 
+[0m15:47:52.222072 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 5.39 seconds (5.39s).
+[0m15:47:52.223688 [debug] [MainThread]: Command end result
+[0m15:47:52.253770 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m15:47:52.255466 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m15:47:52.259964 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m15:47:52.260241 [info ] [MainThread]: 
+[0m15:47:52.260555 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:47:52.260803 [info ] [MainThread]: 
+[0m15:47:52.261085 [error] [MainThread]: [31mFailure in model whale_alerts (models/marts/whale_alerts.sql)[0m
+[0m15:47:52.261392 [error] [MainThread]:   Compilation Error in model whale_alerts (models/marts/whale_alerts.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name       | definition_type | contract_type | mismatch_reason    |
+  | ----------------- | --------------- | ------------- | ------------------ |
+  | TRANSACTION_COUNT | FIXED           | REAL          | data type mismatch |
+  | USD_VALUE         | REAL            | FIXED         | data type mismatch |
+  
+  
+  > in macro assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros/relations/column/columns_spec_ddl.sql)
+  > called by macro snowflake__create_table_info_schema_sql (macros/relations/table/create.sql)
+  > called by macro snowflake__create_table_as (macros/relations/table/create.sql)
+  > called by macro create_table_as (macros/relations/table/create.sql)
+  > called by macro statement (macros/etc/statement.sql)
+  > called by macro materialization_table_snowflake (macros/materializations/table.sql)
+  > called by model whale_alerts (models/marts/whale_alerts.sql)
+[0m15:47:52.261672 [info ] [MainThread]: 
+[0m15:47:52.261915 [info ] [MainThread]:   compiled code at target/compiled/btc/models/marts/whale_alerts.sql
+[0m15:47:52.262121 [info ] [MainThread]: 
+[0m15:47:52.262352 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:47:52.265610 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 6.366129, "process_in_blocks": "0", "process_kernel_time": 0.27238, "process_mem_max_rss": "212467712", "process_out_blocks": "0", "process_user_time": 1.881252}
+[0m15:47:52.265968 [debug] [MainThread]: Command `dbt run` failed at 15:47:52.265907 after 6.37 seconds
+[0m15:47:52.266345 [debug] [MainThread]: Flushing usage events
+[0m15:48:39.739206 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:48:39.750552 | 349d53b2-8fde-4b85-9ccd-755f24151f18 ==============================
+[0m15:48:39.750552 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:48:39.751066 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'version_check': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run --select whale_alerts', 'target_path': 'None', 'profiles_dir': '/Users/mac/.dbt', 'empty': 'False', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'static_parser': 'True', 'quiet': 'False'}
+[0m15:48:40.197945 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m15:48:40.285865 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m15:48:40.360901 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:48:40.361301 [debug] [MainThread]: Partial parsing: updated file: btc://models/schema.yml
+[0m15:48:40.660484 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m15:48:40.661544 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m15:48:40.668796 [info ] [MainThread]: Found 4 models, 1 seed, 3 data tests, 1 source, 597 macros
+[0m15:48:40.669595 [info ] [MainThread]: 
+[0m15:48:40.669812 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:48:40.669978 [info ] [MainThread]: 
+[0m15:48:40.670225 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:48:40.670662 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc'
+[0m15:48:40.698963 [debug] [ThreadPool]: Using snowflake connection "list_btc"
+[0m15:48:40.699242 [debug] [ThreadPool]: On list_btc: show terse schemas in database btc
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc"} */
+[0m15:48:40.699430 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:48:43.054654 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 2.355 seconds
+[0m15:48:43.064493 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_btc, now list_btc_btc_schema)
+[0m15:48:43.078496 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_schema"
+[0m15:48:43.078868 [debug] [ThreadPool]: On list_btc_btc_schema: show objects in btc.btc_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_schema"} */;
+[0m15:48:43.215657 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.136 seconds
+[0m15:48:43.224310 [debug] [Thread-1 (]: Began running node model.btc.whale_alerts
+[0m15:48:43.225241 [info ] [Thread-1 (]: 1 of 1 START sql table model btc_schema.whale_alerts ........................... [RUN]
+[0m15:48:43.225935 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_schema, now model.btc.whale_alerts)
+[0m15:48:43.226397 [debug] [Thread-1 (]: Began compiling node model.btc.whale_alerts
+[0m15:48:43.239469 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m15:48:43.245744 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.whale_alerts"
+[0m15:48:43.246377 [debug] [Thread-1 (]: Began executing node model.btc.whale_alerts
+[0m15:48:43.282336 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m15:48:43.282744 [debug] [Thread-1 (]: On model.btc.whale_alerts: select * from (
+        with  __dbt__cte__stg_btc_transactions as (
+
+
+select * 
+from btc.btc_schema.stg_btc_outputs 
+where is_coinbase = false
+), whales as (
+    select
+    output_address,
+    sum(output_value) as total_sent,
+    count(*) as transaction_count
+
+from __dbt__cte__stg_btc_transactions
+
+where output_value > 10
+
+group by output_address
+order by total_sent desc
+
+),
+latest_price as (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) = current_date()
+)
+
+select wh.output_address,
+wh.total_sent,
+wh.transaction_count,
+
+
+wh.total_sent * (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) >= current_date()
+)
+
+ as usd_value
+from whales wh
+cross join latest_price lp
+order by wh.total_sent desc
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+[0m15:48:43.407380 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.124 seconds
+[0m15:48:43.420731 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m15:48:43.421250 [debug] [Thread-1 (]: On model.btc.whale_alerts: select * from (
+        select
+    
+      
+    cast(null as TEXT)
+     as OUTPUT_ADDRESS, 
+      
+    cast(null as float)
+     as TOTAL_SENT, 
+      
+    cast(null as integer)
+     as TRANSACTION_COUNT, 
+      
+    cast(null as DOUBLE)
+     as USD_VALUE
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */
+[0m15:48:43.731462 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.309 seconds
+[0m15:48:43.754255 [debug] [Thread-1 (]: Writing runtime sql for node "model.btc.whale_alerts"
+[0m15:48:43.759305 [debug] [Thread-1 (]: Using snowflake connection "model.btc.whale_alerts"
+[0m15:48:43.759727 [debug] [Thread-1 (]: On model.btc.whale_alerts: create or replace transient table btc.btc_schema.whale_alerts
+    
+  (
+    OUTPUT_ADDRESS TEXT,
+    TOTAL_SENT float,
+    TRANSACTION_COUNT integer,
+    USD_VALUE DOUBLE
+    
+    )
+
+    
+    
+    
+    as (
+    select OUTPUT_ADDRESS, TOTAL_SENT, TRANSACTION_COUNT, USD_VALUE
+    from (
+        with  __dbt__cte__stg_btc_transactions as (
+
+
+select * 
+from btc.btc_schema.stg_btc_outputs 
+where is_coinbase = false
+), whales as (
+    select
+    output_address,
+    sum(output_value) as total_sent,
+    count(*) as transaction_count
+
+from __dbt__cte__stg_btc_transactions
+
+where output_value > 10
+
+group by output_address
+order by total_sent desc
+
+),
+latest_price as (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) = current_date()
+)
+
+select wh.output_address,
+wh.total_sent,
+wh.transaction_count,
+
+
+wh.total_sent * (
+    select price
+    from btc.btc_schema.btc_usd_max
+    where to_date(replace(snapped_at, ' UTC', '')) >= current_date()
+)
+
+ as usd_value
+from whales wh
+cross join latest_price lp
+order by wh.total_sent desc
+    ) as model_subq
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "btc", "target_name": "dev", "node_id": "model.btc.whale_alerts"} */;
+[0m15:48:44.961994 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.202 seconds
+[0m15:48:44.992663 [info ] [Thread-1 (]: 1 of 1 OK created sql table model btc_schema.whale_alerts ...................... [[32mSUCCESS 1[0m in 1.77s]
+[0m15:48:44.993276 [debug] [Thread-1 (]: Finished running node model.btc.whale_alerts
+[0m15:48:44.994240 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:48:44.994521 [debug] [MainThread]: Connection 'model.btc.whale_alerts' was left open.
+[0m15:48:44.994782 [debug] [MainThread]: On model.btc.whale_alerts: Close
+[0m15:48:45.143987 [info ] [MainThread]: 
+[0m15:48:45.145145 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.47 seconds (4.47s).
+[0m15:48:45.146322 [debug] [MainThread]: Command end result
+[0m15:48:45.175643 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mac/Desktop/DE2025/btc/target/manifest.json
+[0m15:48:45.177310 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mac/Desktop/DE2025/btc/target/semantic_manifest.json
+[0m15:48:45.181853 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mac/Desktop/DE2025/btc/target/run_results.json
+[0m15:48:45.182136 [info ] [MainThread]: 
+[0m15:48:45.182459 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:48:45.182696 [info ] [MainThread]: 
+[0m15:48:45.182944 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:48:45.185898 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.47324, "process_in_blocks": "0", "process_kernel_time": 0.274357, "process_mem_max_rss": "213614592", "process_out_blocks": "0", "process_user_time": 1.899944}
+[0m15:48:45.186250 [debug] [MainThread]: Command `dbt run` succeeded at 15:48:45.186184 after 5.47 seconds
+[0m15:48:45.186509 [debug] [MainThread]: Flushing usage events
