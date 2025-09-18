@@ -5,5 +5,21 @@ models:
     columns:
       - name: HASHKEY
         tests:
-        - unique
-        - not_null
+          - unique
+          - not_null
+
+  - name: whale_alerts
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: OUTPUT_ADDRESS
+        data_type: string
+        tests:
+          - btc_address_validity
+      - name: TOTAL_SENT
+        data_type: float
+      - name: TRANSACTION_COUNT
+        data_type: integer
+      - name: USD_VALUE
+        data_type: DOUBLE
