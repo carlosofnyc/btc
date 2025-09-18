@@ -1,4 +1,4 @@
-#!/Users/mac/Desktop/DE2025/btc/venv/bin/python
+#!/Users/mac/Desktop/DE2025/btc/venv/bin/python3.13
 
 import sys
 import json
