@@ -6653,3 +6653,25 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m16:12:04.483837 [debug] [MainThread]: Connection 'debug' was left open.
 [0m16:12:04.484145 [debug] [MainThread]: On debug: Close
 [0m16:12:04.573043 [debug] [MainThread]: Flushing usage events
+[0m16:49:22.146038 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 16:49:22.161451 | c3e977c0-ec2d-4c91-ac60-5860bff9ca68 ==============================
+[0m16:49:22.161451 [info ] [MainThread]: Running with dbt=1.10.11
+[0m16:49:22.161928 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'profiles_dir': '/Users/mac/.dbt', 'version_check': 'True', 'quiet': 'False', 'partial_parse': 'True', 'no_print': 'None', 'target_path': 'None', 'printer_width': '80', 'static_parser': 'True', 'warn_error': 'None', 'introspect': 'True', 'write_json': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'empty': 'None', 'invocation_command': 'dbt deps', 'use_colors': 'True', 'log_path': '/Users/mac/Desktop/DE2025/btc/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False'}
+[0m16:49:22.242862 [debug] [MainThread]: Set downloads directory='/var/folders/yt/m6lpgwx11h3dm6844cq8ssqr0000gn/T/dbt-downloads-ap_avl4n'
+[0m16:49:22.243180 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:49:22.449931 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:49:22.451607 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:49:22.508602 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:49:22.519937 [info ] [MainThread]: Updating lock file in file path: /Users/mac/Desktop/DE2025/btc/package-lock.yml
+[0m16:49:22.554126 [debug] [MainThread]: Set downloads directory='/var/folders/yt/m6lpgwx11h3dm6844cq8ssqr0000gn/T/dbt-downloads-8zbvxkhl'
+[0m16:49:22.556026 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:49:22.826726 [info ] [MainThread]: Installed from version 1.1.1
+[0m16:49:22.827046 [info ] [MainThread]: Updated version available: 1.3.1
+[0m16:49:22.827274 [info ] [MainThread]: 
+[0m16:49:22.827466 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m16:49:22.830132 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.70852476, "process_in_blocks": "0", "process_kernel_time": 0.186728, "process_mem_max_rss": "117555200", "process_out_blocks": "0", "process_user_time": 0.753168}
+[0m16:49:22.830458 [debug] [MainThread]: Command `dbt deps` succeeded at 16:49:22.830390 after 0.71 seconds
+[0m16:49:22.830675 [debug] [MainThread]: Flushing usage events
