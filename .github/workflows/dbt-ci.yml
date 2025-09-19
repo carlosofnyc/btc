@@ -25,7 +25,8 @@ jobs:
           pip install dbt-core==1.9.4 dbt-snowflake==1.9.4
 
       - name: Write private key to file
-        run: echo "${{ secrets.SNOWFLAKE_PRIVATE_KEY }}" > snowflake_github_actions_key.p8
+        run: |
+          echo "${{ secrets.SNOWFLAKE_PRIVATE_KEY }}" > snowflake_github_actions_key.p8
         env:
           SNOWFLAKE_PRIVATE_KEY: ${{ secrets.SNOWFLAKE_PRIVATE_KEY }}
           
@@ -38,14 +39,14 @@ jobs:
             outputs:
               production:
                 type: snowflake
-                account: \"${{ secrets.SNOWFLAKE_ACCOUNT }}\"
-                user: \"${{ secrets.SNOWFLAKE_USER }}\"
-                role: \"${{ secrets.SNOWFLAKE_ROLE }}\"
-                database: \"${{ secrets.SNOWFLAKE_DATABASE }}\"
-                warehouse: \"${{ secrets.SNOWFLAKE_WAREHOUSE }}\"
+                account: \"${SNOWFLAKE_ACCOUNT}\"
+                user: \"${SNOWFLAKE_USER}\"
+                role: \"${SNOWFLAKE_ROLE}\"
+                database: \"${SNOWFLAKE_DATABASE}\"
+                warehouse: \"${SNOWFLAKE_WAREHOUSE}\"
                 schema: btc_prod
-                private_key_path: snowflake_github_actions_key.p8
-                private_key_passphrase: \"${{ secrets.SNOWFLAKE_PRIVATE_KEY_PASSPHRASE }}\"
+                private_key_path: $(pwd)/snowflake_github_actions_key.p8
+                private_key_passphrase: \"${SNOWFLAKE_PRIVATE_KEY_PASSPHRASE}\"
                 threads: 4
           " > ~/.dbt/profiles.yml
         env:
