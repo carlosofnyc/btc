@@ -24,7 +24,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install dbt-core==1.9.4 dbt-snowflake==1.9.4
 
-      # THIS IS THE CORRECT METHOD - KEEP THESE STEPS
       - name: Write private key to file
         run: echo "${{ secrets.SNOWFLAKE_PRIVATE_KEY }}" > snowflake_github_actions_key.p8
         env:
