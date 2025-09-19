@@ -62,6 +62,3 @@ order by wh.total_sent desc
     ) as model_subq
     )
 ;
-
-
-  
