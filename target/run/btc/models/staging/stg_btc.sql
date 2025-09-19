@@ -12,8 +12,8 @@
 
     
 
-    merge into btc.btc_prod.stg_btc as DBT_INTERNAL_DEST
-        using btc.btc_prod.stg_btc__dbt_tmp as DBT_INTERNAL_SOURCE
+    merge into btc.btc_schema.stg_btc as DBT_INTERNAL_DEST
+        using btc.btc_schema.stg_btc__dbt_tmp as DBT_INTERNAL_SOURCE
         on ((DBT_INTERNAL_SOURCE.hashkey = DBT_INTERNAL_DEST.hashkey))
 
     
